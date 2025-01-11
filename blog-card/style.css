@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('./images/DreamShaper_v7_universe_stars_background_1 1.png');
+    /* background-image: url('./images/DreamShaper_v7_universe_stars_background_1 1.png'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -15,7 +15,7 @@ body {
     height: 100vh;
     flex-direction: column;
     margin: 0;
-    background-color: #030616;
+    background-color: #FAFAF9;
     font-family: "Sora", serif;
 }
 
@@ -96,6 +96,7 @@ span {
     padding-left: 15px;
     font-size: 18px;
     font-weight: 600;
+    color: #20293A;
 }
 
 .card p:not(:nth-of-type(2)) {
@@ -103,11 +104,19 @@ span {
     font-size: 14px;
     width: 350px;
     line-height: 1.6;
+    color: #394150;
+}
+
+hr {
+    color: #E5EAF0;
+    opacity: .2;
+    height: 2px;
 }
 
 .card p:not(:nth-of-type(1)) {
     font-size: 14px;
     padding-left: 15px;
+    color: #394150;
 }
 
 @media screen and (max-width: 640px),
