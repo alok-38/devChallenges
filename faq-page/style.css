@@ -11,7 +11,8 @@ body {
     justify-content: center;
     flex-direction: column;
     line-height: 1.6;
-    height: 85vh;
+    font-family: "Inter", serif;
+    font-size: 16px;
 }
 
 
@@ -25,6 +26,24 @@ main {
     padding: 3rem 0;
 }
 
+h1,
+h2 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+a {
+    color: #4E80EE;
+    text-decoration: none;
+}
+
 header {
     padding: 1.5rem 0 2.5rem 0;
 }
@@ -34,7 +53,8 @@ header p {
 }
 
 hr {
-    width: 70%;
+    width: 50%;
+    margin: auto;
 }
 
 .sections {
@@ -42,4 +62,67 @@ hr {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+section {
+    width: 50%;
+    margin: auto;
+    padding: 2.5rem 0 2rem 0;
+}
+
+section p {
+    margin: 1.5rem 0;
+}
+
+ol,
+ul {
+    padding-left: 15px;
+}
+
+ol li,
+ul li {
+    margin-bottom: .5rem;
+}
+
+@media (max-width: 1024px) {
+    main {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    section {
+        width: 80%;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    section {
+        width: 50%;
+        padding: 1.5rem 0;
+    }
 }
