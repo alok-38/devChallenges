@@ -123,3 +123,30 @@ button {
     background-color: #845EEE;
     color: #ffffff;
 }
+
+@media (max-width: 1024px),
+(max-width: 640px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        width: 95%;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+
+    .description p {
+        width: 100%;
+    }
+}
