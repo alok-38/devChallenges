@@ -148,3 +148,44 @@ img {
     object-fit: contain;
 }
 
+@media (max-width: 1024px) {
+    main {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5rem;
+        column-gap: 2.5rem;
+    }
+
+    article:nth-child(3) {
+        margin: 2rem auto 0 50%;
+    }
+
+    header {
+        margin-bottom: 0;
+    }
+
+    header p {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    header {
+        margin-bottom: 0;
+    }
+
+    header p {
+        margin-bottom: 0;
+    }
+
+}
