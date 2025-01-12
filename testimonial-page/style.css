@@ -11,13 +11,33 @@ body {
     min-height: 100vh;
 }
 
+.fill {
+    background-color: #F5C044;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fill img {
+    width: 24px;
+    height: 30px;
+    filter: brightness(0) saturate(100%) invert(100%);
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
 main {
-    background-color: #FEFEFE;
     display: flex;
     max-width: 1280px;
 }
 
 .google,
 .meta {
-    background-color: #ffffff;
+    width: 552px;
 }
