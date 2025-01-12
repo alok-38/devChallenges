@@ -5,10 +5,15 @@
 }
 
 body {
+    font-family: "Sora", serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
+
+p {
+    line-height: 1.6;
 }
 
 .fill {
@@ -35,9 +40,45 @@ ol {
 main {
     display: flex;
     max-width: 1280px;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    background-color: #fafaf9;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .google,
 .meta {
-    width: 552px;
+    width: 357px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+ul div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+ul li,
+ul img {
+    margin-bottom: 15px;
+}
+
+ul li {
+    font-size: 14px;
+}
+
+.reviewers p {
+    width: 551px;
+    font-size: 20px;
+}
+
+.reviewers h2 {
+    font-size: 36px;
+    font-weight: 600;
 }
