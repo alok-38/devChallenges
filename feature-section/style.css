@@ -31,10 +31,7 @@ header p {
 }
 
 main {
-    max-width: 1280px;
-}
-
-main {
+    max-width: 1140px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -46,12 +43,17 @@ article {
     display: flex;
     flex-direction: column;
     width: 315px;
+    height: 451px;
 }
 
 article .meeting {
     width: 267px;
     height: 193px;
     object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    padding: 0 0 5px 0;
 }
 
 .svg__hand,
@@ -63,6 +65,16 @@ article .meeting {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 1.5rem 0 1rem 1.5rem;
+}
+
+.svg__abacus img,
+.svg__dream img,
+.svg__hand img {
+    object-fit: contain;
+    width: 50%;
+    height: 50%;
+    display: block;
 }
 
 .svg__hand {
@@ -76,3 +88,63 @@ article .meeting {
 .svg__dream {
     background-color: #FBE5E6;
 }
+
+article h2 {
+    font-size: 20px;
+    color: #E5E7EB;
+    padding: 0 0 .5rem 1.5rem;
+}
+
+article p {
+    font-size: 16px;
+    color: #9DA3AE;
+    padding: 0 0 .5rem 1.5rem;
+    width: 254px;
+    line-height: 1.2;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1280px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg__hand,
+.svg__abacus,
+.svg__dream {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0 1rem 1.5rem;
+}
+
+.svg__hand {
+    background-color: #FCEED8;
+}
+
+.svg__abacus {
+    background-color: #DEE9FC;
+}
+
+.svg__dream {
+    background-color: #FBE5E6;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
