@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121826;
+}
+
+header h1 {
+    color: #E5E7EB;
+}
+
+header p {
+    color: #9DA3AE;
+}
+
+main {
+    max-width: 1280px;
+}
+
+main {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+article {
+    border-radius: 15px;
+    background-color: #212936;
+}
