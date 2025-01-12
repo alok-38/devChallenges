@@ -6,14 +6,28 @@
 
 body {
     background-color: #121826;
+    line-height: 1.6;
+}
+
+header {
+    margin: 2.5rem auto;
 }
 
 header h1 {
     color: #E5E7EB;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 40px;
+    width: 471px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.4;
 }
 
 header p {
     color: #9DA3AE;
+    text-align: center;
+    margin: .5rem 0 1rem 0;
 }
 
 main {
@@ -29,4 +43,36 @@ main {
 article {
     border-radius: 15px;
     background-color: #212936;
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+}
+
+article .meeting {
+    width: 267px;
+    height: 193px;
+    object-fit: cover;
+}
+
+.svg__hand,
+.svg__abacus,
+.svg__dream {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg__hand {
+    background-color: #FCEED8;
+}
+
+.svg__abacus {
+    background-color: #DEE9FC;
+}
+
+.svg__dream {
+    background-color: #FBE5E6;
 }
