@@ -18,6 +18,7 @@ form {
     flex-direction: column;
     background-color: #ffffff;
     padding: 2.5rem;
+    border-radius: 5px;
 }
 
 input,
@@ -26,14 +27,29 @@ button {
     border: unset;
     background: transparent;
     border: 2px solid rgb(208, 206, 219);
+    cursor: pointer;
+    border-radius: 2.5px;
 }
 
 input {
-    height: 35px;
     width: 350px;
+    padding: 10px 45px;
+    margin-bottom: 1rem;
+}
+
+input::placeholder {
+    text-align: center;
 }
 
 button {
     width: 150px;
-    height: 35px;
+    display: block;
+    margin: 1rem auto 0 auto;
+    padding: 10px 45px;
+    background-color: rebeccapurple;
+    color: #ffffff;
+}
+
+label {
+    margin-bottom: .5rem;
 }
