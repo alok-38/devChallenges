@@ -1,26 +1,28 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     font-family: "Red Hat Display", serif;
     height: 100%;
 }
 
+/* Header */
 header {
     height: 191px;
     background-image: url('resources/background-png@2x.png');
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
-    /* Full viewport width */
     background-size: cover;
-    /* Ensure background covers the header area */
     image-rendering: crisp-edges;
 }
 
+/* Retina/High-DPI Image for higher resolution displays */
 @media only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi) {
     header {
@@ -28,24 +30,28 @@ only screen and (min-resolution: 192dpi) {
     }
 }
 
+/* Regular image for lower resolution displays */
 @media only screen and (max-device-pixel-ratio: 1),
 only screen and (max-resolution: 192dpi) {
     header {
         background-image: url('resources/background-png.png');
-        /* Regular image */
     }
 }
 
+/* Main content area */
 main {
     max-width: 1280px;
     margin: auto;
 }
 
+/* Hero section */
 .hero {
-    width: 692.9px;
+    width: 100%;
+    max-width: 692.9px;
     height: 180px;
     margin-left: 5rem;
     margin-bottom: 3.5rem;
+    text-align: left;
 }
 
 .hero h2 {
@@ -59,18 +65,24 @@ main {
     color: #374151;
 }
 
+/* Articles container */
 .articles {
-    width: 1116px;
+    width: 100%;
+    max-width: 1116px;
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     gap: 50px;
 }
 
+/* Article styles */
 article {
-    width: 223px;
+    width: calc(25% - 50px);
+    /* 4 items per row with gap */
     display: flex;
     flex-direction: column;
     gap: 15px;
+    text-align: center;
 }
 
 article img {
@@ -79,16 +91,19 @@ article img {
     width: 52px;
 }
 
+/* Link style */
 .articles a {
     color: #6B59D0;
     text-decoration: none;
 }
 
+/* Article titles */
 .articles h3 {
     color: #374151;
     font-size: 18px;
 }
 
+/* Article text */
 .articles p {
     color: #6B7280;
     font-weight: 400;
@@ -127,6 +142,7 @@ article img {
     }
 }
 
+/* Media Query for screens 640px or smaller */
 @media (max-width: 640px) {
     header {
         width: 100%;
@@ -136,15 +152,39 @@ article img {
         width: 100%;
     }
 
+    .hero {
+        margin-left: 0;
+        /* Remove left margin on smaller screens */
+        padding: 20px;
+        /* Add some padding */
+        text-align: center;
+        /* Center text */
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        /* Make the headline smaller */
+    }
+
+    .hero h2 {
+        font-size: 18px;
+        /* Smaller subheading */
+    }
+
     .articles {
         width: 90%;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 250px;
+        flex-direction: column;
+        gap: 30px;
+        /* Add gap between articles */
+        margin: 0 auto;
+        /* Center the articles */
     }
 
     article {
         width: 100%;
+        /* Articles take up full width on mobile */
+        text-align: center;
+        /* Center text */
     }
 }
