@@ -7,3 +7,10 @@
 body {
     font-family: "Red Hat Display", serif;
 }
+
+header {
+    height: 191px;
+    width: 100vw;
+    background-color: #221665;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 20%);
+}
