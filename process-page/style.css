@@ -6,6 +6,7 @@
 
 body {
     font-family: "Red Hat Display", serif;
+    height: 100%;
 }
 
 header {
@@ -35,9 +36,16 @@ only screen and (max-resolution: 192dpi) {
     }
 }
 
+main {
+    max-width: 1280px;
+    margin: auto;
+}
+
 .hero {
     width: 692.9px;
     height: 180px;
+    margin-left: 5rem;
+    margin-bottom: 3.5rem;
 }
 
 .hero h2 {
@@ -49,6 +57,26 @@ only screen and (max-resolution: 192dpi) {
     font-weight: 700;
     font-size: 48px;
     color: #374151;
+}
+
+.articles {
+    width: 1116px;
+    display: flex;
+    margin: auto;
+    gap: 50px;
+}
+
+article {
+    width: 223px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+article img {
+    object-fit: cover;
+    height: 52px;
+    width: 52px;
 }
 
 .articles a {
@@ -63,4 +91,60 @@ only screen and (max-resolution: 192dpi) {
 
 .articles p {
     color: #6B7280;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+
+    /* Your CSS rules for screens 1024px wide or smaller */
+    header {
+        width: 100%;
+    }
+
+    .articles {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 250px;
+    }
+
+    .article {
+        width: 50%;
+        margin-bottom: 20px;
+        /* Adds space between the rows */
+    }
+
+    /* This removes extra margin on the right of the second item in each row */
+    .article:nth-child(odd) {
+        margin-right: 5%;
+    }
+
+    .article:nth-child(even) {
+        margin-right: 0;
+        /* Removes right margin from even items */
+    }
+}
+
+@media (max-width: 640px) {
+    header {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .articles {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 250px;
+    }
+
+    article {
+        width: 100%;
+    }
 }
