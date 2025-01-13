@@ -11,6 +11,44 @@ body {
 header {
     height: 191px;
     width: 100vw;
+    position: relative;
+    /* Make header a containing block */
+    overflow: hidden;
+    /* Prevents overflow of elements outside the header */
+}
+
+.clip--path__1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
     background-color: #221665;
+    /* Another background color for the third layer */
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 20%);
+}
+
+.clip--path__2 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 340.59px;
+    height: 80px;
+    background-color: #1386C9;
+    /* transform: rotate(5deg); */
+    z-index: -1;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, -100% 20%);
+}
+
+.clip--path__3 {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 181.66px;
+    height: 73.89px;
+    background: linear-gradient(to top, #4027ce, #9f7ee7);
+    transform: skewY(5deg);
+    z-index: 0;
+    opacity: .5;
 }
