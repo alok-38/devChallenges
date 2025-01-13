@@ -16,18 +16,32 @@ header {
     width: 612px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
 }
 
 header h1 {
     font-size: 32px;
 }
 
+header p {
+    width: 550px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.4;
+    margin: 1rem 0 2rem 0;
+}
+
 .logo {
     width: 24px;
     height: 32px;
     display: block;
-    margin: auto;
+    margin: 2rem auto 1rem auto;
+}
+
+h1 {
+    line-height: 1.5;
+    width: 450px;
+    font-size: 32px;
 }
 
 .container {
@@ -40,6 +54,16 @@ header h1 {
     background-color: #F3F4F6;
 }
 
+.container p {
+    line-height: 1.6;
+}
+
+.container img {
+    width: 304px;
+    height: 262px;
+    object-fit: cover;
+}
+
 .top-row {
     display: flex;
     gap: 25px;
@@ -49,16 +73,30 @@ header h1 {
     flex: 1;
     background-color: #ffffff;
     border-radius: 16px;
+    height: 492px;
+    width: 368px;
+    padding: 32px;
 }
 
-.top--three div {
-    width: 368px;
-    height: 492px;
-    padding: 32px;
+.top--three .top--three__flex {
+    width: 304px;
+    height: 406px;
+    padding: 24px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+}
+
+.top--three__flex h2 {
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.top--three__flex p {
+    margin-bottom: 1rem;
+    font-size: 16px;
 }
 
 .bottom-row {
@@ -66,26 +104,30 @@ header h1 {
     gap: 25px;
 }
 
-.bottom-row div {
-    width: 564px;
-    height: 326px;
-    padding: 32px;
-}
-
 .bottom--two {
     flex: 1;
     background-color: #ffffff;
-    flex-direction: row;
     width: 564px;
     height: 326px;
     border-radius: 16px;
+    padding: 32px;
 }
 
-.bottom--two div {
+.bottom--two__flex {
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.bottom--two div div {
-    display: flex;
-    flex-direction: column;
+.bottom--two__flex h2 {
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.bottom--two__flex img {
+    width: 275px;
+    height: 262px;
+    object-fit: cover;
 }
