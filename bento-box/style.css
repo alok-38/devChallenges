@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 612px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+.logo {
+    width: 24px;
+    height: 32px;
+    display: block;
+    margin: auto;
+}
+
+main {
+    background-color: #f3f4f6;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px;
+    border-radius: 20px;
+}
+
+section {
+    flex: 1 1 30%;
+    /* Each item takes 30% of the available space */
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+section img {
+    width: 275px;
+    height: 262px;
+    object-fit: cover;
+}
+
+.top--three {
+    width: 368px;
+    height: 492px;
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
