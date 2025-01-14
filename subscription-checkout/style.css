@@ -27,6 +27,7 @@ main {
 header {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 header img {
@@ -35,3 +36,12 @@ header img {
     object-fit: cover;
 }
 
+header h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 14px;
+    color: #6C727F;
+}

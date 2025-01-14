@@ -21,9 +21,51 @@
                 <h2>Upgrade to Plus</h2>
                 <p>Upgrade today and take your AI-powered productivity to the next level.</p>
             </header>
+            <form>
+                <label for="Billed to">Billed to</label>
+                <input type="text" placeholder="Enter first &amp; last name">
+                <label for="Payment Details">Payment Details</label>
+                <div class="payment__mode">
+                    <div class="card">
+                        <img src="resources/atm-card.svg" alt="atm atm-card">
+                        Credit Card
+                    </div>
+                    <div class="bank">
+                        <img src="resources/bank.svg" alt="bank">
+                        Bank Transfer
+                    </div>
+                    <div class="points">
+                        <img src="resources/point-card.svg" alt="point-card">
+                        Points
+                    </div>
+                </div>
+                <label for="Email">Email Address</label>
+                <input type="email" placeholder="Enter email address">
+                <div class="location">
+                    <label for="Country">Country</label>
+                    <select name="country">
+                        <option value="USA">United States</option>
+                        <option value="CAN">Canada</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="AUS">Australia</option>
+                        <option value="IND">India</option>
+                        <option value="GER">Germany</option>
+                        <option value="FRA">France</option>
+                        <option value="JPN">Japan</option>
+                        <option value="BRA">Brazil</option>
+                        <option value="CHN">China</option>
+                    </select>
+                    <label for="Postal code">Postal Code</label>
+                    <input type="number" placeholder="00270">
+                </div>
+                <div class="buttons">
+                    <button class="cancel">Cancel</button>
+                    <button class="subscribe">Subscribe</button>
+                </div>
+            </form>
         </section>
         <section class="plan--section">
-            
+
         </section>
     </main>
 </body>
