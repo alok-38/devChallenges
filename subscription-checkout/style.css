@@ -22,6 +22,16 @@ main {
 
 .form--section {
     width: 720px;
+    padding: 40px 72px;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+label {
+    color: #6C727F;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
 header {
@@ -44,4 +54,64 @@ header h2 {
 header p {
     font-size: 14px;
     color: #6C727F;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 576px;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+input {
+    height: 56px;
+}
+
+select[name="country"],
+input[type="number"] {
+    width: 276px;
+    height: 56px;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.payment__mode {
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 15px;
+}
+
+.payment__mode div {
+    width: 181.33px;
+    height: 84px;
+    border: 1px solid slateblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.payment__mode div img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.location {
+    display: flex;
+    gap: 25px;
+}
+
+.location div {
+    display: flex;
+    flex-direction: column;
 }
