@@ -16,8 +16,11 @@ body {
 main {
     display: flex;
     flex-direction: row;
-    max-width: 1280px;
+    width: 1280px;
     background-color: #ffffff;
+    gap: 25px;
+    height: 720px;
+    padding: 20px;
 }
 
 .form--section {
@@ -26,6 +29,7 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
+    height: 720px;
 }
 
 label {
@@ -221,4 +225,148 @@ select[name="country"]::after {
     background-color: #F0F3F6;
     width: 520px;
     padding: 32px;
+    border-radius: 12px;
+    height: 720px;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.monthly,
+.annual {
+    display: flex;
+    gap: 20px;
+    width: 456px;
+    height: 81px;
+    align-items: center;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.monthly h3,
+.annual h3 {
+    margin-bottom: 5px;
+    color: #121826;
+    font-size: 16px;
+}
+
+.monthly p,
+.annual p {
+    color: #6C727F;
+    font-size: 14px;
+}
+
+.monthly {
+    background-color: #ECE9FC;
+    border: 1.5px #743EE4 solid;
+}
+
+.annual {
+    background-color: #FFFFFF;
+    border: 1.5px #ECE9FC solid;
+}
+
+/* Hide default radio buttons */
+input[type="radio"].radio {
+    display: none;
+}
+
+/* Custom radio button styles */
+input[type="radio"].radio+div::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #888;
+    border-radius: 50%;
+    background-color: white;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Style the container div */
+.monthly,
+.annual {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Change appearance when checked */
+input[type="radio"].radio:checked+div::before {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+/* Style for the div content when the radio button is checked */
+input[type="radio"].radio:checked+div h3,
+input[type="radio"].radio:checked+div p {
+    color: #4CAF50;
+}
+
+/* Adding some padding to the inner content */
+.monthly div,
+.annual div {
+    margin-left: 30px;
+}
+
+/* Optional: hover effect to highlight the radio button */
+input[type="radio"].radio:hover+div::before {
+    border-color: #666;
+}
+
+hr {
+    width: 456px;
+    color: #D2D5DA;
+    height: 2px;
+    opacity: .3;
+    margin: .5rem 0 1rem 0;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.lock {
+    width: 456px;
+    color: #6C727F;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    margin-top: 1rem;
+    gap: 5px;
+}
+
+.lock p {
+    font-size: 12px;
+    color: #6C727F;
+}
+
+.lock img {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.cube {
+    width: 508px;
+    height: 508px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 42px;
+    right: 25px;
+}
+
