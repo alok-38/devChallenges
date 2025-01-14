@@ -25,13 +25,14 @@ main {
     padding: 40px 72px;
     display: flex;
     flex-direction: column;
-    background-color: aliceblue;
+    background-color: #ffffff;
 }
 
 label {
     color: #6C727F;
     font-size: 14px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 
 header {
@@ -68,10 +69,20 @@ input[type="email"] {
     margin-bottom: 1rem;
     border-radius: 12px;
     padding: 16px;
+    border: unset;
+    outline: unset;
+    background: transparent;
+    border: 1px solid #D2D5DA;
+    background-color: #F3F4F6;
 }
 
 input {
     height: 56px;
+}
+
+input::placeholder {
+    color: #6C727F;
+    font-size: 16px;
 }
 
 select[name="country"],
@@ -80,6 +91,45 @@ input[type="number"] {
     height: 56px;
     border-radius: 12px;
     padding: 16px;
+    border: unset;
+    outline: unset;
+    background: transparent;
+    border: 1px solid #D2D5DA;
+    background-color: #F3F4F6;
+    color: #121826;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+select[name="country"] {
+    appearance: none;
+    /* Remove default styling */
+    -webkit-appearance: none;
+    /* For Safari */
+    -moz-appearance: none;
+    /* For Firefox */
+    padding: 10px 30px 10px 10px;
+    /* Space for the text and the dropdown icon */
+    font-size: 16px;
+    /* Adjust font size */
+    border: 1px solid #D2D5DA;
+    /* Border styling */
+    background-color: #F3F4F6;
+    /* Background color */
+    cursor: pointer;
+    position: relative;
+}
+
+select[name="country"]::after {
+    content: '▼';
+    /* Custom dropdown icon */
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    /* Position the icon on the right */
+    top: 50%;
+    transform: translateY(-50%);
+    /* Vertically center the icon */
 }
 
 .payment__mode {
@@ -91,13 +141,26 @@ input[type="number"] {
 .payment__mode div {
     width: 181.33px;
     height: 84px;
-    border: 1px solid slateblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
     padding: 16px;
     border-radius: 12px;
+    color: #121826;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card {
+    border: 1px solid #743EE4;
+    background-color: #ECE9FC;
+}
+
+.bank,
+.points {
+    border: 1px solid #D2D5DA;
+    background-color: #F3F4F6;
 }
 
 .payment__mode div img {
@@ -109,9 +172,53 @@ input[type="number"] {
 .location {
     display: flex;
     gap: 25px;
+    margin-bottom: 1.5rem;
 }
 
 .location div {
     display: flex;
     flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.cancel {
+    color: #121826;
+    background-color: #F0F3F6;
+    width: 101px;
+    height: 56px;
+    border-radius: 12px;
+    padding: 24px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: unset;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.subscribe {
+    background-color: #743EE4;
+    color: #ffffff;
+    width: 459px;
+    height: 56px;
+    padding: 24px 16px;
+    border: unset;
+    outline: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan--section {
+    background-color: #F0F3F6;
+    width: 520px;
+    padding: 32px;
 }
