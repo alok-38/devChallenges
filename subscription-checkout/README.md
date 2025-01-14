@@ -1,6 +1,6 @@
-# DevChallenges.io - Business Blog Card
+# DevChallenges.io - Subscription Checkout
 
-![Thumbnail for the Business Blog Card coding challenge](./thumbnail.jpg)
+![Thumbnail for the Subscription Checkout coding challenge](./thumbnail.jpg)
 
 ## Welcome! 👋
 
@@ -12,7 +12,7 @@ Welcome to this responsive web coding challenge.
 
 ## The challenge
 
-Your task is to create a business blog card that closely resembles the provided design.
+Your task is to create a web page that closely resembles the provided design.
 
 You can use any tools or resources you like to complete this challenge. Each challenge is designed to practice different skills, so be sure to check the challenge description for more information.
 
@@ -20,7 +20,7 @@ If you need help or have any questions, feel free to [join our community](https:
 
 ## Where to find everything
 
-Your goal is to build the project using the provided design. You can find the designs in the challenge editor once you start the challenge or some designs you can also find the `/design` folder. `/design` folder might not include all the design you need, please check the editor for more details.
+Your goal is to build the project using the provided design. You can find the designs in the challenge editor once you start the challenge or in the `/design` folder. Please note that the `/design` folder may not include all the designs you need, so be sure to check the editor for more details.
 
 The designs are in JPG format, so you'll need to use your best judgment for styles such as `font-size`, `padding`, and `margin`. Additionally, spacing guides are available for each challenge, but access to them requires a [Pro membership](https://devchallenges.io/pro). With a Pro membership, you can also download the Figma design files.
 
@@ -38,7 +38,7 @@ For more information about the challenge, access the challenge editor on [devCha
 - [ ] Plan your approach to the project by identifying reusable CSS classes and structuring your HTML content.
 - [ ] Define the base styles for your project, including font-family, font-size, and other general content styles.
 - [ ] Begin adding styles from the top of the page and work your way down, ensuring that each section is visually appealing and matches the provided design.
-- [ ] Optimize and resize the required assets from the `/images` folder as necessary.
+- [ ] Optimize and resize the required assets from the `/resources` folder as necessary.
 - [ ] Test your project's responsiveness by previewing it on different devices and screen sizes.
 - [ ] Once you are satisfied with your implementation, deploy your project to a hosting platform such as GitHub Pages, Vercel, or Netlify.
 - [ ] Submit your solution on devchallenges.io and aim to pass the design comparison and performance tests.
