@@ -11,6 +11,7 @@ body {
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
+    font-family: "Poppins", serif;
 }
 
 main {
@@ -18,6 +19,27 @@ main {
     flex-direction: column;
     background-color: #ffffff;
     height: 529px;
+    width: 418px;
+    border: .5px solid #F2F5F9;
+}
+
+section {
+    width: 354px;
+    height: 132px;
+    padding: 24px;
+}
+
+h1 {
+    color: #111729;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+section p {
+    color: #677489;
+    font-size: 16px;
+    margin-top: 1rem;
+    width: 351.39px;
 }
 
 header {
@@ -46,4 +68,35 @@ header::after {
     /* Create the curve */
     border-top-right-radius: 60% 35px;
     transform: scaleY(-1);
+}
+
+footer {
+    display: flex;
+    padding: 24px;
+    gap: 15px;
+    align-items: center;
+}
+
+footer img {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+}
+
+footer h3 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #111729;
+}
+
+footer p {
+    font-size: 12px;
+    color: #677489;
+}
+
+hr {
+    margin-top: 50px;
+    color: #F2F5F9;
+    width: 418px;
+    opacity: .2;
 }
