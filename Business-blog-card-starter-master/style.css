@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F5F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: 529px;
+}
+
+header {
+    position: relative;
+    background-image: url('resources/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 281px;
+    width: 418px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-top-left-radius: 60% 35px;
+    /* Create the curve */
+    border-top-right-radius: 60% 35px;
+    transform: scaleY(-1);
+}
