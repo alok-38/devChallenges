@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Be Vietnam Pro", serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #F8FAFC;
+    border-bottom: solid .5px #E5E7EB;
+    height: 196px;
+}
+
+header div {
+    width: 444px;
+    height: 92px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 0 1rem 0;
+    gap: 5px;
+}
+
+header h1 {
+    color: #121826;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+header p {
+    text-align: center;
+    font-size: 16px;
+    color: #4D5562;
+}
+
+main {
+    background-color: #FFFFFF;
+    max-width: 1136px;
+}
