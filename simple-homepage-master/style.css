@@ -93,6 +93,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1.5rem 4rem 1.5rem 4rem;
 }
 
 .links ul {
@@ -116,8 +117,71 @@ main {
     max-width: 1136px;
     display: flex;
     flex-direction: row;
-    gap: 32px;
     align-items: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.no {
+    display: flex;
+    gap: 20px;
+}
+
+.no div {
+    display: flex;
+    gap: 10px;
+}
+
+.no div p {
+    color: #677489;
+    font-size: 14px;
+}
+
+.left h5 {
+    font-size: 14px;
+    color: #223344;
+    margin-bottom: .5rem;
+}
+
+.left h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #223344;
+    margin-bottom: 2rem;
+}
+
+.left p {
+    color: #677489;
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    width: 317;
+    gap: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    height: 52px;
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+.buttons a:nth-child(2) {
+    text-decoration: underline;
+    font-weight: 600;
+    color: #2A4DD0;
+}
+
+.left .btn {
+    background-color: #2A4DD0;
+    color: #ffffff;
+    padding: 16px 32px;
+    border-radius: 12px;
 }
 
 .right img {
