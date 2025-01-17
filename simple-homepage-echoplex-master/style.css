@@ -19,6 +19,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 92px;
+    padding: 24px 72px;
 }
 
 nav img {
@@ -44,6 +45,7 @@ nav a {
     display: flex;
     gap: 50px;
     margin: auto;
+    width: 70%;
 }
 
 .right img {
@@ -105,8 +107,19 @@ nav a {
     border: 2px solid #E5E7EB;
 }
 
+.creators {
+    width: 80%;
+    margin: auto;
+}
+
+.creators h2 {
+    padding: 72px;
+    text-align: center;
+}
+
 .creators h3 {
     font-weight: 600;
+    text-align: center;
 }
 
 .creators span {
@@ -116,15 +129,170 @@ nav a {
 .creators .art {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
 }
 
 .creators .art div {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.art span {
+    display: block;
+    text-align: center;
 }
 
 .creators .art div img {
     object-fit: cover;
     width: 32px;
     height: 48px;
+}
+
+.C9D2FA div {
+    background-color: #C9D2FA;
+    width: 72px;
+    height: 72px;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.E2FBE8 div {
+    background-color: #E2FBE8;
+    width: 72px;
+    height: 72px;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FBE5E6 div {
+    background-color: #FBE5E6;
+    width: 72px;
+    height: 72px;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FBE5E6 div {
+    background-color: #FBE5E6;
+    width: 72px;
+    height: 72px;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FDF9C9 div {
+    background-color: #FDF9C9;
+    width: 72px;
+    height: 72px;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FCEED8 div {
+    background-color: #FCEED8;
+    width: 72px;
+    height: 72px;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DEE9FC div {
+    background-color: #DEE9FC;
+    width: 72px;
+    height: 72px;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.F1E8FD div {
+    background-color: #F1E8FD;
+    width: 72px;
+    height: 72px;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.D5FAF1 div {
+    background-color: #D5FAF1;
+    width: 72px;
+    height: 72px;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-image: url('resources/footer_background_image.png');
+    background-repeat: no-repeat;
+    width: 1280px;
+    height: 540.25px;
+    background-size: cover;
+    margin: auto;
+    margin-top: 50px;
+}
+
+footer h2 {
+    color: #FFFFFF;
+}
+
+footer button {
+    background-color: #4E46DC;
+    width: 124px;
+    height: 48px;
+    padding: 12px 36px;
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    justify-content: center;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    gap: 25px;
+}
+
+.footer {
+    background-color: #121826;
+    height: 72px;
+    width: 1280px;
+    margin: auto;
+    padding: 24px 72px;
+}
+
+.footer p {
+    color: #9DA3AE;
 }
