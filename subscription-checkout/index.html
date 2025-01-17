@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="form--section">
+            <header>
+                <img src="resources/neuralite-logo.svg" alt="neuralite-logo">
+                <h2>Upgrade to Plus</h2>
+                <p>Upgrade today and take your AI-powered productivity to the next level.</p>
+            </header>
+            <form>
+                <label for="Billed to">Billed to</label>
+                <input type="text" placeholder="Enter first &amp; last name">
+                <label for="Payment Details">Payment Details</label>
+                <div class="payment__mode">
+                    <div class="card">
+                        <img src="resources/atm-card.svg" alt="atm atm-card">
+                        Credit Card
+                    </div>
+                    <div class="bank">
+                        <img src="resources/bank.svg" alt="bank">
+                        Bank Transfer
+                    </div>
+                    <div class="points">
+                        <img src="resources/point-card.svg" alt="point-card">
+                        Points
+                    </div>
+                </div>
+                <label for="Email">Email Address</label>
+                <input type="email" placeholder="Enter email address">
+                <div class="location">
+                    <div>
+                        <label for="Country">Country</label>
+                        <select name="country">
+                            <option value="USA">United States</option>
+                            <option value="CAN">Canada</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="AUS">Australia</option>
+                            <option value="IND">India</option>
+                            <option value="GER">Germany</option>
+                            <option value="FRA">France</option>
+                            <option value="JPN">Japan</option>
+                            <option value="BRA">Brazil</option>
+                            <option value="CHN">China</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Postal code">Postal Code</label>
+                        <input type="number" placeholder="00270">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="cancel">Cancel</button>
+                    <button class="subscribe">Subscribe</button>
+                </div>
+            </form>
+        </section>
+        <section class="plan--section">
+            <form>
+                <label for="Starter Plan">Starter Plan</label>
+                <div class="monthly">
+                    <input class="radio" type="radio">
+                    <div>
+                        <h3>Pay monthly</h3>
+                        <p>&dollar;20/Month/Member</p>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="annual">
+                    <input class="radio" type="radio">
+                    <div>
+                        <h3>Pay annual</h3>
+                        <p>&dollar;16/Month/Member</p>
+                    </div>
+                    <div></div>
+                </div>
+            </form>
+            <hr>
+            <div class="total">
+                <h3>Total</h3>
+                <h3>$20 / Month</h3>
+            </div>
+            <div class="lock">
+                <img src="resources/unlock key alt.svg" alt="unlock">
+                <p>This environment is for demonstration purposes only. Please refrain from entering any actual
+                    sensitive data.</p>
+            </div>
+            <div class="cube">
+                <img src="resources/Checkout-background.png" alt="">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

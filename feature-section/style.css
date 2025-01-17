@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121826;
+    line-height: 1.6;
+}
+
+header {
+    margin: 2.5rem auto;
+}
+
+header h1 {
+    color: #E5E7EB;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 40px;
+    width: 471px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.4;
+}
+
+header p {
+    color: #9DA3AE;
+    text-align: center;
+    margin: .5rem 0 1rem 0;
+}
+
+main {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+article {
+    border-radius: 15px;
+    background-color: #212936;
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+    height: 451px;
+}
+
+article .meeting {
+    width: 267px;
+    height: 193px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    padding: 0 0 5px 0;
+}
+
+.svg__hand,
+.svg__abacus,
+.svg__dream {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0 1rem 1.5rem;
+}
+
+.svg__abacus img,
+.svg__dream img,
+.svg__hand img {
+    object-fit: contain;
+    width: 50%;
+    height: 50%;
+    display: block;
+}
+
+.svg__hand {
+    background-color: #FCEED8;
+}
+
+.svg__abacus {
+    background-color: #DEE9FC;
+}
+
+.svg__dream {
+    background-color: #FBE5E6;
+}
+
+article h2 {
+    font-size: 20px;
+    color: #E5E7EB;
+    padding: 0 0 .5rem 1.5rem;
+}
+
+article p {
+    font-size: 16px;
+    color: #9DA3AE;
+    padding: 0 0 .5rem 1.5rem;
+    width: 254px;
+    line-height: 1.2;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1280px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+.svg__hand,
+.svg__abacus,
+.svg__dream {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0 1rem 1.5rem;
+}
+
+.svg__hand {
+    background-color: #FCEED8;
+}
+
+.svg__abacus {
+    background-color: #DEE9FC;
+}
+
+.svg__dream {
+    background-color: #FBE5E6;
+}
+
+
+@media (max-width: 1024px) {
+    main {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5rem;
+        column-gap: 2.5rem;
+    }
+
+    article:nth-child(3) {
+        margin: 2rem auto 0 50%;
+    }
+
+    header {
+        margin-bottom: 0;
+    }
+
+    header p {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    header {
+        margin-bottom: 0;
+    }
+
+    header p {
+        margin-bottom: 0;
+    }
+
+    article:nth-child(3) {
+        margin-left: auto;
+    }
+
+}

@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sora", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.fill {
+    background-color: #F5C044;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fill img {
+    width: 24px;
+    height: 30px;
+    filter: brightness(0) saturate(100%) invert(100%);
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+main {
+    display: flex;
+    max-width: 1280px;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    background-color: #fafaf9;
+    gap: 50px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.google,
+.meta {
+    width: 357px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.google {
+    margin-left: 100px;
+    margin-bottom: 15px;
+}
+
+.meta {
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+ul div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+ul li,
+ul img {
+    margin-bottom: 15px;
+}
+
+ul li {
+    font-size: 14px;
+}
+
+.reviewers p {
+    width: 551px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.reviewers h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+/* For devices with a screen width of 1024px or less */
+@media (max-width: 1024px) {
+    main {
+        width: 95%;
+        margin: 0 1rem;
+        display: flex;
+        gap: 15px;
+    }
+
+    .google {
+        margin-left: 50px;
+        margin-bottom: 15px;
+    }
+
+    .meta {
+        margin-right: 150px;
+        margin-top: 30px;
+    }
+}
+
+/* For devices with a screen width of 640px or less */
+@media (max-width: 640px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .google,
+    .meta {
+        width: 95%;
+    }
+}

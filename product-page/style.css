@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", serif;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 1280px;
+    display: flex;
+    gap: 50px;
+    height: 718px;
+}
+
+.image img {
+    width: 472px;
+    height: 646px;
+    object-fit: cover;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumbs {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.breadcrumbs span {
+    color: #9DA3AE;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    width: 405px;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    margin-bottom: 2rem;
+    width: 684px;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    /* Remove the default bullets */
+    padding-left: 15px;
+    /* Adjust indentation */
+    margin-bottom: 2rem;
+}
+
+ul li::before {
+    content: '•';
+    /* Unicode character for bullet */
+    font-size: 15px;
+    /* Adjust the bullet size */
+    padding-right: 10px;
+    /* Space between the bullet and text */
+}
+
+li {
+    margin-bottom: .75rem;
+}
+
+.shoe {
+    display: flex;
+    background-color: #F3F4F6;
+    width: 377px;
+    height: 72px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2.5rem;
+}
+
+.shoe div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    width: 144px;
+    height: 40px;
+    border: unset;
+    outline: unset;
+    border-radius: 2.5px;
+}
+
+.wishlist {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cart {
+    background-color: #845EEE;
+    color: #ffffff;
+}
+
+@media (max-width: 1024px),
+(max-width: 640px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        width: 95%;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+
+    .description p {
+        width: 100%;
+    }
+}

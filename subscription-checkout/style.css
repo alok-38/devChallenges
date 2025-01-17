@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Be Vietnam Pro", serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 1280px;
+    background-color: #ffffff;
+    gap: 25px;
+    height: 720px;
+    padding: 20px;
+}
+
+.form--section {
+    width: 720px;
+    padding: 40px 72px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: 720px;
+}
+
+label {
+    color: #6C727F;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+header img {
+    width: 98px;
+    height: 20px;
+    object-fit: cover;
+}
+
+header h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 14px;
+    color: #6C727F;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 576px;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    padding: 16px;
+    border: unset;
+    outline: unset;
+    background: transparent;
+    border: 1px solid #D2D5DA;
+    background-color: #F3F4F6;
+}
+
+input {
+    height: 56px;
+}
+
+input::placeholder {
+    color: #6C727F;
+    font-size: 16px;
+}
+
+select[name="country"],
+input[type="number"] {
+    width: 276px;
+    height: 56px;
+    border-radius: 12px;
+    padding: 16px;
+    border: unset;
+    outline: unset;
+    background: transparent;
+    border: 1px solid #D2D5DA;
+    background-color: #F3F4F6;
+    color: #121826;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+select[name="country"] {
+    appearance: none;
+    /* Remove default styling */
+    -webkit-appearance: none;
+    /* For Safari */
+    -moz-appearance: none;
+    /* For Firefox */
+    padding: 10px 30px 10px 10px;
+    /* Space for the text and the dropdown icon */
+    font-size: 16px;
+    /* Adjust font size */
+    border: 1px solid #D2D5DA;
+    /* Border styling */
+    background-color: #F3F4F6;
+    /* Background color */
+    cursor: pointer;
+    position: relative;
+}
+
+select[name="country"]::after {
+    content: '▼';
+    /* Custom dropdown icon */
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    /* Position the icon on the right */
+    top: 50%;
+    transform: translateY(-50%);
+    /* Vertically center the icon */
+}
+
+.payment__mode {
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 15px;
+}
+
+.payment__mode div {
+    width: 181.33px;
+    height: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px;
+    border-radius: 12px;
+    color: #121826;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card {
+    border: 1px solid #743EE4;
+    background-color: #ECE9FC;
+}
+
+.bank,
+.points {
+    border: 1px solid #D2D5DA;
+    background-color: #F3F4F6;
+}
+
+.payment__mode div img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.location {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 1.5rem;
+}
+
+.location div {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.cancel {
+    color: #121826;
+    background-color: #F0F3F6;
+    width: 101px;
+    height: 56px;
+    border-radius: 12px;
+    padding: 24px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: unset;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.subscribe {
+    background-color: #743EE4;
+    color: #ffffff;
+    width: 459px;
+    height: 56px;
+    padding: 24px 16px;
+    border: unset;
+    outline: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan--section {
+    background-color: #F0F3F6;
+    width: 520px;
+    padding: 32px;
+    border-radius: 12px;
+    height: 720px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.monthly,
+.annual {
+    display: flex;
+    gap: 20px;
+    width: 456px;
+    height: 81px;
+    align-items: center;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.monthly h3,
+.annual h3 {
+    margin-bottom: 5px;
+    color: #121826;
+    font-size: 16px;
+}
+
+.monthly p,
+.annual p {
+    color: #6C727F;
+    font-size: 14px;
+}
+
+.monthly {
+    background-color: #ECE9FC;
+    border: 1.5px #743EE4 solid;
+}
+
+.annual {
+    background-color: #FFFFFF;
+    border: 1.5px #ECE9FC solid;
+}
+
+/* Hide default radio buttons */
+input[type="radio"].radio {
+    display: none;
+}
+
+/* Custom radio button styles */
+input[type="radio"].radio+div::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #888;
+    border-radius: 50%;
+    background-color: white;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Style the container div */
+.monthly,
+.annual {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Change appearance when checked */
+input[type="radio"].radio:checked+div::before {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+/* Style for the div content when the radio button is checked */
+input[type="radio"].radio:checked+div h3,
+input[type="radio"].radio:checked+div p {
+    color: #4CAF50;
+}
+
+/* Adding some padding to the inner content */
+.monthly div,
+.annual div {
+    margin-left: 30px;
+}
+
+/* Optional: hover effect to highlight the radio button */
+input[type="radio"].radio:hover+div::before {
+    border-color: #666;
+}
+
+hr {
+    width: 456px;
+    color: #D2D5DA;
+    height: 2px;
+    opacity: .3;
+    margin: .5rem 0 1rem 0;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.lock {
+    width: 456px;
+    color: #6C727F;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    margin-top: 1rem;
+    gap: 5px;
+}
+
+.lock p {
+    font-size: 12px;
+    color: #6C727F;
+}
+
+.lock img {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.cube {
+    width: 508px;
+    height: 508px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 42px;
+    right: 25px;
+}
+
