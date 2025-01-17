@@ -1,3 +1,15 @@
+:root {
+    --hero-bg-color: #F6F7FB;
+    --section-bg-color: #161739;
+    --btn-bg-color: #5DB082;
+    --heading-txt-color: #333333;
+    --section-txt-color: #737F8B;
+    --hero-link-color: #737F8B;
+    --section-h3-color: #F6F7FB;
+    --section-p-color: #C9D0DA;
+    --footer-link-color: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
