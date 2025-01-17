@@ -40,3 +40,67 @@ nav a {
     display: flex;
     align-items: center;
 }
+
+.hero {
+    display: flex;
+    gap: 50px;
+}
+
+.right img {
+    width: 550px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.left {
+    width: 551px;
+    height: 298px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.left h1 {
+    font-size: 36px;
+    color: #121826;
+}
+
+.left span {
+    color: #4E46DC;
+}
+
+.left p {
+    font-size: 16px;
+    color: #121826;
+    font-weight: 400;
+}
+
+.buttons {
+    width: 267px;
+    display: flex;
+    gap: 15px;
+}
+
+.buttons button {
+    padding: 12px 36px;
+    width: 124px;
+    height: 48px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-weight: 700;
+}
+
+.buttons .create {
+    background-color: #4E46DC;
+    color: #ffffff;
+}
+
+.buttons .explore {
+    color: #4E46DC;
+    background-color: #FFFFFF;
+    border: 2px solid #E5E7EB;
+}
