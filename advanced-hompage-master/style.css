@@ -67,3 +67,13 @@ h6 {
 #__next {
     isolation: isolate;
 }
+
+/* Root variables */
+/* colors */
+:root {
+    --main-bg-color: #F6F7FB;
+    --button-bg-color: #5DB082;
+    --pill-bg-color: #6281F7;
+    --heading-font-color: #333333;
+    --section-para-color: #737F8B;
+}
