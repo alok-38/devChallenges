@@ -77,3 +77,28 @@ body {
     flex-direction: column;
     background: linear-gradient(to bottom right, #AE2D5D 0%, #7429C6 29%, #46208F 68%, #2A4DD0 100%);
 }
+
+form {
+    width: 810px;
+    height: 617px;
+    border-radius: 24px;
+    background: linear-gradient(to bottom right, #000000 0%, #FFFFFF 32%, #DADADA 67%, #000000 100%);
+}
+
+input,
+button,
+textarea,
+select {
+    border-radius: 16px;
+}
+
+button {
+    outline: none;
+    border: none;
+    color: #4036A9;
+    background-color: #FFFFFF;
+    width: 746px;
+    height: 73px;
+    font-weight: 600;
+    font-size: 20px;
+}
