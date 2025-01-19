@@ -1,175 +1,81 @@
-/* 1. Use a more-intuitive box-sizing model */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* 2. Remove default margin */
 * {
+    box-sizing: border-box;
+    padding: 0;
     margin: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+html,
+body {
+    min-height: 100%;
+    height: auto;
 }
 
 body {
-    /* 3. Add accessible line-height */
-    line-height: 1.5;
-    /* 4. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
-}
-
-/* 5. Improve media defaults */
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
-/* 6. Inherit fonts for form controls */
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-/* 7. Avoid text overflows */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
-}
-
-/* 8. Improve line wrapping */
-p {
-    text-wrap: pretty;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-wrap: balance;
-}
-
-/*
-    9. Create a root stacking context
-  */
-#root,
-#__next {
-    isolation: isolate;
-}
-
-body {
-    font-family: "Be Vietnam Pro", serif;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background: linear-gradient(to bottom right, #AE2D5D 0%, #7429C6 29%, #46208F 68%, #2A4DD0 100%);
-}
-
-.logo {
-    padding: 24px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: 100%;
+    background-image: url("resources/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 12px;
 }
 
 header {
-    padding: 32px;
-    color: #ffffff;
+    padding-bottom: 44px;
+}
+
+#heading {
+    margin-bottom: 16px;
+}
+
+#heading>h1 {
+    width: fit-content;
+    color: #FFFFFF;
+    font-size: 4rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#description {
+    margin: 0 auto 72px;
+    width: fit-content;
+}
+
+#description>p {
+    color: #FFFFFF;
+    font-size: 1rem;
     text-align: center;
 }
 
-header h1 {
-    font-size: 64px;
-    font-weight: 700;
-    width: 577px;
-    margin: auto;
-}
-
-header p {
-    width: 641px;
-    margin: auto;
-    font-size: 32px;
-}
-
 form {
-    width: 810px;
-    height: 617px;
-    border-radius: 24px;
-    background: rgba(255, 255, 255, 0.3);
-    /* Slightly transparent white background */
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0.3) 32%, rgba(218, 218, 218, 0.3) 67%, rgba(0, 0, 0, 0.3) 100%);
-    /* Gradient with transparency */
-    backdrop-filter: blur(10px);
-    /* Apply blur effect to the background */
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    justify-content: space-evenly;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Optional: Adds a subtle shadow for depth */
-    padding: 32px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    /*box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.15);*/
+    background-color: #FFFFFF33;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 24px;
+    grid-column-gap: 18px;
+    border-radius: 20px;
 }
 
+@media (min-width: 1024px) {
+    body {
+        padding: 20px 72px;
+    }
 
+    #heading>h1 {
+        max-width: 800px;
+    }
 
-input,
-button,
-textarea,
-select {
-    border-radius: 16px;
-    outline: unset;
-    border: unset;
-}
+    #description>p {
+        font-size: 2rem;
+        max-width: 700px;
+    }
 
-button {
-    outline: none;
-    border: none;
-    color: #4036A9;
-    background-color: #FFFFFF;
-    width: 746px;
-    height: 73px;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-}
-
-.flex .name,
-.flex .email,
-.flex .size,
-.flex .subject {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-
-input,
-select {
-    width: 364px;
-    padding: 24px;
-}
-
-
-label {
-    color: #ffffff;
-}
-
-textarea {
-    resize: none;
-    margin-bottom: 15px;
+    form {
+        padding: 32px;
+        max-width: 746px;
+        grid-template-columns: 1fr 1fr;
+    }
 }
