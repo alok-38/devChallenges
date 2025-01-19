@@ -76,4 +76,56 @@ h6 {
     --pill-bg-color: #6281F7;
     --heading-font-color: #333333;
     --section-para-color: #737F8B;
+    --article-para-color: #C9D0DA;
+    --links-font-color: #FFFFFF;
+    --section-bg-color: #161739;
+    /* Typography */
+    --section-h2-size: 36px;
+    --section-h2-weight: 600;
+    --article-para-size: 16px;
+    --article-h3-size: 20px;
+    --footer-list-size: 18px;
+    --section-list-size: 14px;
+}
+
+body {
+    line-height: 1.6;
+    font-family: "Sora", serif;
+    background-color: var(--main-bg-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+button {
+    font-family: "Sora", serif;
+}
+
+nav {
+    width: 1124px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__links {
+    font-weight: var(--section-h2-weight);
+    display: flex;
+    align-items: center;
+    font-size: var(--article-para-size);
+}
+
+.nav__links a:nth-child(1) {
+    margin-right: 27px;
+    color: var(--section-para-color);
+}
+
+.nav__links a:nth-child(2) {
+    color: var(--links-font-color);
+    background-color: var(--button-bg-color);
+    padding: 12px 24px;
+    border-radius: 37px;
 }
