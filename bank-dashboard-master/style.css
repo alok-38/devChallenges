@@ -39,7 +39,7 @@
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
   }
-  
+
   /*
     9. Create a root stacking context
   */
@@ -51,6 +51,13 @@
     font-family: "Outfit", serif;
     background-color: #262833;
   }
+
+  
+  a {
+    text-decoration: none;
+    font-family: "Outfit", serif;
+  }
+  
 
 header {
   display: flex;
@@ -70,4 +77,71 @@ header div {
 
 .header__right h4 {
   color: #ffffff;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 50vh;
+  padding: 24px;
+}
+
+.bottom--nav {
+  margin-top:auto;
+}
+
+nav a {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+nav h5 {
+  text-transform: uppercase;
+  color: #6C727F;
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+
+.nav__menus  a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav__menus--new a,
+.nav__menus--tickets a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav__menus--new,
+.nav__menus--tickets {
+  color: #ffffff;
+  display: flex;
+  width: 172px;
+  align-items: center;
+  /* height: 20px; */
+}
+
+
+.nav__menus--new div,
+.nav__menus--tickets div {
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 10px;
+  color: #ffffff;
+  background-color: #A686C4;
+  padding: 2px 8px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.nav__menus--tickets div {
+  background-color: #43454D;
+  width: 25px;
+  height: 17px;
+  display: flex;
 }
