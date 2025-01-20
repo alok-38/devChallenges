@@ -19,6 +19,7 @@
   img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
+    object-fit: cover;
   }
   
   /* 6. Inherit fonts for form controls */
@@ -48,5 +49,25 @@
 
   body {
     font-family: "Outfit", serif;
+    background-color: #262833;
   }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 24px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+.header__right {
+  display: flex;
+  gap: 12px;
+}
+
+.header__right h4 {
+  color: #ffffff;
+}
