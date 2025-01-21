@@ -117,9 +117,18 @@ main {
 section {
     border-radius: 16px;
     width: 1200px;
+    display: flex;
+}
+
+.row {
+    display: flex;
 }
 
 .products {
     padding: 32px;
     background-color: #E5E7EB;
+}
+
+.product {
+    display: flex;
 }
