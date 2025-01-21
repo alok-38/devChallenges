@@ -10,13 +10,59 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
     <h2>Checkout<span>3&nbsp;ITEMS</span></h2>
   </header>
+  <main>
+    <section>
+      <div class="products">
+        <div class="products__apple">
+
+        </div>
+        <div class="products__price">
+          <div class="coupon">
+            <input type="text" placeholder="Enter coupon code">
+            <button>Apply Coupon</button>
+          </div>
+          <div class="total">
+            <div>
+              <span>Sub total</span><span>&dollar;2597&period;00</span>
+            </div>
+            <div><span>Tax</span><span>&dollar;623&period;28</span></div>
+            <div><span>Total</span><span>&dollar;3220&period;28</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <h4>Contact Information</h4>
+        <form>
+          <label for="First&amp;Last name"></label>
+          <input type="text" placeholder="Enter first &amp; last name">
+          <label for="Email Address"></label>
+          <input type="email" placeholder="Enter email address">
+          <div>
+            <div>
+              <label for="Country">Country</label>
+              <select>
+                <option value="Finland">Finland</option>
+                <option value="Norway">Norway</option>
+                <option value="Sweden">Sweden</option>
+              </select>
+            </div>
+            <div>
+              <label for="Postal Code">Postal Code</label>
+              <input type="number" placeholder="00270">
+            </div>
+          </div>
+          <button>Continue</button>
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>

@@ -74,11 +74,11 @@ body {
 
 header {
     background-image: url('resources/background-image.png');
-    width: 1280px;
     height: 240px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    width: 1280px;
     margin: auto;
 }
 
@@ -104,4 +104,22 @@ header span {
     padding: 4px 12px;
     width: 72px;
     height: 26px;
+}
+
+main {
+    background-color: #F3F4F6;
+    width: 1280px;
+    margin: auto;
+    height: calc(777px - 240px);
+    padding: 40px;
+}
+
+section {
+    border-radius: 16px;
+    width: 1200px;
+}
+
+.products {
+    padding: 32px;
+    background-color: #E5E7EB;
 }
