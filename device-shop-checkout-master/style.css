@@ -259,9 +259,34 @@ form label {
 form input,
 form select {
     background-color: #F3F4F6;
+    border-radius: 8px;
+    border: 2px solid #D2D5DA;
+    padding: 16px;
+    margin-bottom: 2rem;
 }
 
 form input[type="text"],
 form input[type="email"] {
     width: 100%;
+}
+
+.country {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.country select,
+.country input {
+    width: 256px;
+    height: 56px;
+}
+
+form button {
+    background-color: #1D1D1F;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 16px;
+    padding: 16px;
 }
