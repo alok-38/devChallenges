@@ -70,6 +70,7 @@ h6 {
 
 body {
     font-family: "Inter", serif;
+    margin-top: 25px;
 }
 
 header {
@@ -115,9 +116,24 @@ main {
 }
 
 section {
-    border-radius: 16px;
     width: 1200px;
     display: flex;
+    position: absolute;
+    bottom: 12%;
+}
+
+.image {
+    background-color: #F3F4F6;
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    object-fit: cover;
 }
 
 .row {
@@ -127,8 +143,21 @@ section {
 .products {
     padding: 32px;
     background-color: #E5E7EB;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    width: 600px;
+    height: 616px;
 }
 
 .product {
     display: flex;
+}
+
+.contact {
+    background-color: #ffffff;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 32px;
+    width: 600px;
+    height: 616px;
 }
