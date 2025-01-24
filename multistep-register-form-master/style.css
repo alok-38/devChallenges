@@ -75,8 +75,12 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    /* background: #121826; */
-    background-color: rgb(32, 28, 67);
+    /* background-color: rgb(32, 28, 67); */
+    background:
+        radial-gradient(circle at top left, #652CD1 0%, #652CD1 100%),
+        radial-gradient(circle at bottom right, #652CD1 0%, #652CD1 100%),
+        linear-gradient(45deg, #190D2E 0%, #4A208A 100%);
+
 }
 
 form {
