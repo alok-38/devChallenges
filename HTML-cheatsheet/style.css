@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border-radius: .75rem;
+    background-color: #F8FAFC;
+    max-width: 95vw;
+    margin: auto;
+}
+
+header img {
+    aspect-ratio: 16 / 7;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+}
