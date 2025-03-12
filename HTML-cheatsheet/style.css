@@ -4,11 +4,25 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url('https://devchallenges.io/img/grid.svg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
 .container {
     border-radius: .75rem;
     background-color: #F8FAFC;
     max-width: 95vw;
     margin: auto;
+}
+
+ul,
+ol {
+    padding: 0;
+    list-style-type: none;
 }
 
 header img {
@@ -17,4 +31,48 @@ header img {
     width: 100%;
     border-top-left-radius: .75rem;
     border-top-right-radius: .75rem;
+}
+
+article {
+    color: #374151;
+    font-size: 1rem;
+    line-height: 1.75;
+    width: 70vw;
+    margin: auto;
+}
+
+article h1 {
+    color: #111827;
+    font-weight: 800;
+    font-size: 2.25em;
+    margin-top: .8888889em;
+    margin-bottom: .8888889em;
+    line-height: 1.1111111;
+}
+
+pre {
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    padding: 12px;
+    max-width: 85vw !important;
+}
+
+code {
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    color: #1e293b;
+    background-color: #d1d5db;
+    border-radius: 6px;
+    padding: 2px 4px;
+}
+
+article p {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    max-width: 65ch;
 }
