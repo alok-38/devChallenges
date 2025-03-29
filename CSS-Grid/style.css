@@ -1,8 +1,0 @@
-main {
-    display: grid;
-    grid-template-columns: 500px 1fr 2fr 2fr 12%;
-}
-
-section:last-of-type {
-    margin-left: auto;
-}
