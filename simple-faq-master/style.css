@@ -1,25 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 body {
-    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    /* height: 100vh; */
     line-height: 1.5;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #030616;
+}
+
+header {
+    padding: 72px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+main {
+    background-color: #F8FAFC;
+    padding: 72px 24px;
+    align-items: center;
+    width: 100%;
+}
+
+.wrapper {
+    width: 640px;
+    margin: auto;
+}
+
+section:first-of-type {
+    margin-bottom: 40px;
+    padding-bottom: 0;
+}
+
+section:last-of-type {
+    margin-top: 40px;
+}
+
+hr {
+    height: 2px;
+    color: #D2D5DA;
+}
+
+p:not(header p) {
+    margin: 2rem 0;
+}
+
+ol,
+ul {
+    padding-left: 20px;
+}
+
+li:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.25rem;
+    margin-bottom: .5rem;
+}
+
+h1,
+h2 {
+    font-weight: 500;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+a {
+    font-family: inherit;
+    text-decoration: none;
+    color: #4E80EE;
 }
 
 .author-info {
     font-size: 14px;
     text-align: center;
-    margin-top: auto;
+    margin-top: 0;
     color: rgb(55, 65, 81);
 }
 
 .author-info a {
     text-decoration: none;
+    font-family: inherit;
+}
+
+@media screen and (max-width: 1040px) {
+    body {
+        margin: 2rem;
+    }
+
+    header {
+        width: 80%;
+        padding: 50px 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
 }
