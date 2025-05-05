@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    margin: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #06a0f9;
+    background-image: url("https://images.unsplash.com/photo-1504253163759-c23fccaebb55?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xvdWR8ZW58MHx8MHx8fDA%3D");
+    /* Sets an image as the background */
+    background-repeat: no-repeat;
+    /* Ensures the image does not repeat */
+    background-position: center;
+    /* Positions the image at the top center of the element */
+    background-size: cover;
+    height: 100vh;
+}
+
+main {
+    max-width: 640px;
+    margin: 15px auto 0 auto;
+    border: 2px solid;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+}
+
+h1,
+h2 {
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgb(213, 234, 241);
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    width: 90%;
+    padding-left: 25px;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    border: 2px solid #06a0f9;
+    padding: 1em;
+    height: 35px;
+    margin-left: 25px;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+}
