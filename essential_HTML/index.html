@@ -5,23 +5,34 @@
     <meta name="description" content="This is an example HTML document" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Web Page</title>
+    <link rel="icon" href="https://fav.farm/👓" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <h1>Welcome to My Web Page</h1>
     </header>
+
     <main>
       <p>This is a captivating paragraph to engage readers.</p>
-      <section>
+
+      <section class="image-section">
         <img
-          src="data:image/jpeg;base64,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"
+          src="https://via.placeholder.com/600x400"
           alt="Description of the image"
         />
       </section>
-      <a rel="noreferrer" href="https://www.example.com" target="_blank"
-        >Visit Example.com</a
+
+      <a
+        class="external-link"
+        href="https://www.example.com"
+        target="_blank"
+        rel="noreferrer"
       >
-      <section>
+        Visit Example.com
+      </a>
+
+      <section class="lists-section">
         <ul>
           <li>Item 1</li>
           <li>Item 2</li>
@@ -33,47 +44,88 @@
           <li>Third item</li>
         </ol>
       </section>
-      <aside>
-        <video controls width="640">
+
+      <aside class="media-section">
+        <video controls width="100%">
           <source src="video.mp4" type="video/mp4" />
           <source src="video.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
-        <table border="1" cellpadding="4" cellspacing="0" width="100%">
-          <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-            <th>Header 3</th>
-          </tr>
-          <tr>
-            <td>Data 1</td>
-            <td>Data 2</td>
-            <td>Data 3</td>
-          </tr>
-          <tr>
-            <td>Data 4</td>
-            <td>Data 5</td>
-            <td>Data 6</td>
-          </tr>
+
+        <table>
+          <caption>
+            Sample Data Table
+          </caption>
+          <thead>
+            <tr>
+              <th>Header 1</th>
+              <th>Header 2</th>
+              <th>Header 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Data 1</td>
+              <td>Data 2</td>
+              <td>Data 3</td>
+            </tr>
+            <tr>
+              <td>Data 4</td>
+              <td>Data 5</td>
+              <td>Data 6</td>
+            </tr>
+          </tbody>
         </table>
       </aside>
-      <section>
-        <form action="/submit-form" method="POST" enctype="multipart/form-data">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
 
-          <label for="photo">Profile Photo:</label>
-          <input
-            type="file"
-            id="photo"
-            name="photo"
-            accept="image/*"
-            required
-          />
+      <section class="form-section">
+        <form
+          action="/submit-form"
+          method="POST"
+          enctype="multipart/form-data"
+          aria-label="Profile submission form"
+        >
+          <fieldset>
+            <legend>Submit Your Profile</legend>
 
-          <input type="submit" value="Submit" />
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                minlength="2"
+                required
+                aria-describedby="nameHelp"
+              />
+              <small id="nameHelp"
+                >Enter your full name (min. 2 characters).</small
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="photo">Profile Photo:</label>
+              <input
+                type="file"
+                id="photo"
+                name="photo"
+                accept="image/*"
+                required
+                aria-describedby="photoHelp"
+              />
+              <small id="photoHelp">Accepted formats: JPG, PNG, GIF.</small>
+            </div>
+
+            <div class="form-group">
+              <input type="submit" value="Submit Profile" class="btn-submit" />
+            </div>
+          </fieldset>
         </form>
       </section>
     </main>
+
+    <footer>
+      <p>&copy; 2025 My Web Page. All rights reserved.</p>
+    </footer>
   </body>
 </html>
