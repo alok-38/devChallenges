@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --font-heading: 'Inter', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+
+    --font-size-heading-1: 2.25rem;
+    /* 36px */
+    --font-size-heading-2: 1.5rem;
+    /* 24px */
+    --font-size-body: 1rem;
+    /* 16px */
+
+    /* Primary Colors */
+    --color-primary: #4E80EE;
+    /* Blue */
+    --color-background: #F8FAFC;
+    /* Light Background */
+    --color-white: #FFFFFF;
+    /* White */
+
+    /* Neutral / Grayscale */
+    --color-black: #030616;
+    /* Almost Black */
+    --color-gray-light: #D2D5DA;
+    /* Light Gray */
+}

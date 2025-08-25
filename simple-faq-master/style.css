@@ -1,28 +1,35 @@
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
+@import url(variables.css);
 
- body {
-     height: 100vh;
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
- .author-info {
-     font-size: 14px;
-     text-align: center;
-     margin-top: 16px;
-     color: rgb(55, 65, 81);
- }
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-black);
+    background-color: var(--color-background);
+}
 
- .author-info a {
-     text-decoration: none;
- }
+header {
+    padding: 72px 24px;
+    background-color: var(--color-white);
+    width: 100%;
+}
 
- header {
-     margin: 72px 0;
- }
+header h1 {
+    margin-bottom: 16px;
+}
 
- h1 {
-     margin-bottom: 16px;
- }
+header p,
+header h1 {
+    text-align: center;
+}
+
+.author-info a {
+    color: inherit;
+}
