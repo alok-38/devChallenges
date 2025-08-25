@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and statements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+        }
+
+        #output {
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Variables and Statements Demo</h1>
+    <p>Click the button to see how variables work in JavaScript.</p>
+
+    <button onclick="showResult()">Run Code</button>
+
+    <div id="output"></div>
+    <script>
+        function showResult() {
+            // Declare and initialize variables
+            let name = "Alice";
+            let age = 25;
+            // Use statements to process the variables
+            let message = `Hello, my name is ${name} and I'm ${age} years old`;
+            // Log to the console
+            console.log(`Name: ${name}`);
+            console.log(`Age: ${age}`);
+            console.log(`Message: ${message}`);
+
+            // Show result on the page
+            document.getElementById('output').textContent = message;
+        }
+    </script>
+</body>
+
+</html>
