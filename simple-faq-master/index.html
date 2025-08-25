@@ -4,24 +4,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="FAQ page of a cloth company">
+  <meta name="description" content="FAQ page of a cloth company" />
 
   <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
 
   <title>Simple FAQ | devChallenges.io</title>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&display=swap" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
-  </noscript>
 
+  <!-- Preload custom self-hosted fonts -->
+  <link rel="preload" href="resources/Inter/static/Inter_18pt-Regular.ttf" as="font" type="font/ttf"
+    crossorigin="anonymous" />
+  <link rel="preload" href="resources/Inter/static/Inter_18pt-Bold.ttf" as="font" type="font/ttf"
+    crossorigin="anonymous" />
 
+  <!-- Load variable.css first -->
+  <link rel="stylesheet" href="variables.css" />
+
+  <!-- Preload and load styles -->
   <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </noscript>
-
 </head>
+
+
 
 <body>
   <header>

@@ -1,9 +1,26 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('./resources/Inter/static/Inter_18pt-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./resources/Inter/static/Inter_18pt-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --font-heading: 'Inter', sans-serif;
     --font-body: 'Inter', sans-serif;
 
     --font-weight-regular: 400;
-    --font-weight-semibold: 600;
+    --font-weight-semibold: 700;
+    /* Changed from 600 to 700 */
 
     --font-size-heading-1: 2.25rem;
     /* 36px */
@@ -12,17 +29,10 @@
     --font-size-body: 1rem;
     /* 16px */
 
-    /* Primary Colors */
-    --color-primary: #4E80EE;
-    /* Blue */
+    --color-primary: #1A5AFF;
     --color-background: #F8FAFC;
-    /* Light Background */
     --color-white: #FFFFFF;
-    /* White */
 
-    /* Neutral / Grayscale */
     --color-black: #030616;
-    /* Almost Black */
     --color-gray-light: #D2D5DA;
-    /* Light Gray */
 }
