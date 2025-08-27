@@ -1,3 +1,5 @@
+@import url(fonts.css);
+
 :root {
     /* Font Family */
     --font-primary: 'Poppins', sans-serif;
@@ -51,29 +53,126 @@ body {
     font-family: var(--font-primary);
 }
 
+img {
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
 header {
     margin-bottom: 60px;
     width: 720px;
+    text-align: center;
 }
 
 h1 {
     margin: 16px 0;
+    font-family: var(--font-primary);
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-black);
+}
+
+header p {
+    font-weight: var(--font-weight-regular);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-subheading);
+    color: var(--color-gray-dark);
 }
 
 section {
     width: 552px;
     display: flex;
     flex-direction: column;
+    margin: auto;
+    padding: 24px;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03),
+        0px 8px 12px 0px rgba(0, 0, 0, 0.08);
 }
 
+section input,
+section button {
+    cursor: pointer;
+    width: 504px;
+    height: 59px;
+    outline: unset;
+    border: unset;
+    border-radius: 12px;
+}
+
+button {
+    margin: 24px 0;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+input::placeholder,
+section button {
+    text-align: center;
+    color: var(--color-gray-deep);
+    font-size: var(--font-size-placeholder);
+    font-weight: var(--font-weight-semibold);
+}
+
+section input {
+    border: 1px solid var(--color-gray-light);
+    background-color: var(--color-gray-lighter);
+}
+
+section input::placeholder {
+    font-weight: var(--font-weight-medium);
+}
+
+section button {
+    color: var(--color-white);
+}
+
+section p {
+    font-size: var(--font-size-helper);
+    text-align: center;
+    color: var(--color-gray-deep);
+}
+
+/* footer */
 .author-info {
     font-size: 14px;
     text-align: center;
-    margin-top: 16px;
     color: rgb(55, 65, 81);
+    margin-top: 100px;
 }
 
 .author-info a {
     text-decoration: none;
     color: inherit;
+}
+
+@media (max-width: 731px) {
+    body {
+        padding: 80px 24px;
+    }
+
+    main {
+        width: 367px;
+        margin: auto;
+    }
+
+    input,
+    button {
+        max-width: 100%;
+    }
+
+    header,
+    section {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
 }
