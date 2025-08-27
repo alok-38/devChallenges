@@ -136,7 +136,7 @@ section p {
 }
 
 /* footer */
-.author-info {
+/* .author-info {
     font-size: 14px;
     text-align: center;
     color: rgb(55, 65, 81);
@@ -146,7 +146,7 @@ section p {
 .author-info a {
     text-decoration: none;
     color: inherit;
-}
+} */
 
 @media (max-width: 731px) {
     body {
