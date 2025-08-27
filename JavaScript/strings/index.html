@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+
+<body>
+    <script>
+        let singleQuote = 'Hello';
+        let doubleQuote = "World";
+        let backtick = `Hello, ${doubleQuote}`;
+        // String Creation
+        let str1 = "JavaScript";
+        let str2 = String(123);
+        // Template Literals (Backticks ``)
+        let name = "Alice";
+        let greeting = `Hello, ${name}!`;
+        let multiLine = `This is line 1
+This is line 2`;
+        // Case Conversion
+        console.log("hello".toUpperCase());
+        console.log("HELLO".toLowerCase());
+        // Trimming
+        console.log(" trim me ".trim());
+        console.log(" hi ".trimStart());
+        console.log(" hi ".trimEnd());
+        // Searching
+        console.log("JavaScript".indexOf("Script"));
+        console.log("JavaScript".includes("Script"));
+        let text = "Hello World";
+        console.log(text.toLowerCase());
+        let str = "JavaScript";
+        let strExtract = str.slice(4); // Starts at index 4
+        console.log(strExtract); // "Script"
+        let job = "Developer";
+        console.log(job.startsWith('Dev'));
+        console.log(job.endsWith('per'));
+        let fruit = "banana";
+        
+    </script>
+</body>
+
+</html>
