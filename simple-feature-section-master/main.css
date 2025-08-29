@@ -1,0 +1,139 @@
+@import url(presets.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family-outfit);
+    background-color: var(--color-black);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 471px;
+    text-align: center;
+}
+
+h1 {
+    color: var(--color-light-gray);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-heading);
+}
+
+header p {
+    color: var(--color-gray);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-body);
+}
+
+span {
+    outline: unset;
+    padding: 16px;
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hand {
+    background-color: var(--color-yellow-tint);
+}
+
+.tablet {
+    background-color: var(--color-blue-tint);
+}
+
+.idea {
+    background-color: var(--color-red-tint);
+}
+
+
+img {
+    object-fit: cover;
+    display: block;
+    width: 267px;
+    height: 193px;
+    border-radius: 16px;
+    outline: unset;
+    border: unset;
+}
+
+main {
+    display: flex;
+    gap: 48px;
+    margin: 48px 0;
+}
+
+article {
+    width: 316px;
+    height: 451px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--color-dark-bg);
+    border-radius: 16px;
+}
+
+h2 {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-small-heading);
+    color: var(--color-light-gray);
+}
+
+article p {
+    color: var(--color-border);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+}
+
+/* footer */
+.author-info {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    color: rgb(55, 65, 81);
+    color: var(--color-light-gray);
+}
+
+.author-info a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 1024px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 70%;
+    }
+
+    article:last-of-type {
+        margin: auto;
+    }
+
+    header {
+        margin: 48px 0;
+    }
+}
+
+@media (max-width: 412px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
