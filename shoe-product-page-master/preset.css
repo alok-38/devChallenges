@@ -1,0 +1,104 @@
+/* Outfit Font Weights */
+@font-face {
+    font-family: 'Outfit';
+    src: url('../resources/Outfit/static/Outfit-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../resources/Outfit/static/Outfit-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../resources/Outfit/static/Outfit-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../resources/Outfit/static/Outfit-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../resources/Outfit/static/Outfit-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../resources/Outfit/static/Outfit-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../resources/Outfit/static/Outfit-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../resources/Outfit/static/Outfit-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../resources/Outfit/static/Outfit-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+:root {
+    /* Font Family */
+    --font-primary: 'Outfit', sans-serif;
+
+    /* Font Weights */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-extralight: 300;
+
+    /* Font Sizes */
+    --font-size-heading: 2rem;
+    /* 32px */
+    --font-size-body: 1rem;
+    /* 16px */
+    --font-size-button: 1rem;
+    /* 16px */
+    --font-size-small: 0.875rem;
+    /* 14px */
+
+    /* Line Heights (optional, if part of system) */
+    --line-height-heading: 1.2;
+    --line-height-body: 1.5;
+    --line-height-small: 1.4;
+
+    /* Base Colors */
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+
+    /* Primary / Accent Color */
+    --color-primary: #652CD1;
+
+    /* Neutral / Text Colors */
+    --color-text-dark: #394150;
+    --color-text-light: #D2D5DA;
+
+    /* Background Colors */
+    --color-bg-light: #F3F4F6;
+    --color-bg-lighter: #F9FAFB;
+}
