@@ -1,0 +1,136 @@
+@import url(preset.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFAF9;
+    font-family: var(--font-primary);
+}
+
+img {
+    display: block;
+    object-fit: cover;
+}
+
+body>img {
+    width: 100%;
+    height: 200px;
+}
+
+.container {
+    max-width: 1280px;
+    flex: 1;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 720px;
+    height: 180px;
+    gap: 20px;
+    padding: 0 20px 20px 20px;
+    margin-bottom: 80px;
+}
+
+h2 {
+    font-size: var(--font-size-heading-2);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-heading-2);
+    letter-spacing: 0.05em;
+    color: var(--color-primary);
+}
+
+h1 {
+    color: var(--color-gray-800);
+    letter-spacing: -0.05em;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-heading-1);
+    line-height: var(--line-height-heading-1);
+}
+
+article:not(:nth-of-type(3)) img {
+    width: 52px;
+    height: 52px;
+}
+
+article:nth-of-type(3) img {
+    width: 56.15px;
+    height: 52px;
+}
+
+/* main */
+main {
+    display: flex;
+    width: 1206px;
+    height: 263px;
+    gap: 32px;
+    margin: 0 auto;
+}
+
+article {
+    width: 277.5px;
+    height: 263px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+article div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 237.5px;
+    height: 179px;
+}
+
+h3 {
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.05em;
+    color: var(--color-gray-800);
+}
+
+article p {
+    width: 237.5px;
+    height: 135px;
+    color: var(--color-gray-600);
+    letter-spacing: 0.05em;
+    font-size: 14px;
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-body);
+}
+
+/* line */
+article .line img {
+    width: 4px;
+    height: 24px;
+    text-align-last: ;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+}
+
+/* footer */
+.author-info {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    color: rgb(55, 65, 81);
+}
+
+.author-info a {
+    text-decoration: none;
+    color: inherit;
+}
