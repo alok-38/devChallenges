@@ -1,0 +1,181 @@
+/* Thin 100 */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/Poppins/Poppins-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/Poppins/Poppins-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* ExtraLight 200 */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/Poppins/Poppins-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/Poppins/Poppins-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* Light 300 */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/Poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/Poppins/Poppins-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Regular 400 */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/Poppins/Poppins-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Medium 500 */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/Poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/Poppins/Poppins-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* SemiBold 600 */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/Poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/Poppins/Poppins-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Bold 700 */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/Poppins/Poppins-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* ExtraBold 800 */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/Poppins/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/Poppins/Poppins-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Black 900 */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/Poppins/Poppins-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/Poppins/Poppins-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+:root {
+    /* Font Family */
+    --font-primary: 'Poppins', sans-serif;
+
+    /* Font Sizes */
+    --font-size-heading: 3.75rem;
+    /* 60px */
+    --font-size-body: 1.125rem;
+    /* 18px */
+    --font-size-button: 1rem;
+    /* 16px */
+    --font-size-small: 0.875rem;
+    /* 14px */
+
+    /* Font Weights */
+    --font-weight-thin: 100;
+    --font-weight-extra-light: 200;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
+    --font-weight-black: 900;
+
+    /* Line Heights */
+    --line-height-heading: 1.2;
+    --line-height-body: 1.6;
+    --line-height-button: 1.4;
+    --line-height-small: 1.4;
+
+    /* Letter Spacing */
+    --letter-spacing-heading: -0.5px;
+    --letter-spacing-body: 0px;
+    --letter-spacing-button: 0.5px;
+    --letter-spacing-small: 0px;
+
+    /* Colors */
+    --color-primary: #2A4DD0;
+    --color-success: #4CA154;
+    --color-text-dark: #111729;
+    --color-text-muted: #223344;
+    --color-text-light: #909193;
+    --color-background-light: #F2F9FE;
+    --color-white: #FFFFFF;
+}
