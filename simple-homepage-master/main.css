@@ -73,6 +73,7 @@ main {
 .btn+div {
     display: flex;
     gap: 20px;
+    flex-direction: row;
 }
 
 section:first-child {
@@ -82,22 +83,85 @@ section:first-child {
     flex-direction: column;
 }
 
+
+
+section:first-child>p {
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: var(--font-weight-semi-bold);
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: var(--font-weight-bold);
+    width: 587px;
+    letter-spacing: -0.01em;
+    line-height: var(--line-height-heading);
+}
+
+section>div:nth-of-type(1)>p {
+    font-size: 18px;
+    font-weight: var(--font-weight-medium);
+}
+
+
 section>div:nth-of-type(1) {
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
 
-
-section:first-child>div:nth-of-type(2)>div {
+/* Parent of the two feature blocks: flex them horizontally */
+section>div:nth-of-type(3) {
     display: flex;
-    gap: 8px;
-    align-items: center;
+    gap: 2rem;
 }
+
+/* Each icon-text pair: flex row */
+section>div:nth-of-type(3)>div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Control image size */
+section>div:nth-of-type(3) img {
+    width: 24px;
+    height: 24px;
+}
+
+
+section>div:nth-of-type(3) p {
+    font-size: 14px;
+    letter-spacing: -0.01em;
+}
+
 
 section:first-child>div:nth-of-type(2)>div img {
     width: 18px;
     height: 18px;
+}
+
+.btn {
+    margin: 22px 0 40px 0;
+    align-items: center;
+    gap: 32px;
+    width: 317px;
+    display: flex;
+}
+
+button {
+    width: 174px;
+    height: 52px;
+    background-color: #263FA9;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 16px 32px;
+    outline: unset;
+    border: unset;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 section:last-child img {
