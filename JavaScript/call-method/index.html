@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The call() Method</title>
+</head>
+
+<body>
+    <script>
+        function showDetails(age, profession) {
+            console.log(`${this.name} is ${age} years old and is a(n) ${profession}.`);
+        }
+        const person = { name: "Alice" };
+        showDetails.call(person, 30, "Developer");
+    </script>
+</body>
+
+</html>
