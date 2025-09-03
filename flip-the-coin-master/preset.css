@@ -1,0 +1,46 @@
+/* Kanit Regular */
+@font-face {
+    font-family: 'Kanit';
+    src: url('./resources/Kanit/Kanit-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Kanit Semibold */
+@font-face {
+    font-family: 'Kanit';
+    src: url('./resources/Kanit/Kanit-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Kanit Semibold Italic */
+@font-face {
+    font-family: 'Kanit';
+    src: url('./resources/Kanit/Kanit-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+:root {
+    /* Font Family */
+    --font-primary: 'Kanit', sans-serif;
+
+    /* Font Weights */
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+
+    /* Font Sizes */
+    --font-size-heading: 4rem;
+    /* 64px */
+    --font-size-subheading: 1.5rem;
+    /* 24px */
+    --font-size-button: 1.25rem;
+    /* 20px */
+
+    /* Colors */
+    --color-text-primary: #35383F;
+    --color-background: #ECEDF0;
+    --color-accent: #1F6FB0;
+    --color-muted: #404A65;
+}

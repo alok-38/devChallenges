@@ -14,6 +14,7 @@
         }
         const person = { name: "Alice" };
         showDetails.call(person, 30, "Developer");
+        showDetails.apply(person, [30, "Developer"]);
     </script>
 </body>
 
