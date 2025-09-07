@@ -14,59 +14,86 @@
 </head>
 
 <body>
-  <main>
-    <section>
-      <header>
-        <img class="logo" src="resources/neuralite-logo.svg" alt="logo">
-        <h1>Upgrade to Plus</h1>
-        <p>Upgrade today and take your AI-powered productivity to the next level.</p>
-      </header>
-      <form action="post" role="form">
-        <div class="customer-name">
-          <label for="name">Billed to</label>
-          <input type="email" name="email" id="email" placeholder="Enter first &amp; last name">
+  <div class="container">
+    <main>
+      <section>
+        <header>
+          <img class="logo" src="resources/neuralite-logo.svg" alt="logo">
+          <h1>Upgrade to Plus</h1>
+          <p>Upgrade today and take your AI-powered productivity to the next level.</p>
+        </header>
+        <form action="post" role="form">
+          <div class="customer-name">
+            <label for="name">Billed to</label>
+            <input required autofocus type="email" name="email" id="email" placeholder="Enter first &amp; last name">
+          </div>
+          <h2>Payment Details</h2>
+          <div class="payment-details">
+            <a class="card" href="#" target="_blank" rel="noopener noreferrer">
+              <img src="resources/atm-card.svg" alt="atm card icon">
+              Credit Card
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="resources/bank.svg" alt="bank icon">
+              Bank Transfer
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="resources/point-card.svg" alt="point card icon">
+              Points
+            </a>
+          </div>
+          <div class="email-address">
+            <label for="email">Email Address</label>
+            <input required autofocus type="email" name="email" id="email" placeholder="Enter email address">
+          </div>
+          <div class="location">
+            <div>
+              <label for="country">Country</label>
+              <select name="country">
+                <option value="Finland">Finland</option>
+                <option value="pro">Pro</option>
+                <option value="premium">Premium</option>
+              </select>
+            </div>
+            <div>
+              <label for="post">Postal Code</label>
+              <input autofocus required type="number" name="number" id="number" placeholder="00270">
+            </div>
+          </div>
+        </form>
+        <div class="btn">
+          <button type="button">Cancel</button>
+          <button type="button">Subscribe</button>
         </div>
-        <label for="payment">Payment Details</label>
-        <div class="payment-details">
-          <a class="card" href="#" target="_blank" rel="noopener noreferrer">
-            <img src="resources/atm-card.svg" alt="atm-card">
-            Credit Card
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="resources/bank.svg" alt="bank">
-            Bank Transfer
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="resources/point-card.svg" alt="point-card">
-            Points
-          </a>
-        </div>
-        <div class="email-address">
-          <label for="email">Email Address</label>
-          <input type="email" name="email" id="email" placeholder="Enter email address">
-        </div>
-        <div class="location">
+      </section>
+      <section>
+        <article>
+          <h2>Starter Plan</h2>
           <div>
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="Finland">Finland</option>
-              <option value="pro">Pro</option>
-              <option value="premium">Premium</option>
-            </select>
+            <input type="radio" name="monthly" id="monthly">
+            <div>
+              <h2>Pay monthly</h2>
+              <p>$20/ Month/ Member</p>
+            </div>
           </div>
           <div>
-            <label for="post">Postal Code</label>
-            <input type="number" name="number" id="number" placeholder="00270">
+            <input type="radio" name="annual" id="annual">
+            <div>
+              <h2>Pay Annual</h2>
+              <p>$16/ Month/ Member</p>
+            </div>
           </div>
-        </div>
-      </form>
-      <div class="btn">
-        <button type="button">Cancel</button>
-        <button type="button">Subscribe</button>
-      </div>
-    </section>
-    <section></section>
-  </main>
+        </article>
+        <hr>
+        <article>
+          <h2>Total<span>$20 / Month</span></h2>
+          <p><img src="resources/unlock key alt.png" alt="unlock">This environment is for demonstration purposes only.
+            Please refrain from entering any actual sensitive data.</p>
+        </article>
+        <img src="resources/Checkout-background.png" alt="background">
+      </section>
+    </main>
+  </div>
 
   <footer class="author-info">
     Coded by <a href="#">Alokananda Y</a> | Challenge by
