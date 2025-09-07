@@ -1,0 +1,65 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #12111F;
+      font-family: "Be Vietnam Pro", sans-serif;
+  }
+
+  .container {
+      padding: 80px 12px;
+      max-width: 1326px;
+      display: flex;
+      flex-direction: column;
+      height: 1083px;
+      margin: 0 auto;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  header {
+      color: #97A3B6;
+      width: 820px;
+      height: 295.2px;
+      margin: 0 auto;
+      text-align: center;
+      background-image: url(resources/faq-title-bg.svg);
+      display: flex;
+      align-items: center;
+  }
+
+  h1 {
+      font-size: 48px;
+      letter-spacing: -1%;
+      font-weight: bold;
+      line-height: 150%;
+      width: 455px;
+      margin: 0 auto;
+  }
+
+  nav {
+    width: 820px;
+    height: 139px;
+  }
+
+  .author-info {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 16px;
+      color: rgb(55, 65, 81);
+  }
+
+  .author-info a {
+      text-decoration: none;
+      color: inherit;
+  }

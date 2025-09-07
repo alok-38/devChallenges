@@ -1,0 +1,73 @@
+@import url(preset.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-white);
+    font-family: var(--font-primary);
+}
+
+button,
+input,
+a {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+img {
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1350px;
+    font-family: var(--font-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+}
+
+section:first-child {
+    padding: 40px 72px;
+}
+
+header {
+    width: 479px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.logo {
+    width: 98px;
+    height: 20px;
+}
+
+h1 {
+    font-size: var(--font-heading);
+    font-weight: var(--weight-semibold);
+}
+
+/* footer */
+.author-info {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    color: rgb(55, 65, 81);
+}
+
+.author-info a {
+    text-decoration: none;
+    color: inherit;
+}

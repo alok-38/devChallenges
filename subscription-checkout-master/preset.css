@@ -1,0 +1,62 @@
+/* Be Vietnam Pro - Font Faces */
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+:root {
+    /* Font Family */
+    --font-primary: 'Be Vietnam Pro', sans-serif;
+
+    /* Font Sizes */
+    --font-heading: 1.5rem;
+    /* 24px */
+    --font-big-text: 1.25rem;
+    /* 20px */
+    --font-body: 1rem;
+    /* 16px */
+    --font-small-text: 0.875rem;
+    /* 14px */
+    --font-extra-small: 0.75rem;
+    /* 12px */
+
+    /* Font Weights */
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+
+    /* Neutrals / Grayscale */
+    --color-black: #121826;
+    --color-gray-700: #4D5562;
+    --color-gray-400: #D2D5DA;
+    --color-gray-100: #F0F3F6;
+    --color-white: #FFFFFF;
+
+    /* Primary Theme Colors */
+    --color-primary: #5425AF;
+    --color-primary-light: #ECE9FC;
+}
