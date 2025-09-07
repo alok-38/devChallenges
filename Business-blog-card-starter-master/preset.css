@@ -1,0 +1,88 @@
+/* Lato - Font-face declarations */
+@font-face {
+    font-family: 'Lato';
+    src: url('./resources/Lato/Lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./resources/Lato/Lato-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./resources/Lato/Lato-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./resources/Lato/Lato-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./resources/Lato/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./resources/Lato/Lato-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./resources/Lato/Lato-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./resources/Lato/Lato-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./resources/Lato/Lato-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./resources/Lato/Lato-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+:root {
+    /* Font Families */
+    --font-body: 'Lato', sans-serif;
+    --font-title: 'Poppins', sans-serif;
+
+    /* Font Sizes */
+    --font-size-body: 16px;
+    /* 1rem */
+    --font-size-small: 16px;
+    /* 1rem */
+    --font-size-title: 24px;
+    /* 1.5rem */
+
+    /* Line Heights (optional if used consistently) */
+    --line-height-body: 1.5;
+    --line-height-title: 1.5;
+}
