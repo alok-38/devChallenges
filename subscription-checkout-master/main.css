@@ -11,52 +11,128 @@ body {
     font-family: var(--font-primary);
 }
 
-button,
 input,
-a {
+button,
+a,
+select {
     font-family: inherit;
     cursor: pointer;
+}
+
+input,
+button,
+select {
+    height: 56px;
+    padding: 16px;
+    border-radius: 12px;
+    outline: unset;
+    border: unset;
+}
+
+select {
+    border: 1px solid #D2D5DA;
+    background-color: #F3F4F6;
+    cursor: pointer;
+}
+
+input {
+    background-color: #F3F4F6;
+    border: 1px solid #D2D5DA;
+}
+
+.payment-details {
+    display: flex;
+    gap: 16px;
+}
+
+form div a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-black);
+    border: 1px solid #D2D5DA;
+    background-color: #F3F4F6;
+    border-radius: 12px;
+    padding: 16px;
+    width: 204px;
+    height: 84px;
+    gap: 8px;
+}
+
+.card {
+    border: 1px solid var(--color-primary);
+    background-color: #ECE9FC;
+}
+
+form div a img {
+    width: 20px;
+    height: 20px;
 }
 
 img {
     object-fit: cover;
 }
 
-.container {
-    max-width: 1350px;
-    font-family: var(--font-primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-main {
-    display: flex;
-}
-
 section:first-child {
     padding: 40px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 header {
-    width: 479px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 479px;
+    letter-spacing: -1%;
+}
+
+h1 {
+    font-size: var(--font-heading);
+    color: var(--color-black);
+    font-weight: var(--weight-semibold);
+}
+
+header p {
+    color: var(--color-gray-700);
+    font-weight: var(--weight-regular);
+    font-size: var(--font-small-text);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 644px;
+}
+
+form div img {
+    height: 20px;
+    width: 20px;
+}
+
+.payment-details {
+    display: flex;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    letter-spacing: -2%;
+    font-weight: var(--weight-semibold);
+    font-size: var(--font-small-text);
+    color: var(--color-gray-700);
+}
+
+#name,
+#email {
+    width: 100%;
 }
 
 .logo {
     width: 98px;
     height: 20px;
-}
-
-h1 {
-    font-size: var(--font-heading);
-    font-weight: var(--weight-semibold);
 }
 
 /* footer */
