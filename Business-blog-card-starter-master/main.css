@@ -7,17 +7,98 @@
 }
 
 body {
-    height: 100vh;
+    /* min-height: 100vh; */
+    font-family: "Lato", sans-serif;
+    background-color: #F2F5F9;
 }
 
-.author-info {
-    font-size: 14px;
-    text-align: center;
-    margin-top: 16px;
-    color: rgb(55, 65, 81);
+.text--h1 {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: #111729;
 }
 
-.author-info a {
-    color: inherit;
-    text-decoration: underline;
+.text--body-md {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #4A5567;
 }
+
+.text--body-strong {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #111729;
+}
+
+.text--body-sm {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4A5567;
+}
+
+main {
+    margin: 220px auto 0px auto;
+    max-width: 410px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.business-card__intro {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 32px 24px 32px;
+    background-color: #fff;
+}
+
+.business-card__title {
+    margin-bottom: 12px;
+
+}
+
+.business-card__media {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.business-card__media-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.business-card__media-overlay {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    display: block;
+}
+
+hr {
+    opacity: 0.1;
+    margin: 24px 0px;
+}
+
+.business-card__info {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.business-card__author-img {
+    border-radius: 50%;
+    border: 5px solid #F2F5F9;
+}
+
+@media (max-width: 640px) {
+    .business-card {
+        margin: 147px 8px;
+    }
+}
+

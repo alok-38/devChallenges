@@ -85,4 +85,16 @@
     /* Line Heights (optional if used consistently) */
     --line-height-body: 1.5;
     --line-height-title: 1.5;
+
+    /* Color Palette */
+    --color-light-gray: #F2F5F9;
+    --color-white: #FFFFFF;
+    --color-dark-blue: #111729;
+    --color-muted-gray: #4A5567;
+
+    /* Semantic Naming (optional) */
+    --color-background: var(--color-light-gray);
+    --color-surface: var(--color-white);
+    --color-text-primary: var(--color-dark-blue);
+    --color-text-secondary: var(--color-muted-gray);
 }
