@@ -1,0 +1,100 @@
+/* Be Vietnam Pro - Font Face Definitions */
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('../resources/Be_Vietnam_Pro/BeVietnamPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('../resources/Be_Vietnam_Pro/BeVietnamPro-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('../resources/Be_Vietnam_Pro/BeVietnamPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('../resources/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('../resources/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('../resources/Be_Vietnam_Pro/BeVietnamPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('../resources/Be_Vietnam_Pro/BeVietnamPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('../resources/Be_Vietnam_Pro/BeVietnamPro-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('../resources/Be_Vietnam_Pro/BeVietnamPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Italics (optional, include only if you use italic styles) */
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('../resources/Be_Vietnam_Pro/BeVietnamPro-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Add other italic weights as needed */
+
+:root {
+    --font-primary: 'Be Vietnam Pro', sans-serif;
+
+    /* Font Sizes */
+    --fs-heading: 3rem;
+    /* 48px */
+    --fs-label: 1.25rem;
+    /* 20px */
+    --fs-body: 1rem;
+    /* 16px */
+    --fs-button: 0.875rem;
+    /* 14px */
+
+    /* Font Weights */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* Color Palette */
+    --color-primary: #12111F;
+    --color-background: #F2F5F9;
+    --color-border: #CDD5E0;
+    --color-muted: #97A3B6;
+    --color-surface: #2A2936;
+}
