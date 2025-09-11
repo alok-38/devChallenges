@@ -1,210 +1,139 @@
-@import url(preset.css);
+ h1 {
+     font-family: "Outfit", sans-serif;
+     font-size: 40px;
+     font-weight: 500;
+ }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+ h2 {
+     font-family: "Outfit", sans-serif;
+     font-size: 20px;
+     font-weight: 600;
+     color: #FFFEFE;
 
-body {
-    min-height: 100vh;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 72px;
-}
+ }
 
-main {
-    max-width: 1136px;
-    background-color: #FFFFFF;
-    border-radius: 24px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    height: 576px;
-}
+ p {
+     font-family: "Outfit", sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+     color: #394150;
 
-article div {
-    /* width: 122px; */
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    margin-top: 220px;
-    margin-left: 24px;
-}
+ }
 
-article div h2 {
-    font-size: 20px;
-    color: #FFFEFE;
-    font-weight: var(--font-body-weight-medium);
-}
+ .page {
+     border: 0px solid black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 80px;
+ }
 
-article div p {
-    font-size: 15px;
-    color: #F3F4F6;
-    font-weight: var(--font-body-weight-regular);
-}
+ .main {
+     border: 0px solid black;
+     display: flex;
+     justify-content: center;
+     background: url(resources/Background_decor.svg);
+     background-color: #F3F4F6;
+     background-repeat: no-repeat;
+     flex-wrap: wrap;
+     border-radius: 16px;
+     overflow: hidden;
+ }
 
-a {
-    text-decoration: none;
-    font-family: inherit;
-}
+ .text {
+     border: 0px solid black;
+     width: 478px;
+     height: 264px;
+     padding-left: 20px;
+     padding-top: 20px;
+     padding-right: 70px;
+     line-height: 16px;
 
-section:first-of-type article:first-child {
-    width: 568px;
-    padding: 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
+ }
 
-section:last-of-type article:first-child {
-    padding: 32px;
-    position: relative;
-}
+ .people {
+     border: 0px solid black;
+     background-color: #C1B6F8;
+     width: 284px;
+     height: 290px;
+     display: flex;
+     flex-direction: column-reverse;
+     background-image: url(resources/person_1@2x.png);
+     background-repeat: no-repeat;
+     line-height: 1px;
+ }
 
+ .people1 {
+     border: 0px solid black;
+     background-color: #C1B6F8;
+     width: 284px;
+     height: 290px;
+     display: flex;
+     flex-direction: column-reverse;
+     background-image: url(resources/person_2@2x.png);
+     border-top-right-radius: 20px;
+     background-repeat: no-repeat;
+     line-height: 1px;
+ }
 
-section:last-of-type article:first-child a {
-    position: absolute;
-    bottom: 32px;
-    color: #394150;
-    font-size: 16px;
-    font-weight: var(--font-body-weight-medium);
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
+ .people2 {
+     border: 0px solid black;
+     width: 284px;
+     height: 290px;
+     display: flex;
+     align-items: end;
+     background-repeat: no-repeat;
+ }
 
-h1 {
-    font-size: 40px;
-    color: #000000;
-    letter-spacing: -1%;
-}
+ .people3 {
+     border: 0px solid black;
+     background-color: #C1B6F8;
+     width: 284px;
+     height: 290px;
+     display: flex;
+     flex-direction: column-reverse;
+     background-image: url(resources/person_3@2x.png);
+     background-repeat: no-repeat;
+     line-height: 1px;
+ }
 
-section:first-of-type article:first-child p {
-    width: 451px;
-    color: #394150;
-    font-size: 16px;
-}
+ .people4 {
+     border: 0px solid black;
+     background-color: #C1B6F8;
+     width: 284px;
+     height: 290px;
+     display: flex;
+     flex-direction: column-reverse;
+     background-image: url(resources/person_4@2x.png);
+     background-repeat: no-repeat;
+     line-height: 1px;
+ }
 
-section:first-of-type article:first-child a {
-    color: #263FA9;
-    font-size: 16;
-}
+ .people5 {
+     border: 0px solid black;
+     background-color: #C1B6F8;
+     width: 284px;
+     height: 290px;
+     display: flex;
+     flex-direction: column-reverse;
+     background-image: url(resources/person_5@2x.png);
+     border-bottom-right-radius: 20px;
+     background-repeat: no-repeat;
+     line-height: 1px;
+ }
 
-article {
-    height: 288px;
-}
+ .shadowPeople5 {
+     border-bottom-right-radius: 20px;
+ }
 
-.liam {
-    background-image: url(resources/person_1.png), linear-gradient(to bottom, rgba(217, 217, 217, 0.3) 0%, rgba(193, 182, 248, 0.9) 70%, rgba(193, 182, 248, 0.9) 85%, rgba(0, 0, 0, 0.5) 150%);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+ @media (max-width: 1024px) {
+     .text {
+         width: 100%;
+     }
+ }
 
-.sophia {
-    background-image:
-        url(resources/person_2.png),
-        linear-gradient(to bottom,
-            rgba(237, 172, 210, 0.3) 0%,
-            rgba(237, 172, 210, 0.9) 70%,
-            rgba(237, 172, 210, 0.9) 85%,
-            rgba(0, 0, 0, 0.5) 150%);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.ethan {
-    background-image:
-        url(resources/person_3.png),
-        linear-gradient(to bottom,
-            rgba(237, 172, 210, 0.3) 0%,
-            rgba(237, 172, 210, 0.9) 70%,
-            rgba(237, 172, 210, 0.9) 85%,
-            rgba(0, 0, 0, 0.5) 150%);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.isabella {
-    background-image:
-        linear-gradient(to bottom,
-            rgba(248, 216, 176, 0.1) 0%,
-            /* very transparent peach */
-            rgba(248, 216, 176, 0.4) 70%,
-            /* subtle peach */
-            rgba(248, 216, 176, 0.4) 85%,
-            rgba(0, 0, 0, 0.2) 150%
-            /* light black at bottom */
-        ),
-        url(resources/person_4.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-
-
-.noah {
-    background-image:
-        url(resources/person_5.png),
-        linear-gradient(to bottom,
-            rgba(134, 231, 212, 0.3) 0%,
-            rgba(134, 231, 212, 0.9) 70%,
-            rgba(134, 231, 212, 0.9) 85%,
-            rgba(0, 0, 0, 0.5) 150%);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-
-section:first-of-type {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-section:last-of-type {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.author-info {
-    font-size: 14px;
-    text-align: center;
-    margin-top: 16px;
-    color: inherit;
-    font-family: inherit;
-}
-
-.author-info a {
-    text-decoration: none;
-    color: inherit;
-}
-
-footer {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-/* Responsive layout for small screens (e.g. 412px) */
-@media (max-width: 412px) {
-    main section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* Optional: centers children */
-    }
-
-    main section article {
-        width: 100%;
-        /* Optional: make articles take full width */
-    }
-}
+ @media (max-width: 640px) {
+     .page {
+         padding: 0px;
+     }
+ }
