@@ -1,0 +1,64 @@
+@import url(preset.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 72px;
+}
+
+main {
+    max-width: 1136px;
+    background-color: var(--color-light-gray);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+section:first-of-type article:first-child {
+    width: 568px;
+    padding: 32px;
+}
+
+article {
+    height: 288px;
+}
+
+.liam {
+    background-image: url(resources/person_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+section:last-of-type {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.author-info {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    color: inherit;
+    font-family: inherit;
+}
+
+.author-info a {
+    text-decoration: none;
+    color: inherit;
+}
