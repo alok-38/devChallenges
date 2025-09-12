@@ -20,20 +20,38 @@
   <div class="container">
     <header>
       <h1>Interested in our business pricing?</h1>
-      <p>Fill out the form to view details and we'll contact you as soon as possible.</p>
+      <h2>Fill out the form to view details and we'll contact you as soon as possible.</h2>
     </header>
     <form id="form" action="javascript:void(0);" method="POST" novalidate>
-      Name
-      Ethan Johnson
-      Company Email
-      ethan@johnson.com
-      Company Size
-      50-100 employees
-      Subject
-      Building Landing pages
-      Message
-      50-100 employees
-      Contact Sales
+      <div class="name-email">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Ethan Johnson">
+        </div>
+        <div>
+          <label for="email">Company Email</label>
+          <input type="email" name="email" id="email" placeholder="ethan@johnson.com">
+        </div>
+      </div>
+      <div class="size-subject">
+        <div>
+          <label for="size">Company Size</label>
+          <select name="size" id="size">
+            <option value="size">50-100 employees</option>
+          </select>
+        </div>
+        <div>
+          <label for="subject">Subject</label>
+          <select name="subject" id="subject">
+            <option value="subject">Building Landing pages</option>
+          </select>
+        </div>
+      </div>
+      <div class="message-box">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="50-100 employees"></textarea>
+      </div>
+      <button type="submit">Contact Sales</button>
     </form>
   </div>
 
