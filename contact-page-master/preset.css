@@ -1,0 +1,155 @@
+/* Font Faces for Be Vietnam Pro */
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/resources/Be_Vietnam_Pro/BeVietnamPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+:root {
+    /* Font family */
+    --font-base: 'Be Vietnam Pro', sans-serif;
+
+    /* Font sizes */
+    --font-heading-1: 4rem;
+    /* 64px */
+    --font-heading-2: 2rem;
+    /* 32px */
+    --font-body: 1rem;
+    /* 16px */
+    --font-label: 0.875rem;
+    /* 14px */
+    --font-button: 1.25rem;
+    /* 20px */
+
+    /* Primary Colors */
+    --color-primary: #4036A9;
+    --color-dark: #111729;
+    --color-light: #CDD5E0;
+    --color-white: #FFFFFF;
+
+    /* Additional Colors */
+    --color-white-transparent: #FFFFFF33;
+    /* 20% opacity */
+    --color-accent: #B4436D;
+}
