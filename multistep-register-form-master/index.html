@@ -1,66 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="registration">
 
-    <link
-      rel="icon"
-      href="resources/favicon.ico"
-      type="image/x-icon"
-      sizes="96x96"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="registration">
 
-    <title>Multi-step Register Form | devChallenges.io</title>
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
 
-   <link rel="stylesheet" href="main.css">
-   <script src="app.js" defer></script>
-  </head>
-  <body>
-    <!-- 
+  <title>Multi-step Register Form | devChallenges.io</title>
 
-    Register
+  <link rel="stylesheet" href="main.css">
+  <script src="app.js" defer></script>
+</head>
 
-    Name
+<body>
 
-    Enter your name
+  <main>
+    <form action="#" method="post">
+      <section class="step-content" data-step="1">
+        <h1>Register</h1>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" placeholder="Enter your name" required></input>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Example@gmail.com" required>
+        </div>
+      </section>
+      <section class="step-content hidden" data-step="2">
+        <h2>Which topics you are interested in?</h2>
+        <div>
+          <label for="software_development">Software Development</label>
+          <input type="checkbox" name="topics" id="software_development">
+        </div>
+        <div>
+          <label for="user_experience">User Experience</label>
+          <input type="checkbox" name="topics" id="user_experience">
+        </div>
+        <div>
+          <label for="graphic_design">Graphic Design</label>
+          <input type="checkbox" name="topics" id="graphic_design">
+        </div>
+      </section>
+      <section class="step-content hidden" data-step="3">
+        <h2>Summary</h2>
+        <div>
+          <p><span>Name:</span> Emily Johnson</p>
+          <p><span>Email:</span> emily@emilyjohnsonstl.com</p>
+        </div>
+        <div>
+          <h3>Topics:</h3>
+          <ul>
+            <li>User Experience</li>
+            <li>Graphic Design</li>
+          </ul>
+        </div>
+      </section>
+      <button type="submit">Continue</button>
+    </form>
+    <article class="dots-wrapper">
+      <p>Step <span class="current-step-number">2</span> of 3</p>
+      <div class="dots">
+        <div class="dot" data-dot="1"></div>
+        <div class="dot active-dot" data-dot="2"></div>
+        <div class="dot" data-dot="3"></div>
+      </div>
+    </article>
+  </main>
 
-    Email
+  <footer class="author-info">
+    Coded by <a href="#">Alokananda Y</a> | Challenge by
+    <a href="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>.
+  </footer>
+</body>
 
-    Example@gmail.com
-
-    Continue
-
-    Step 1 of 3
-
-    Which topics you are interested in?
-
-    Software Development
-
-    User Experience
-    
-    Graphic Design
-
-    Step 2 of 3
-
-    Summary
-
-    Name: Emily Johnson
-    Email: emily@emilyjohnsonstl.com
-
-    Topics:
-    User Experience
-    Graphic Design
-
-    Step 3 of 3
-     -->
-
-    <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
-      >.
-    </div>
-  </body>
 </html>
