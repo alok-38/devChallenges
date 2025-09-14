@@ -147,6 +147,9 @@
     --font-size-small: 0.875rem;
     /* 14px */
 
+    --toggle-bg: #223344;
+    --icon-color: #F2F9FE;
+
     /* Font Weights */
     --font-weight-thin: 100;
     --font-weight-extra-light: 200;
@@ -178,4 +181,18 @@
     --color-text-light: #909193;
     --color-background-light: #F2F9FE;
     --color-white: #FFFFFF;
+}
+
+/* Light theme overrides */
+[data-theme="light"] {
+    --color-background: var(--color-background-light);
+    --toggle-bg: #223344;
+    --icon-color: #F2F9FE;
+}
+
+/* Dark theme overrides */
+[data-theme="dark"] {
+    --color-background: var(--color-background-dark);
+    --toggle-bg: #F2F9FE;
+    --icon-color: #223344;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8" />
@@ -11,37 +11,63 @@
   <title>Simple Homepage - Alarado | devChallenges.io</title>
 
   <link rel="stylesheet" href="main.css">
+  <script src="app.js" defer></script>
 </head>
 
 <body>
   <div class="container">
     <nav>
-      <img src="resources/logo-light.svg" alt="logo" width="100%">
+      <figure>
+        <img src="resources/logo-light.svg" alt="logo light">
+      </figure>
       <ul>
-        <li><a href="#" target="_blank" rel="noopener noreferrer">About us</a></li>
-        <li><a href="#" target="_blank" rel="noopener noreferrer">Product</a></li>
-        <li><a href="#" target="_blank" rel="noopener noreferrer">Resource</a></li>
-        <li><a href="#" target="_blank" rel="noopener noreferrer">Contact</a></li>
+        <li>
+          <a href="#" target="_blank" rel="noopener noreferrer">About Us</a>
+        </li>
+        <li>
+          <a href="#" target="_blank" rel="noopener noreferrer">Product</a>
+        </li>
+        <li>
+          <a href="#" target="_blank" rel="noopener noreferrer">Resource</a>
+        </li>
+        <li>
+          <a href="#" target="_blank" rel="noopener noreferrer">Contact</a>
+        </li>
       </ul>
-      <div>
-        <img src="resources/Moon_fill.svg" alt="moon" width="100%">
-        <img src="resources/Sun_fill.svg" alt="sun" width="100%">
-      </div>
+      <section id="theme-toggle">
+        <!-- Inline Moon SVG -->
+        <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="#F2F9FE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 0112.21 3 7 7 0 1012 21a9 9 0 009-8.21z"></path>
+        </svg>
+
+        <!-- Inline Sun SVG -->
+        <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="#F2F9FE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </section>
+
     </nav>
     <main>
       <section>
         <p>😎 Simple way to communicate</p>
-        <div>
-          <h1>Actions for Accessibility in Design</h1>
-          <p>
-            The fastest way to build and deploy websites with resusable components.
-          </p>
-        </div>
-        <div class="btn">
-          <button type="button">Get Started</button>
-          <a href="#" target="_blank" rel="noopener noreferrer">Get live demo</a>
-        </div>
-        <div>
+        <h1>Actions for Accessibility
+          in Design</h1>
+        <p>The fastest way to build and deploy websites with resusable components.</p>
+        <article class="button-group">
+          <button type="button">GET STARTED</button>
+          <button type="button">Get live demo</button>
+        </article>
+        <article>
           <div>
             <img src="resources/Done_ring_round_fill.png" alt="done">
             <p>No credit card required</p>
@@ -50,19 +76,21 @@
             <img src="resources/Done_ring_round_fill.png" alt="done">
             <p>No software to install</p>
           </div>
-        </div>
+        </article>
       </section>
       <section>
-        <img src="resources/hero-image-simple-homepage.png" alt="hero" width="100%">
+        <figure>
+          <img src="resources/hero-image-simple-homepage.png" alt="homepage">
+        </figure>
       </section>
     </main>
   </div>
 
 
-  <!-- <footer class="author-info">
+  <footer class="author-info">
     Coded by <a href="https://github.com/alok-38">Alokananda Y</a> | Challenge by
     <a href="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>.
-  </footer> -->
+  </footer>
 </body>
 
 </html>
