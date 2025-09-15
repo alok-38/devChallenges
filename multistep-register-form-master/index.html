@@ -16,50 +16,53 @@
 
 <body>
 
-  <main>
-    <form action="#" method="post">
-      <section class="step-content" data-step="1">
-        <h1>Register</h1>
-        <div>
-          <label for="name">Name</label>
-          <input type="text" placeholder="Enter your name" required></input>
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Example@gmail.com" required>
-        </div>
-      </section>
-      <section class="step-content hidden" data-step="2">
-        <h2>Which topics you are interested in?</h2>
-        <div>
-          <label for="software_development">Software Development</label>
-          <input type="checkbox" name="topics" id="software_development">
-        </div>
-        <div>
-          <label for="user_experience">User Experience</label>
-          <input type="checkbox" name="topics" id="user_experience">
-        </div>
-        <div>
-          <label for="graphic_design">Graphic Design</label>
-          <input type="checkbox" name="topics" id="graphic_design">
-        </div>
-      </section>
-      <section class="step-content hidden" data-step="3">
-        <h2>Summary</h2>
-        <div>
-          <p><span>Name:</span> Emily Johnson</p>
-          <p><span>Email:</span> emily@emilyjohnsonstl.com</p>
-        </div>
-        <div>
-          <h3>Topics:</h3>
-          <ul>
-            <li>User Experience</li>
-            <li>Graphic Design</li>
-          </ul>
-        </div>
-      </section>
-      <button type="submit">Continue</button>
-    </form>
+  <div class="container">
+    <main>
+      <form action="#" method="post">
+        <section class="step-content" data-step="1">
+          <h1>Register</h1>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter your name" required></input>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Example@gmail.com" required>
+          </div>
+        </section>
+        <section class="step-content hidden" data-step="2">
+          <h2>Which topics you are interested in?</h2>
+          <div>
+            <label for="software_development">Software Development</label>
+            <input type="checkbox" name="topics" id="software_development">
+          </div>
+          <div>
+            <label for="user_experience">User Experience</label>
+            <input type="checkbox" name="topics" id="user_experience">
+          </div>
+          <div>
+            <label for="graphic_design">Graphic Design</label>
+            <input type="checkbox" name="topics" id="graphic_design">
+          </div>
+        </section>
+        <section class="step-content hidden" data-step="3">
+          <h2>Summary</h2>
+          <div>
+            <p><span>Name:</span> Emily Johnson</p>
+            <p><span>Email:</span> emily@emilyjohnsonstl.com</p>
+          </div>
+          <div>
+            <h3>Topics:</h3>
+            <ul>
+              <li>User Experience</li>
+              <li>Graphic Design</li>
+            </ul>
+          </div>
+        </section>
+        <button type="submit">Continue</button>
+      </form>
+
+    </main>
     <article class="dots-wrapper">
       <p>Step <span class="current-step-number">2</span> of 3</p>
       <div class="dots">
@@ -68,7 +71,7 @@
         <div class="dot" data-dot="3"></div>
       </div>
     </article>
-  </main>
+  </div>
 
   <footer class="author-info">
     Coded by <a href="#">Alokananda Y</a> | Challenge by
