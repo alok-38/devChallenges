@@ -82,6 +82,7 @@ section:first-of-type div:not(section:first-of-type div:last-of-type) {
 
 section:nth-of-type(2) {
     margin-bottom: 36px;
+    height: 179px;
 }
 
 section:last-of-type div {
@@ -170,6 +171,50 @@ input[type="checkbox"] {
     transition: border 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
+/* Custom Checkboxes */
+.custom-checkbox {
+    display: block;
+    position: relative;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-regular);
+    color: #E5E7EB;
+    transition: background 0.3s ease, border 0.3s ease;
+}
+
+.custom-checkbox:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+    border-color: #A78BFA;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.custom-checkbox span {
+    pointer-events: none;
+}
+
+/* Optional: checked visual style */
+.custom-checkbox input[type="checkbox"]:checked+span {
+    color: #C4B5FD;
+    font-weight: var(--font-weight-medium);
+}
+
+
+
 /* Hover effect for checkbox */
 input[type="checkbox"]:hover {
     border-color: #A78BFA;
@@ -224,7 +269,6 @@ button:active {
 }
 
 .dots-wrapper {
-    color: white;
     display: flex;
     width: 180px;
     height: 15px;
@@ -233,11 +277,35 @@ button:active {
     justify-content: center;
 }
 
+.dots-wrapper p {
+    color: #E5E7EB;
+    font-weight: var(--font-weight-light);
+    font-size: 12px;
+}
+
 .dots {
     display: flex;
-    background-color: #fff;
     width: 72px;
     justify-content: space-between;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #212936;
+    border-radius: 100%;
+    border: none;
+}
+
+.active-dot {
+    background-color: #5425af;
+    border: solid 7px #212936;
+}
+
+.current-step-number {
+    color: #E5E7EB;
+    font-weight: var(--font-weight-light);
+    font-size: 12px;
 }
 
 /* footer */
