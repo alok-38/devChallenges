@@ -48,6 +48,28 @@ header p {
     font-weight: var(--font-weight-regular);
 }
 
+main {
+    max-width: 1136px;
+    width: 100%;
+    padding: 0 107px 32px 107px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.popular {
+    background-color: #263FA9;
+    color: #ffffff;
+    padding: 2px 12px;
+    border-radius: 25px;
+    width: 86px;
+    height: 24px;
+    font-size: 16px;
+    letter-spacing: -1%;
+}
+
 .author-info {
     font-size: 14px;
     text-align: center;
