@@ -1,22 +1,38 @@
-const articles = document.querySelectorAll('main article');
+const questionEls = document.querySelectorAll('h3');
+const faqItem = document.querySelector('.faq-item');
+const faqItemStyle = window.getComputedStyle(faqItem);
+const backgroundColor = faqItemStyle.backgroundColor;
 
-articles.forEach(article => {
-    const toggleImg = article.querySelector('h3 img');
-    const answer = article.querySelector('p');
+// Initialize all answers as closed and arrows pointing down
+questionEls.forEach((question) => {
+    const img = question.querySelector('img');
+    const faqItem = question.parentElement;
+    const answer = faqItem.querySelector('p');
 
-    // Check if the image indicates an expanded state
-    const isExpanded = toggleImg.src.endsWith('Expand_up.png');
+    answer.classList.add('closed'); // Hide answers on page load
+    img.setAttribute('src', 'resources/Expand_down.svg'); // Set arrow down
+});
 
-    // Set initial state
-    answer.style.display = isExpanded ? 'block' : 'none';
+// Add click listeners to toggle answer visibility and arrow
+questionEls.forEach((question) => {
+    question.addEventListener('click', () => {
+        const img = question.querySelector('img');
+        const faqItem = question.parentElement;
+        const answer = faqItem.querySelector('p');
 
-    // Toggle on click
-    toggleImg.addEventListener('click', () => {
-        const isVisible = answer.style.display === 'block';
+        const currentSrc = img.getAttribute('src');
 
-        answer.style.display = isVisible ? 'none' : 'block';
-        toggleImg.src = isVisible
-            ? 'resources/Expand_down.svg'
-            : 'resources/Expand_up.png';
+        if (currentSrc === 'resources/Expand_up.png') {
+            img.setAttribute('src', 'resources/Expand_down.svg');
+            answer.classList.add('closed');
+            faqItem.style.backgroundColor = backgroundColor;
+            faqItem.style.padding = "0px";
+        } else {
+            img.setAttribute('src', 'resources/Expand_up.png');
+            answer.classList.remove('closed');
+            faqItem.style.backgroundColor = "#2A2936";
+            faqItem.style.borderRadius = "20px";
+            faqItem.style.padding = "28px 32px";
+        }
     });
 });
