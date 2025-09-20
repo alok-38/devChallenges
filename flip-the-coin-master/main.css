@@ -198,3 +198,12 @@ button:active {
         margin: 0 auto;
     }
 }
+
+/* coin flip animation */
+.coin {
+    transition: transform 0.6s;
+}
+
+.flip {
+    transform: rotateY(360deg);
+}
