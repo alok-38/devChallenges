@@ -1,57 +1,74 @@
 @import url(fonts.css);
 
-:root {
-    /* Font Family */
-    --font-primary: 'Poppins', sans-serif;
-
-    /* Font Weights */
-    --font-weight-regular: 400;
-    --font-weight-medium: 500;
-    --font-weight-semibold: 600;
-
-    /* Font Sizes */
-    --font-size-heading: 3rem;
-    /* 48px */
-    --font-size-subheading: 1.25rem;
-    /* 20px */
-    --font-size-placeholder: 1rem;
-    /* 16px */
-    --font-size-button: 1rem;
-    /* 16px */
-    --font-size-helper: 0.875rem;
-    /* 14px */
-
-    /* Neutrals */
-    --color-gray-dark: #6C727F;
-    --color-gray-light: #E5E7EB;
-    --color-gray-lighter: #F9FAFB;
-    --color-white: #FFFFFF;
-    --color-black: #000000;
-
-    /* Primary Colors */
-    --color-primary: #284BCE;
-
-    /* Additional Colors */
-    --color-gray-deep: #394150;
-}
+@import url(variables.css);
 
 
-* {
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
+
 body {
+    font-family: var(--font-primary);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 80px 24px;
-    background-color: var(--color-white);
-    font-family: var(--font-primary);
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+header {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16;
+    align-items: center;
+    letter-spacing: -1%;
+}
+
+h1 {
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-semibold);
+}
+
+h2 {
+    text-align: center;
+    font-weight: var(--font-weight-regular);
+    font-size: var( --font-size-subheading);
+    color: #6C727F;
+}
+
+a {
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 1px dotted;
+}
+
 
 img {
     display: block;
@@ -59,120 +76,20 @@ img {
     object-fit: cover;
 }
 
-header {
-    margin-bottom: 60px;
-    width: 720px;
-    text-align: center;
-}
 
-h1 {
-    margin: 16px 0;
-    font-family: var(--font-primary);
-    font-size: var(--font-size-heading);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-black);
-}
-
-header p {
-    font-weight: var(--font-weight-regular);
-    font-family: var(--font-primary);
-    font-size: var(--font-size-subheading);
-    color: var(--color-gray-dark);
-}
-
-section {
-    width: 552px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    padding: 24px;
-    border-radius: 16px;
-    background: #ffffff;
-    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03),
-        0px 8px 12px 0px rgba(0, 0, 0, 0.08);
-}
-
-section input,
-section button {
-    cursor: pointer;
-    width: 504px;
-    height: 59px;
-    outline: unset;
-    border: unset;
-    border-radius: 12px;
-}
-
-button {
-    margin: 24px 0;
-    background-color: var(--color-primary);
-    color: var(--color-white);
-}
-
-input::placeholder,
-section button {
-    text-align: center;
-    color: var(--color-gray-deep);
-    font-size: var(--font-size-placeholder);
-    font-weight: var(--font-weight-semibold);
-}
-
-section input {
-    border: 1px solid var(--color-gray-light);
-    background-color: var(--color-gray-lighter);
-}
-
-section input::placeholder {
-    font-weight: var(--font-weight-medium);
-}
-
-section button {
-    color: var(--color-white);
-}
-
-section p {
-    font-size: var(--font-size-helper);
-    text-align: center;
-    color: var(--color-gray-deep);
-}
 
 /* footer */
 .author-info {
     font-size: 14px;
     text-align: center;
-    color: rgb(55, 65, 81);
-    margin-top: 100px;
+    font-family: inherit;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: inherit;
 }
 
 .author-info a {
     text-decoration: none;
-    color: inherit;
-}
-
-@media (max-width: 731px) {
-    body {
-        padding: 80px 24px;
-    }
-
-    main {
-        width: 367px;
-        margin: auto;
-    }
-
-    input,
-    button {
-        max-width: 100%;
-    }
-
-    header,
-    section {
-        width: 100%;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
-
-    p {
-        font-size: 16px;
-    }
 }
