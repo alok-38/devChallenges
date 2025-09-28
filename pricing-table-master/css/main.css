@@ -1,3 +1,139 @@
 @import url(font-face.css);
 @import url(variables.css);
 @import url(global.css);
+
+header {
+    background-image: url('/resources/bg-pattern.png');
+    height: 196px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    letter-spacing: -0.01em;
+    display: flex;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    max-width: 468.28px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-bold);
+}
+
+header p {
+    color: var(--color-text-muted);
+    text-align: center;
+    font-size: var(--font-size-body);
+}
+
+main {
+    max-width: 1136px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+
+section:first-of-type {
+    max-width: 920px;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    padding: 0 40px;
+    letter-spacing: -0.01em;
+    margin-left: auto;
+}
+
+section:first-of-type>div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+section:first-of-type>div h2 {
+    border: unset;
+    background: none;
+}
+
+section:first-of-type>div p {
+    font-size: 16px;
+    text-align: center;
+}
+
+section:first-of-type>div p:first-of-type {
+    color: #263FA9;
+    font-weight: var(--font-weight-semibold);
+}
+
+section:first-of-type>div p:last-of-type {
+    color: #4D5562;
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: var(--font-weight-semibold);
+    padding: 16px 12px;
+    background-color: #F8FAFC;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.popular {
+    background-color: #263FA9;
+    padding: 2px 12px;
+    color: #FFFFFF !important;
+    display: flex;
+    justify-content: center;
+    width: 86px;
+    height: 24px;
+    border-radius: 25px;
+}
+
+section:last-of-type {
+    display: flex;
+    max-width: 1136px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+section:last-of-type img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+}
+
+section:last-of-type div:last-of-type {
+    width: 100%;
+    max-width: 920px;
+}
+
+
+section:last-of-type div:last-of-type>div {
+    display: flex;
+    padding: 16px 40px;
+    gap: 40px;
+    font-weight: var(--font-weight-regular);
+    font-size: 16px;
+    align-items: center;
+    max-width: 920px;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+h3 {
+    font-weight: var(--font-weight-semibold);
+    font-size: 16px;
+    padding: 16px 12px;
+    background-color: #F8FAFC;
+    border-bottom: 1px solid #E5E7EB;
+}
