@@ -1,0 +1,21 @@
+:root {
+    /* Brand Colors */
+    --color-primary: #2A4DD0;
+    /* Primary Blue */
+    --color-success: #4CA154;
+    /* Success Green */
+
+    /* Text Colors */
+    --color-heading: #111729;
+    /* Darkest for main headings */
+    --color-body: #223344;
+    /* Dark text for body content */
+    --color-muted: #909193;
+    /* Muted/Secondary text */
+
+    /* Background Colors */
+    --color-background: #F2F9FE;
+    /* Light blue-ish background */
+    --color-white: #FFFFFF;
+    /* Pure white */
+}

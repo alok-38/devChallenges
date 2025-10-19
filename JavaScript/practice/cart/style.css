@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rebeccapurple;
+}
+
+main {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+button {
+    background: transparent;
+    outline: unset;
+    border: unset;
+    cursor: pointer;
+}

@@ -1,0 +1,21 @@
+:root {
+    /* Font Family */
+    --font-primary: 'Poppins', sans-serif;
+
+    /* Typography Sizes */
+    --font-heading: 3.75rem;
+    /* 60px */
+    --font-body: 1.125rem;
+    /* 18px */
+    --font-button: 1rem;
+    /* 16px */
+    --font-small: 0.875rem;
+    /* 14px */
+
+    /* Font Weights */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+}
