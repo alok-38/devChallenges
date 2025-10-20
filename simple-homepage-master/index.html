@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      href="resources/favicon.ico"
-      type="image/x-icon"
-      sizes="96x96"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="alarado home page">
 
-    <title>Simple Homepage - Alarado | devChallenges.io</title>
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
 
-  
-  </head>
-  <body>
-    <!-- 
-    About us
+  <title>Simple Homepage - Alarado | devChallenges.io</title>
 
-    Product
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="script.js" defer></script>
+</head>
 
-    Resource
+<body>
+  <div class="container">
+    <nav>
+      <img src="resources/logo-light.svg" alt="logo">
+      <ul>
+        <li><a target="_blank" rel="noreferrer noopener" href="#">About us</a></li>
+        <li><a target="_blank" rel="noreferrer noopener" href="#">Product</a></li>
+        <li><a target="_blank" rel="noreferrer noopener" href="#">Resource</a></li>
+        <li><a target="_blank" rel="noreferrer noopener" href="#">Contact</a></li>
+      </ul>
+        <div class="toggle">
+          <img src="resources/Moon_fill_light.svg" alt="moon">
+          <img src="resources/Sun_fill.svg" alt="sun">
+        </div>
+        <img class="hamburger" src="resources/hamburger-button.svg" alt="ham">
+    </nav>
+    <main>
+      <section>
+        <article>
+          <p>😎 Simple way to communicate</p>
+          <div>
+            <h1>Actions for Accessibility in Design</h1>
+            <p>The fastest way to build and deploy websites with resusable components.</p>
+          </div>
+          <div class="btn">
+            <button type="button">Get Started</button>
+            <button type="button">Get live demo</button>
+          </div>
+        </article>
+        <article>
+          <div>
+            <img src="resources/Done_ring_round_fill.svg" alt="ring">
+            <p>No credit card required</p>
+          </div>
+          <div>
+            <img src="resources/Done_ring_round_fill.svg" alt="ring">
+            <p>No software to install</p>
+          </div>
+        </article>
+      </section>
+      <figure>
+        <img src="resources/hero-image-simple-homepage.png" alt="hero">
+      </figure>
+    </main>
+  </div>
 
-    Contact
 
-    😎 Simple way to communicate
+</body>
 
-    Actions for Accessibility in Design
-
-    The fastest way to build and deploy websites with resusable components.
-
-    Get Started
-
-    Get live demo
-
-    No credit card required
-
-    No software to install
-
-    -->
-
-   
-  </body>
 </html>

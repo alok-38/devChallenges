@@ -1,0 +1,259 @@
+@import url(font-face.css);
+@import url(typography.css);
+@import url(colors.css);
+@import url(reset.css);
+
+body {
+    padding: 28px 72px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 92px;
+    max-width: 1208px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    gap: 32px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 587px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    max-width: 365px;
+    width: 100%;
+    gap: 40px;
+    padding: 0;
+}
+
+nav ul a {
+    font-weight: var(--font-weight-semibold);
+    color: #223344;
+    font-size: var(--font-small);
+    font-family: inherit;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+h1 {
+    margin-bottom: 32px;
+    letter-spacing: -0.0375em;
+    font-size: var(--font-heading);
+    font-weight: var(--font-weight-bold);
+    width: 73.1%;
+}
+
+article:first-of-type p:not(article:first-of-type div p) {
+    margin-bottom: 12px;
+    color: #223344;
+    letter-spacing: -1%;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-small);
+}
+
+article:first-of-type div p {
+    font-size: var(--font-body);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: 22px;
+}
+
+nav div {
+    background-color: #223344;
+    display: flex;
+    width: 48px;
+    height: 24px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+nav ul a:hover {
+    color: #263FA9;
+    border-bottom: 2px solid #263FA9;
+}
+
+.btn {
+    display: flex;
+    gap: 32px;
+    font-size: var(--font-button);
+    font-weight: var(--font-weight-semibold);
+    align-items: center;
+}
+
+/* === Primary Button === */
+.btn button:first-of-type {
+    background-color: #263FA9;
+    color: #FFFFFF;
+    border-radius: 12px;
+    padding: 16px 32px;
+    width: 174px;
+    height: 52px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn button:first-of-type:hover {
+    background-color: #1f3391;
+    /* Slightly darker */
+}
+
+.btn button:first-of-type:focus-visible {
+    outline: 3px solid #90b4ff;
+    /* Light blue focus ring */
+    outline-offset: 2px;
+}
+
+.btn button:first-of-type:active {
+    transform: scale(0.97);
+    /* Slight press effect */
+}
+
+/* === Secondary Button (Text Button) === */
+.btn button:last-of-type {
+    background: none;
+    border: none;
+    color: #263FA9;
+    cursor: pointer;
+    transition: border-bottom 0.3s ease, transform 0.1s ease;
+    position: relative;
+}
+
+.btn button:last-of-type:hover {
+    border-bottom: 2px solid #263FA9;
+}
+
+.btn button:last-of-type:focus-visible {
+    outline: 3px solid #90b4ff;
+    outline-offset: 2px;
+}
+
+.btn button:last-of-type:active {
+    transform: scale(0.98);
+}
+
+article:last-of-type {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-small);
+}
+
+article:last-of-type div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+figure img {
+    max-width: 587px;
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding: 28px 72px;
+    }
+
+    .container {
+        max-width: 880px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section {
+        max-width: 424px;
+        width: 100%;
+    }
+
+    figure img {
+        max-width: 424px;
+        height: 418px;
+        object-fit: cover;
+    }
+
+    h1 {
+        width: 100%;
+    }
+}
+
+/* Hide hamburger on tablet/desktop */
+.hamburger {
+    display: none;
+}
+
+nav ul.active {
+    display: block;
+}
+
+@media (max-width: 412px) {
+    body {
+        padding: 16px 12px;
+    }
+
+    .container {
+        max-width: 412px;
+        width: 100%;
+        gap: 0;
+    }
+
+    nav ul {
+        margin: 0;
+        display: none;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline-block;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 32px;
+        max-width: 388px;
+        width: 100%;
+    }
+
+    figure {
+        max-width: 388px;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    figure img {
+        max-width: 278px;
+        height: 258px;
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+
+    h1 {
+        font-size: 40px;
+        width: 75%;
+    }
+
+}
