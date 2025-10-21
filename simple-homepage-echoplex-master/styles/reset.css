@@ -46,6 +46,7 @@ svg {
     display: block;
     max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 /* 7. Inherit fonts for form elements */
