@@ -1,3 +1,102 @@
 @import url(typography.css);
 @import url(reset.css);
 @import url(colors.css);
+
+body {
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+    color: var(--clr-black);
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+/* Fluid spacing */
+nav,
+header {
+    padding-inline: clamp(1rem, 4vw, 4.5rem);
+    /* left + right */
+    padding-block: clamp(1rem, 2vw, 2rem);
+    /* top + bottom */
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav button {
+    border-radius: 500px;
+    width: auto;
+    height: auto;
+    padding: 0.75rem 2.25rem;
+    border: 2px solid var(--clr-gray-light);
+    color: var(--clr-primary);
+    letter-spacing: -0.01em;
+    font-weight: var(--fw-bold);
+    font-size: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(1rem, 4vw, 2rem);
+    color: inherit;
+}
+
+header section {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 4vw, 2rem);
+}
+
+figure {
+    margin: 0;
+    /* optional: remove default browser margin */
+}
+
+figure img {
+    display: block;
+    /* removes a small gap below image */
+    width: 100%;
+    /* allows it to scale down for smaller screens */
+    height: auto;
+    /* maintains correct aspect ratio */
+    max-width: 100%;
+    /* prevents it from stretching larger than the container */
+    object-fit: cover;
+    /* ensures it crops nicely if constrained */
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+}
+
+h1 span {
+    color: var(--clr-primary);
+}
+
+.buttons {
+    display: flex;
+    gap: clamp(0.5rem, 1.2vw, 0.75rem);
+}
+
+.buttons button {
+    border-radius: 999px;
+    padding: clamp(0.5rem, 1.4vw, 0.75rem) clamp(1.5rem, 4vw, 2.25rem);
+    letter-spacing: -0.01em;
+    font-size: inherit;
+    /* scales with body clamp */
+    font-weight: var(--fw-bold);
+}
+
+.buttons button:first-of-type {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+}

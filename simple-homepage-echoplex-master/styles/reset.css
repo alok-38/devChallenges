@@ -61,6 +61,7 @@ button {
     border: none;
     background: none;
     cursor: pointer;
+    font-family: inherit;
 }
 
 /* 9. Create a root stacking context */
