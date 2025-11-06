@@ -1,8 +1,19 @@
-:root {
-    /* === Font Family === */
-    --font-primary: 'Be Vietnam Pro', sans-serif;
+@import url(font-face.css);
+/* ============================= */
+/*  Root Variables               */
+/* ============================= */
 
-    /* === Font Sizes === */
+:root {
+    /* Font Family */
+    --font-primary: "Be Vietnam Pro", sans-serif;
+
+    /* Font Weights */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+
+    /* Font Sizes (Desktop) */
     --fs-heading-1: 2.25rem;
     /* 36px */
     --fs-heading-2: 2rem;
@@ -12,11 +23,7 @@
     --fs-body: 1rem;
     /* 16px */
 
-    /* === Font Weights === */
-    --fw-regular: 400;
-    --fw-bold: 700;
-
-    /* === Line Heights (Optional) === */
+    /* Line Height */
     --lh-heading: 1.2;
-    --lh-body: 1.5;
+    --lh-body: 1.6;
 }

@@ -1,67 +1,41 @@
-@import url(font-face.css);
-@import url(typography.css);
-@import url(color.css);
-/* === Modern CSS Reset === */
+/* ============================= */
+/* Modern CSS Reset              */
+/* ============================= */
 
-/* 1. Set box-sizing globally */
+/* 1. Use a more intuitive box-sizing model */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-/* 2. Remove default margin and padding */
+/* 2. Remove default margin */
 * {
     margin: 0;
     padding: 0;
 }
 
-/* 3. Set up a more consistent line-height and font smoothing */
-html {
+/* 3. Allow percentage-based heights */
+html,
+body {
+    height: 100%;
+}
+
+/* 4. Improve text rendering */
+body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeSpeed;
-    scroll-behavior: smooth;
 }
 
-/* 4. Remove list styles on ul, ol */
-ul,
-ol {
-    list-style: none;
-}
-
-/* 5. Remove default link styles */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* 6. Images and media should be responsive by default */
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-/* 7. Inherit fonts for form elements */
+/* 5. Remove built-in form typography styles */
 input,
 button,
 textarea,
 select {
     font: inherit;
-    color: inherit;
-    background: none;
-    border: none;
-    outline: none;
 }
 
-/* 8. Prevent text overflow */
+/* 6. Avoid text overflows */
 p,
 h1,
 h2,
@@ -72,24 +46,24 @@ h6 {
     overflow-wrap: break-word;
 }
 
-/* 9. Set base font and background */
-body {
-    font-family: var(--font-primary, sans-serif);
-    font-size: var(--fs-body, 1rem);
-    background-color: var(--clr-white, #fff);
-    color: var(--clr-black, #000);
-    line-height: var(--lh-body, 1.5);
+/* 7. Images: ensure they don’t exceed their containers */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
 }
 
-/* 10. Make buttons clickable and accessible */
+/* 8. Remove button border & inherit cursor */
 button {
-    cursor: pointer;
-    background: none;
     border: none;
-    padding: 0;
+    background: none;
+    cursor: pointer;
 }
 
-/* 11. Set root stacking context */
+/* 9. Create a root stacking context */
 #root,
 #__next {
     isolation: isolate;

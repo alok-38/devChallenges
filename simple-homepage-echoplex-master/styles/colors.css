@@ -1,0 +1,38 @@
+:root {
+    /* ============================= */
+    /* Colors                        */
+    /* ============================= */
+
+    /* Base / Text */
+    --clr-black: #121826;
+    --clr-gray: #9DA3AE;
+    --clr-gray-light: #E5E7EB;
+    --clr-white: #FFFFFF;
+
+    /* Brand / Primary Palette */
+    --clr-primary: #4138C2;
+    --clr-primary-light: #C9D2FA;
+    --clr-primary-soft: #DEE9FC;
+
+    /* Accent Palette */
+    --clr-accent-blue: #4E80EE;
+    --clr-accent-cyan: #52B3D0;
+    --clr-accent-green: #5EC269;
+    --clr-accent-purple: #9D59EF;
+    --clr-accent-pink: #C951E7;
+
+    /* Warm / Highlight Colors */
+    --clr-orange: #E87B35;
+    --clr-touch-gold: #E2B53E;
+    --clr-rose: #E14F62;
+
+    /* Semantic / Feedback */
+    --clr-success-bg: #E2FBE8;
+    --clr-info-bg: #D5FAF1;
+    --clr-warning-bg: #FCEED8;
+    --clr-error-bg: #FBE5E6;
+
+    /* Extra Soft Background Shades */
+    --clr-soft-yellow: #FDF9C9;
+    --clr-soft-purple: #F1E8FD;
+}
