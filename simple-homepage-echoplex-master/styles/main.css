@@ -100,3 +100,29 @@ h1 span {
     background-color: var(--clr-primary);
     color: var(--clr-white);
 }
+
+header+section {
+    padding: clamp(1.5rem, 5vw, 4.5rem);
+}
+
+h2 {
+
+    font-size: clamp(1.25rem, 4vw, 2rem);
+    margin-bottom: clamp(1.5rem, 5vw, 4rem);
+}
+
+header+section div {
+    display: flex;
+    justify-content: space-between
+}
+
+header+section h2+div:first-of-type {
+    margin-bottom: clamp(1.5rem, 5vw, 4rem);
+}
+
+header+section div article {
+    width: clamp(12rem, 40vw, 18rem);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.75rem, 2vw, 1.5rem);
+}
