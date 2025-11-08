@@ -1,0 +1,83 @@
+/* -----------------------------------
+   Modern CSS Reset
+----------------------------------- */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Prevent font size inflation */
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+/* Make REM units easier to work with */
+html {
+    font-size: 100%;
+    /* 1rem = 16px */
+}
+
+/* Improve text rendering */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Remove list styles if list has a class */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Anchor tags without href behave like text */
+a:not([href]) {
+    text-decoration: none;
+}
+
+/* Make images, videos, and canvas elements responsive */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+}
+
+/* Improve text wrapping */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* Create a root stacking context */
+#root,
+#__next {
+    isolation: isolate;
+}

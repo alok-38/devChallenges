@@ -1,0 +1,21 @@
+:root {
+    /* Primary Brand */
+    --clr-primary: #5DB082;
+    --clr-primary-dark: #295E48;
+    --clr-primary-light: #DEE9FC;
+
+    /* Secondary / Accent */
+    --clr-accent-1: #6281F7;
+    --clr-accent-2: #6D4AE5;
+    --clr-accent-3: #263FA9;
+    --clr-accent-4: #3C4C98;
+
+    /* Neutrals */
+    --clr-black: #161739;
+    --clr-gray-900: #364153;
+    --clr-gray-500: #C9D0DA;
+    --clr-gray-100: #F6F7FB;
+
+    /* Highlights */
+    --clr-warning: #F5C044;
+}
