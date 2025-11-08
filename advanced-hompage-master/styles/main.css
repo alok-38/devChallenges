@@ -59,6 +59,10 @@ nav {
     box-shadow: none;
 }
 
+.nav--btn button:first-of-type:hover {
+    transform: translateY(-2px);
+}
+
 .nav--btn button:last-of-type {
     background-color: var(--clr-primary-dark);
     color: var(--clr-gray-100);
@@ -82,6 +86,10 @@ nav {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+.nav--btn button:first-of-type:active {
+    transform: translateY(0);
+}
+
 /* Focus (keyboard navigation accessibility) */
 .nav--btn button:last-of-type:focus-visible {
     outline: 3px solid var(--clr-primary-light);
@@ -94,34 +102,176 @@ nav {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
 }
 
-section:first-of-type>article>div:first-child {
-    padding: 4px 20px 4px 4px;
-    width: 152px;
-    height: 40px;
+section:first-of-type {
     display: flex;
-    gap: 20px;
-    border-radius: 36px;
-    background-color: var(--clr-primary-light);
-    color: var(--clr-accent-3);
-    font-size: 11.5px;
-    font-weight: 700;
+    justify-content: space-between;
+}
+
+section:first-of-type>article>div:first-child {
+    display: flex;
     align-items: center;
     justify-content: center;
+
+    /* Responsive width + height */
+    width: clamp(120px, 22vw, 152px);
+    height: clamp(32px, 4vw, 40px);
+
+    /* Responsive padding */
+    padding: clamp(2px, 0.6vw, 4px) clamp(12px, 4vw, 20px) clamp(2px, 0.6vw, 4px) clamp(4px, 1.4vw, 4px);
+
+    /* Responsive gap */
+    gap: clamp(8px, 3vw, 20px);
+
+    border-radius: 999px;
+    /* Always pill-shaped */
+
+    background-color: var(--clr-primary-light);
+    color: var(--clr-accent-3);
+
+    font-size: clamp(10px, 1.4vw, 11.5px);
+    font-weight: 700;
+}
+
+
+.cta {
+    display: flex;
+    gap: clamp(16px, 3vw, 36px);
+}
+
+.cta button:first-of-type {
+    background-color: var(--clr-primary-dark);
+    color: var(--clr-gray-100);
+
+    /* Responsive width & height */
+    width: clamp(140px, 22vw, 182px);
+    height: clamp(44px, 4vw, 52px);
+
+    /* Responsive padding */
+    padding: clamp(12px, 2vw, 16px) clamp(24px, 4vw, 36px);
+
+    /* Rounded shape stays proportional */
+    border-radius: 999px;
+    /* always pill-shaped */
+    font-size: var(--fs-body);
+    letter-spacing: -0.02em;
+    /* Smooth animations */
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+/* Hover (mouse-over) */
+.cta button:first-of-type:hover {
+    background-color: var(--clr-primary);
+    /* slightly lighter shade if available */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Focus (keyboard accessibility) */
+.cta button:first-of-type:focus {
+    outline: 2px solid var(--clr-primary);
+    outline-offset: 4px;
+}
+
+/* Active (click/press) */
+.cta button:first-of-type:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+    background-color: var(--clr-primary-dark);
+    /* returns to base tone while pressed */
+}
+
+.cta button:last-of-type {
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    color: #364153;
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+/* Hover */
+.cta button:last-of-type:hover {
+    color: black;
+    transform: translateY(-2px);
+}
+
+/* Focus (keyboard-friendly) */
+.cta button:last-of-type:focus {
+    outline-offset: 4px;
+}
+
+/* Press / Active */
+.cta button:last-of-type:active {
+    transform: translateY(0);
 }
 
 section:first-of-type>article>div:first-child div {
-    background-color: var(--clr-accent-1);
-    border-radius: 50%;
-    padding: 8px;
-    width: 32px;
-    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background-color: var(--clr-accent-1);
+
+    /* Perfect circle maintained at all sizes */
+    width: clamp(24px, 4vw, 32px);
+    height: clamp(24px, 4vw, 32px);
+    border-radius: 50%;
+
+    /* Scales with the circle */
+    padding: clamp(4px, 1vw, 8px);
 }
 
-.cta {
-    margin-top: 82px;
+
+section:first-of-type>article {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(24px, 6vw, 82px);
+}
+
+section:first-of-type>article section {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(12px, 3vw, 32px);
+}
+
+article>section>div:first-of-type {
+    background-color: var(--clr-primary-light);
+    display: flex;
+    align-items: center;
+    gap: clamp(8px, 1.8vw, 20px);
+
+    /* Fluid size instead of fixed width/height */
+    padding: 4px clamp(12px, 2vw, 20px);
+    border-radius: 12px;
+
+    /* Typography */
+    font-weight: 500;
+    font-size: clamp(14px, 1.4vw, 16px);
+    line-height: 1;
+    width: max-content;
+    /* Shrinks/grows based on text */
+    height: 40px;
+    border-radius: 36px;
+    font-size: 12px;
+    color: var(--clr-accent-3);
+    font-weight: 700;
+}
+
+article>section>div:first-of-type div {
+    background-color: var(--clr-accent-1);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section:nth-of-type(2) {
@@ -130,4 +280,28 @@ section:nth-of-type(2) {
     background-position: top right, center;
     background-size: 180px, cover;
     height: 741px;
+    background-color: var(--clr-black);
+}
+
+h1 {
+    color: var(--clr-gray-900);
+    font-size: clamp(32px, 6vw, 64px);
+}
+
+section>article>section>p {
+    font-size: clamp(16px, 2vw, 20px);
+    color: var(--clr-gray-900);
+    font-weight: 300;
+}
+
+section>article {
+    max-width: 552px;
+    width: 100%;
+}
+
+section:first-of-type figure img {
+    max-width: 656px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
