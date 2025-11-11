@@ -1,38 +1,33 @@
 :root {
-    /* ============================= */
-    /* Colors                        */
-    /* ============================= */
-
-    /* Base / Text */
+    /* Base / Neutral */
     --clr-black: #121826;
-    --clr-gray: #9DA3AE;
-    --clr-gray-light: #E5E7EB;
+    --clr-gray-600: #9DA3AE;
+    --clr-gray-200: #E5E7EB;
+    --clr-gray-100: #DEE9FC;
+    /* Light UI background */
     --clr-white: #FFFFFF;
 
-    /* Brand / Primary Palette */
-    --clr-primary: #4138C2;
-    --clr-primary-light: #C9D2FA;
-    --clr-primary-soft: #DEE9FC;
+    /* Primary */
+    --clr-primary-600: #4138C2;
+    --clr-primary-500: #4E80EE;
+    --clr-primary-300: #C9D2FA;
+    --clr-primary-100: #D5FAF1;
 
-    /* Accent Palette */
-    --clr-accent-blue: #4E80EE;
-    --clr-accent-cyan: #52B3D0;
+    /* Accent */
+    --clr-accent-blue: #52B3D0;
     --clr-accent-green: #5EC269;
-    --clr-accent-purple: #9D59EF;
-    --clr-accent-pink: #C951E7;
+    --clr-accent-purple-600: #9D59EF;
+    --clr-accent-purple-400: #C951E7;
 
-    /* Warm / Highlight Colors */
-    --clr-orange: #E87B35;
-    --clr-touch-gold: #E2B53E;
-    --clr-rose: #E14F62;
+    /* Status / Semantic */
+    --clr-error: #E14F62;
+    --clr-warning: #E2B53E;
+    --clr-alert: #E87B35;
 
-    /* Semantic / Feedback */
-    --clr-success-bg: #E2FBE8;
-    --clr-info-bg: #D5FAF1;
-    --clr-warning-bg: #FCEED8;
-    --clr-error-bg: #FBE5E6;
-
-    /* Extra Soft Background Shades */
-    --clr-soft-yellow: #FDF9C9;
-    --clr-soft-purple: #F1E8FD;
+    /* Soft Background Variants / Pastel UI Tints */
+    --clr-bg-brand-tint: #F1E8FD;
+    --clr-bg-error-tint: #FBE5E6;
+    --clr-bg-warning-tint: #FCEED8;
+    --clr-bg-success-tint: #E2FBE8;
+    --clr-bg-highlight-tint: #FDF9C9;
 }
