@@ -1,50 +1,30 @@
-/* -----------------------------------
-   Modern CSS Reset
------------------------------------ */
+/* Modern CSS Reset */
 
-/* Box sizing rules */
+/* 1. Use a more intuitive box-sizing model */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-/* Remove default margin */
+/* 2. Remove default margin */
 * {
     margin: 0;
-    padding: 0;
 }
 
-/* Prevent font size inflation */
-html {
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
+/* 3. Allow percentage-based heights in the application */
+html,
+body {
+    height: 100%;
 }
 
-/* Make REM units easier to work with */
-html {
-    font-size: 100%;
-    /* 1rem = 16px */
-}
-
-/* Improve text rendering */
+/* 4. Typographic tweaks: improve text rendering */
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
 
-/* Remove list styles if list has a class */
-ul[class],
-ol[class] {
-    list-style: none;
-}
-
-/* Anchor tags without href behave like text */
-a:not([href]) {
-    text-decoration: none;
-}
-
-/* Make images, videos, and canvas elements responsive */
+/* 5. Improve media defaults */
 img,
 picture,
 video,
@@ -54,18 +34,23 @@ svg {
     max-width: 100%;
 }
 
-/* Remove built-in form typography styles */
+/* 6. Inherit fonts for form controls */
 input,
 button,
 textarea,
 select {
     font: inherit;
-    color: inherit;
-    background: none;
-    border: none;
 }
 
-/* Improve text wrapping */
+/* 7. Remove built-in button styles */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* 8. Avoid text overflows */
 p,
 h1,
 h2,
@@ -76,7 +61,7 @@ h6 {
     overflow-wrap: break-word;
 }
 
-/* Create a root stacking context */
+/* 9. Create a root stacking context */
 #root,
 #__next {
     isolation: isolate;

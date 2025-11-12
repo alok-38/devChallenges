@@ -1,21 +1,28 @@
 :root {
-    /* Primary Brand */
+    /* Brand / Primary Palette */
     --clr-primary: #5DB082;
     --clr-primary-dark: #295E48;
     --clr-primary-light: #DEE9FC;
 
-    /* Secondary / Accent */
+    /* Accent / Supporting Colors */
     --clr-accent-1: #6281F7;
     --clr-accent-2: #6D4AE5;
     --clr-accent-3: #263FA9;
     --clr-accent-4: #3C4C98;
+    --clr-accent-5: #F5C044;
 
-    /* Neutrals */
-    --clr-black: #161739;
-    --clr-gray-900: #364153;
-    --clr-gray-500: #C9D0DA;
-    --clr-gray-100: #F6F7FB;
+    /* Neutral Scale */
+    --clr-neutral-100: #F6F7FB;
+    --clr-neutral-200: #C9D0DA;
+    --clr-neutral-300: #DEE9FC;
+    /* also used as light tone */
+    --clr-neutral-800: #364153;
+    --clr-neutral-900: #161739;
 
-    /* Highlights */
-    --clr-warning: #F5C044;
+    /* Background + Text defaults */
+    --clr-bg: var(--clr-neutral-100);
+    --clr-text: var(--clr-neutral-900);
+    --clr-heading: var(--clr-neutral-900);
+    --clr-subdued-text: var(--clr-neutral-800);
+    --clr-border: var(--clr-neutral-200);
 }
