@@ -156,7 +156,7 @@ header figure img {
     width: 656px;
 }
 
-header > div > section {
+header>div>section {
     width: 552px;
 }
 
@@ -219,4 +219,55 @@ header > div > section {
     background-color: #161739;
     padding: 96px 72px;
     height: 741px;
+    margin-top: -450px;
+    position: relative;
+    z-index: 1;
+}
+
+.features h2 {
+    font-size: 36px;
+    font-weight: var(--fw-semi-bold);
+}
+
+.features h2,
+.features h3 {
+    color: #F6F7FB;
+}
+
+.features p {
+    color: #C9D0DA;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.features__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+.features__icon {
+    width: 120px;
+    height: 120px;
+    background-color: #F5C044;
+    border-radius: 12px;
+}
+
+.features__header {
+    width: 510px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 72px;
+}
+
+.features__item {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 260px;
+    align-items: center;
 }
