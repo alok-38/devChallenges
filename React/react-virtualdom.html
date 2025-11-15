@@ -15,28 +15,44 @@
 <body>
     <div id="root"></div>
 
-    <!-- Your React code -->
     <script type="text/babel">
-        const { useState } = React;
+        // ✅ Just declare the data directly (no export/import)
+        const sculptureList = [{
+            name: 'Homenaje a la Neurocirugía',
+            artist: 'Marta Colvin Andrade',
+            description: 'Although Colvin is predominantly known for abstract themes...',
+            url: 'https://i.imgur.com/Mx7dA2Y.jpg',
+            alt: 'A bronze statue of two crossed hands delicately holding a human brain in their fingertips.'
+        },
+        {
+            name: 'Floralis Genérica',
+            artist: 'Eduardo Catalano',
+            description: 'This enormous silver flower...',
+            url: 'https://i.imgur.com/ZF6s192m.jpg',
+            alt: 'A gigantic metallic flower sculpture with reflective mirror-like petals.'
+        }];
 
-        function UserProfile({ name, email }) {
+        function Gallery() {
+            const [index, setIndex] = React.useState(0);
+            const sculpture = sculptureList[index];
+
+            function handleClick() {
+                setIndex((index + 1) % sculptureList.length);
+            }
+
             return (
-                <div>
-                    <h1 id="user-name">{name}</h1>
-                    <p id="user-email">{email}</p>
-                </div>
+                <>
+                    <button onClick={handleClick}>Next</button>
+                    <h2><i>{sculpture.name}</i> by {sculpture.artist}</h2>
+                    <h3>({index + 1} of {sculptureList.length})</h3>
+                    <img src={sculpture.url} alt={sculpture.alt} width="300" />
+                    <p>{sculpture.description}</p>
+                </>
             );
         }
 
         function App() {
-            const [name, setName] = useState("John");
-
-            return (
-                <div>
-                    <UserProfile name={name} email="john@email.com" />
-                    <button onClick={() => setName("Jane")}>Change Name</button>
-                </div>
-            );
+            return <Gallery />;
         }
 
         const root = ReactDOM.createRoot(document.getElementById("root"));
