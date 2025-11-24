@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React in HTML</title>
+    <!-- Load React and ReactDOM from CDN -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Load Babel for JSX support -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="p-2.5">
+    <div id="root"></div>
+    <!-- React code -->
+    <script type="text/babel">
+        function MyButton() {
+            return (
+                <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 active:scale-95 active:bg-blue-800 transition-all mt-2">I'm a button</button>
+            )
+        }
+        function FirstComponent() {
+            return (
+                <article className="border border-blue-500 border-2 rounded-lg max-w-sm mt-5 p-5">
+                    <h2 className="text-2xl mb-5">My first component</h2>
+                    <ol className="italic">
+                        <li>Components: UI Building Blocks</li>
+                        <li>Defining a Component</li>
+                        <li>Using a Component</li>
+                    </ol>
+                </article>
+            );
+        }
+
+        function App() {
+            return (
+                <main>
+                    <h1 className="text-2xl">Hello from React!</h1>
+                    <MyButton />
+                    <FirstComponent />
+                </main>
+            )
+        }
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(<App />);
+    </script>
+</body>
+
+</html>
