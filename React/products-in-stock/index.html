@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React in HTML</title>
+    <!-- Load React and ReactDOM from CDN -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Load Babel for JSX support -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <div id="root"></div>
+    <!-- React code -->
+    <script type="text/babel">
+
+        const user = {
+            name: 'Hedy Lamarr',
+            imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
+            imageSize: 90,
+        };
+
+        function MyButton() {
+            function handleClick() {
+                alert('You clicked me!');
+            }
+            return (
+                <button onClick={handleClick}>
+                    Click me
+                </button>
+            )
+        }
+
+        function AboutPage() {
+            return (
+                <>
+                    <h1>{user.name}</h1>
+                    <p>Hello there.<br />How do you do?</p>
+                    <img
+                        className="avatar"
+                        src={user.imageUrl}
+                        alt={`Photo of ${user.imageUrl}`}
+                        style={{
+                            width: user.imageSize,
+                            height: user.imageSize
+                        }}
+                    />
+                </>
+            )
+        }
+
+        const products = [
+            { title: 'Cabbage', isFruit: false, id: 1 },
+            { title: 'Garlic', isFruit: false, id: 2 },
+            { title: 'Apple', isFruit: true, id: 3 },
+        ];
+
+        function ShoppingList() {
+            const listItems = products.map(product =>
+                <li
+                    key={product.id}
+                    style={{
+                        color: product.isFruit ? 'magenta' : 'darkgreen'
+                    }}
+                >
+                    {product.title}
+                </li>
+            );
+
+            return (
+                <ul>{listItems}</ul>
+            );
+        }
+
+        function App() {
+            return (
+                <>
+                    <h1>Welcome to my app</h1>
+                    <AboutPage />
+                    <MyButton />
+                    <ShoppingList />
+                </>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(<App />);
+    </script>
+</body>
+
+</html>
