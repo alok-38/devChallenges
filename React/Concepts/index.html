@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="output"></div>
+    <script>
+        const output = document.getElementById("output");
+        for (let i = 1; i <= 100; i++) {
+            output.innerHTML += `${i}<br>`;
+
+            // Store numbers in an array
+            const numbers = [];
+            for (let i = 1; i <= 100; i++) {
+                numbers.push(i);
+            }
+            console.log(numbers);
+        }
+
+        // Print only even numbers
+        let result = "";
+
+        for (let i = 1; i <= 100; i++) {
+            if (i % 2 === 0) {
+                result += `${i}<br>`;
+            }
+        }
+
+        output.innerHTML = result;
+
+        // Even Cleaner
+        for (let i = 2; i <= 100; i += 2) {
+            result += `${i}<br>`;
+        }
+
+        output.innerHTML = result;
+        // Bonus: Using Array & Filter (Great for React Prep)
+        const evens = Array.from({ length: 100 }, (_, i) => i + 1)
+            .filter(n => n % 2 === 0)
+            .join("<br>");
+
+        output.innerHTML = evens;
+
+        // odd numbers
+        for (let i = 1; i <= 100; i++) {
+            if (i % 2 !== 0) {
+                result += `${i}<br>`;
+            }
+        }
+        // Lexical Scope (also called Static Scope)
+        function outer() {
+            let name = "Alok";
+            function inner() {
+                console.log(name);
+            }
+            inner();
+        }
+        outer();
+
+        // Simple closure example
+        function makeCounter() {
+            let count = 0;
+
+            return function () {
+                count++;
+                console.log(count);
+            }
+        }
+
+        const counter = makeCounter();
+        counter();
+        counter();
+
+    </script>
+</body>
+
+</html>

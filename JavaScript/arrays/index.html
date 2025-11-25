@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible To-Do UI</title>
+</head>
+
+<body>
+
+    <!-- Text input with label -->
+    <label for="taskInput">Task name</label>
+    <input type="text" id="taskInput" aria-required="true">
+
+    <!-- Buttons grouped with fieldset -->
+    <fieldset class="tasks">
+        <legend>Task actions</legend>
+
+        <button type="button" id="addBtn" aria-label="Add task">Add</button>
+        <button type="button" id="deleteBtn" aria-label="Delete selected tasks">Delete</button>
+        <button type="button" id="displayBtn" aria-label="Display all tasks">Display</button>
+    </fieldset>
+
+    <!-- display Task -->
+    <ul>
+
+    </ul>
+
+    <!-- Filters section -->
+    <fieldset class="filters">
+        <legend>Filter tasks</legend>
+
+        <div>
+            <input type="checkbox" name="all" id="all">
+            <label for="all">All</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="completed" id="completed">
+            <label for="completed">Completed</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="pending" id="pending">
+            <label for="pending">Pending</label>
+        </div>
+    </fieldset>
+
+    <!-- Optional: ARIA live region for updates (useful for task apps) -->
+    <div id="status" aria-live="polite" style="margin-top: 1rem;"></div>
+
+    <script>
+        const inputEl = document.getElementById('taskInput');
+        const addBtn = document.getElementById('addBtn');
+        const deleteBtn = document.getElementById('deleteBtn');
+        const displayBtn = document.getElementById('displayBtn');
+        const allCheckBox = document.getElementById('all');
+        const completedCheckBox = document.getElementById('completed');
+        const pendingCheckBox = document.getElementById('pending');
+
+        const allValue = allCheckBox.checked;
+        const completedValue = completedCheckBox.checked;
+        const PendingValue = pendingCheckBox.checked;
+
+        const ulEl = document.querySelector('ul');
+
+        function addTask() {
+            const inputValue = inputEl.value;
+            const liEl = document.createElement('li');
+            liEl.textContent = inputValue;
+            ulEl.appendChild(liEl);
+            inputEl.value = "";
+        }
+        addBtn.addEventListener('click', addTask);
+
+        function deleteTask() {
+            ulEl.textContent = "";
+        }
+        deleteBtn.addEventListener('click', deleteTask);
+
+        function displayTask() {
+            
+        }
+    </script>
+
+</body>
+
+</html>

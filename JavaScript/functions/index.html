@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div class="numbers">
+        <input type="number" id="number1" placeholder="Enter first number">
+        <input type="number" id="number2" placeholder="Enter second number">
+    </div>
+
+    <div class="functions">
+        <button id="add">Add</button>
+        <button id="subtract">Subtract</button>
+        <button id="multiply">Multiply</button>
+        <button id="divide">Divide</button>
+    </div>
+
+    <div id="output"></div>
+
+    <script>
+        const firstInputEl = document.getElementById('number1');
+        const secondInputEl = document.getElementById('number2');
+        const outputEl = document.getElementById('output');
+
+        function getNumbers() {
+            return {
+                num1: parseFloat(firstInputEl.value),
+                num2: parseFloat(secondInputEl.value)
+            };
+        }
+
+        function add() {
+            const { num1, num2 } = getNumbers();
+            outputEl.textContent = num1 + num2;
+        }
+
+        function subtract() {
+            const { num1, num2 } = getNumbers();
+            outputEl.textContent = num1 - num2;
+        }
+
+        function multiply() {
+            const { num1, num2 } = getNumbers();
+            outputEl.textContent = num1 * num2;
+        }
+
+        function divide() {
+            const { num1, num2 } = getNumbers();
+            if (num2 === 0) {
+                outputEl.textContent = "Cannot divide by zero";
+                return;
+            }
+            outputEl.textContent = num1 / num2;
+        }
+
+        document.getElementById('add').addEventListener('click', add);
+        document.getElementById('subtract').addEventListener('click', subtract);
+        document.getElementById('multiply').addEventListener('click', multiply);
+        document.getElementById('divide').addEventListener('click', divide);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even / Odd Generator</title>
+</head>
+
+<body>
+
+    <input type="number" id="number" placeholder="Enter a number">
+    <div id="output"></div>
+
+    <div class="btn">
+        <button id="showEven">Show Even</button>
+        <button id="showOdd">Show Odd</button>
+    </div>
+
+    <script>
+        const inputEl = document.getElementById('number');
+        const outputEl = document.getElementById('output');
+
+        const evenBtn = document.getElementById('showEven');
+        const oddBtn = document.getElementById('showOdd');
+
+        evenBtn.addEventListener('click', () => {
+            const num = parseInt(inputEl.value);
+            outputEl.innerHTML = "";  // clear
+
+            for (let i = 1; i <= num; i++) {
+                if (i % 2 === 0) {
+                    outputEl.innerHTML += `${i}<br>`;
+                }
+            }
+        });
+
+        oddBtn.addEventListener('click', () => {
+            const num = parseInt(inputEl.value);
+            outputEl.innerHTML = "";  // clear
+
+            for (let i = 1; i <= num; i++) {
+                if (i % 2 !== 0) {
+                    outputEl.innerHTML += `${i}<br>`;
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
