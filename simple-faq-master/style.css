@@ -106,3 +106,9 @@ a {
         width: 100%;
     }
 }
+
+@media (max-width: 412px) {
+    main {
+        max-width: 90%;
+    }
+}
