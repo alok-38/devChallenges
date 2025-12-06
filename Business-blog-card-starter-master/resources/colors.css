@@ -1,0 +1,17 @@
+:root {
+    /* BASE COLORS */
+    --color-white: #FFFFFF;
+    --color-offwhite: #F2F5F9;
+
+    --color-dark: #111729;
+    --color-gray: #4A5567;
+
+    /* SEMANTIC TOKENS */
+    --color-bg: var(--color-offwhite);
+    --color-bg-card: var(--color-white);
+
+    --color-text-main: var(--color-dark);
+    --color-text-muted: var(--color-gray);
+
+    --color-border: var(--color-gray);
+}

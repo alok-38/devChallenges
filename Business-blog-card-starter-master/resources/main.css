@@ -1,0 +1,107 @@
+@import url(reset.css);
+@import url(typography.css);
+@import url(colors.css);
+
+body {
+    font-family: var(--font-body);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-offwhite);
+}
+
+main {
+    max-width: 418px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--color-white);
+    overflow: hidden;
+}
+
+h1,h2 {
+    font-family: var(--font-title);
+    color: var(--color-dark);
+}
+
+figure img {
+    mask: radial-gradient(60% 70px at bottom, #0000 98%, #000);
+    /* rounded edge at the top */
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 354px;
+    width: 100%;
+    margin: auto;
+}
+
+article h1,
+article p {
+    line-height: 150%;
+}
+
+h1 {
+    letter-spacing: -0.05em;
+    font-size: clamp(1.25rem, 2vw + 0.5rem, 1.5rem);
+    /* 20px → 24px */
+    font-weight: 600;
+}
+
+article p {
+    font-size: clamp(0.875rem, 1vw + 0.5rem, 1rem);
+    /* 14px → 16px */
+}
+
+article p,
+footer p {
+    color: var(--color-gray);
+}
+
+footer {
+    display: flex;
+    padding: 2rem 0 1rem 2rem;
+    align-items: center;
+    gap: 12px;
+}
+
+footer img {
+    height: 44px;
+    width: 44px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer h2 {
+    font-size: 1rem;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media (max-width: 412px) {
+    body {
+        padding: 0 8px;
+    }
+
+    main {
+        max-width: 396px;
+        width: 100%;
+    }
+
+    article {
+        max-width: 335.37px;
+        width: 100%;
+        margin: auto;
+    }
+}

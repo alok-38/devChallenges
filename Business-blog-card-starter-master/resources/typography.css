@@ -1,0 +1,33 @@
+@import url(font-face.css);
+
+:root {
+    /* FONT FAMILIES */
+    --font-body: "Lato", sans-serif;
+    --font-title: "Poppins", sans-serif;
+
+    /* FONT WEIGHTS */
+    --fw-thin: 100;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-black: 900;
+    --fw-title: 600;
+
+    /* FONT SIZES */
+    --fs-body: 1rem;
+    /* 16px */
+    --fs-small: 1rem;
+    /* 16px */
+    --fs-title: 1.5rem;
+    /* 24px */
+
+    /* LINE HEIGHTS (recommended) */
+    --lh-body: 1.6;
+    --lh-title: 1.3;
+
+    /* OPTIONAL COLOR TOKENS (can be updated later) */
+    --color-black: #000000;
+    --color-gray-700: #4D5562;
+    --color-gray-300: #D9D9D9;
+    --color-gray-50: #F8FAFC;
+}
