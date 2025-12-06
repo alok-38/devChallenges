@@ -1,0 +1,156 @@
+@import url(reset.css);
+@import url(typography.css);
+@import url(colors.css);
+
+body {
+    font-family: var(--font-body);
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    object-fit: cover;
+}
+
+img {
+    width: 160px;
+    height: 160px;
+}
+
+.container {
+    padding: 42px 32px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.seperator {
+    height: 15.43px;
+    width: 175.03px;
+    display: block;
+    margin: 42px auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    gap: 60px;
+    cursor: pointer;
+
+    /* Interaction styling */
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+
+    border-radius: 12px;
+    padding: 20px;
+    background: #fff;
+
+    /* Subtle resting shadow */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover: lift + stronger shadow */
+article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background-color: #f8faff;
+    /* very light hover tint */
+}
+
+/* Keyboard navigation focus */
+article:focus,
+article:focus-visible {
+    outline: 2px solid #4D5562;
+    /* your gray-700 */
+    outline-offset: 4px;
+    transform: translateY(-2px);
+}
+
+/* Active: press down */
+article:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    background-color: #f0f4f8;
+    /* slightly darker press color */
+}
+
+
+article img {
+    border-radius: 16px;
+}
+
+h1,
+h2 {
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);
+    /* 24px → 36px */
+    letter-spacing: -0.01em;
+    text-align: center;
+}
+
+h2 {
+    font-size: clamp(1rem, 2vw + 0.5rem, 1.25rem);
+    /* 16px → 20px */
+}
+
+p {
+    font-size: 14px;
+    color: var(--color-gray-700);
+}
+
+@media (max-width: 412px) {
+    .container {
+        max-width: 412px;
+        width: 100%;
+        padding: 42px 32px;
+        margin: auto;
+    }
+
+    header {
+        max-width: 348px;
+        width: 100%;
+    }
+
+    .seperator {
+        margin: 42px auto;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 52px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}

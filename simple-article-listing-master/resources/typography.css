@@ -1,0 +1,27 @@
+@import url(font-face.css);
+:root {
+    /* FONT FAMILY */
+    --font-heading: "Poppins", sans-serif;
+    --font-body: "Poppins", sans-serif;
+
+    /* FONT WEIGHTS */
+    --fw-heading: 600;
+    /* Semibold */
+    --fw-small-heading: 600;
+    /* Semibold */
+    --fw-small-text: 500;
+    /* Medium */
+
+    /* FONT SIZES (px + rem) */
+    --fs-heading: 2.25rem;
+    /* 36px */
+    --fs-small-heading: 1.25rem;
+    /* 20px */
+    --fs-small-text: 0.875rem;
+    /* 14px */
+
+    /* LINE HEIGHTS (optional, recommended) */
+    --lh-heading: 1.2;
+    --lh-small-heading: 1.3;
+    --lh-small-text: 1.5;
+}

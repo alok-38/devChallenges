@@ -1,0 +1,84 @@
+/* -----------------------------------------
+   Modern CSS Reset
+----------------------------------------- */
+
+/* 1. Use a more intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* 3. Allow percentage-based heights */
+html,
+body {
+    height: 100%;
+}
+
+/* 4. Improve text rendering */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Remove list styles when using list-role elements */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+/* 6. Reset anchor styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 7. Make images easier to work with */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 8. Inherit fonts */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 9. Remove animations for users who prefer no motion */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

@@ -1,0 +1,13 @@
+:root {
+    /* PRIMARY COLORS */
+    --color-black: #000000;
+    --color-gray-700: #4D5562;
+    --color-gray-300: #D9D9D9;
+    --color-gray-50: #F8FAFC;
+
+    /* SEMANTIC ALIASES */
+    --color-text-main: var(--color-black);
+    --color-text-muted: var(--color-gray-700);
+    --color-border: var(--color-gray-300);
+    --color-bg-light: var(--color-gray-50);
+}
