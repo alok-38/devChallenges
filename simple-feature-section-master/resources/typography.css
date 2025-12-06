@@ -1,0 +1,45 @@
+@import url(font-face.css);
+
+:root {
+    /* ================================
+     FONT FAMILY
+     ================================ */
+    --ff-main: "Outfit", system-ui, sans-serif;
+
+    /* ================================
+     FONT WEIGHTS
+     ================================ */
+    --fw-regular: 400;
+    --fw-semibold: 600;
+
+    /* ================================
+     FONT SIZES - FLUID RESPONSIVE
+     ================================ */
+
+    /* Heading — 40px → responsive */
+    --fs-heading: clamp(2rem, 1.5vw + 1.8rem, 2.5rem);
+
+    /* Small Heading — 20px → responsive */
+    --fs-small-heading: clamp(1.125rem, 1vw + 1rem, 1.25rem);
+
+    /* Body Text — 16px → responsive */
+    --fs-body: clamp(0.95rem, 0.3vw + 0.9rem, 1rem);
+
+    /* ================================
+     COLORS (example palette)
+     ================================ */
+    --color-bg: #ffffff;
+    --color-surface: #f2f5f9;
+    --color-dark: #111729;
+    --color-text: #4a5567;
+
+    /* ================================
+     SPACING SCALE
+     ================================ */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2rem;
+}

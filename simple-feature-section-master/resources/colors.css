@@ -1,0 +1,31 @@
+:root {
+    /* ======================================
+     BRAND / PRIMARY COLORS
+     ====================================== */
+    --color-primary: #121826;
+    /* Very dark blue-gray */
+    --color-secondary: #212936;
+    /* Slightly lighter dark-blue */
+
+    /* ======================================
+     TEXT COLORS
+     ====================================== */
+    --color-text-main: #121826;
+    --color-text-muted: #9DA3AE;
+    --color-text-light: #E5E7EB;
+
+    /* ======================================
+     GRAYS / NEUTRALS
+     ====================================== */
+    --gray-100: #E5E7EB;
+    --gray-200: #D2D5DA;
+    --gray-300: #9DA3AE;
+    --gray-900: #121826;
+
+    /* ======================================
+     ACCENT / FEEDBACK COLORS
+     ====================================== */
+    --accent-blue: #DEE9FC;
+    --accent-red: #FBE5E6;
+    --accent-yellow: #FCEED8;
+}
