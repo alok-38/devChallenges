@@ -1,0 +1,23 @@
+:root {
+    /* Primary Palette */
+    --clr-primary-500: #5DB082;
+    --clr-primary-600: #295E48;
+
+    /* Secondary / Accent */
+    --clr-accent-blue-500: #6281F7;
+    --clr-accent-blue-600: #263FA9;
+    --clr-accent-blue-700: #3C4C98;
+    --clr-accent-purple-500: #6D4AE5;
+
+    /* Surface / Background */
+    --clr-surface-100: #F6F7FB;
+    --clr-surface-200: #DEE9FC;
+
+    /* Neutral / Gray Scale */
+    --clr-gray-900: #161739;
+    --clr-gray-800: #364153;
+    --clr-gray-500: #C9D0DA;
+
+    /* Utility */
+    --clr-warning: #F5C044;
+}

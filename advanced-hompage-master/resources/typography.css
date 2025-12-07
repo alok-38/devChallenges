@@ -1,9 +1,12 @@
 @import url(font-face.css);
 
+/* ================================
+   ROOT VARIABLES
+   ================================ */
 :root {
-    --font-primary: "Sora", sans-serif;
+    --ff-base: "Sora", system-ui, -apple-system, sans-serif;
 
-    /* Font Sizes */
+    /* Font sizes */
     --fs-heading-1: 4rem;
     /* 64px */
     --fs-heading-2: 2.25rem;
@@ -17,13 +20,13 @@
     --fs-small: 0.875rem;
     /* 14px */
 
-    /* Font Weights */
-    --fw-thin: 100;
-    --fw-extra-light: 200;
-    --fw-light: 300;
+    /* Line heights (recommended defaults) */
+    --lh-heading: 1.1;
+    --lh-body: 1.6;
+
+    /* Font weights */
     --fw-regular: 400;
     --fw-medium: 500;
-    --fw-semi-bold: 600;
+    --fw-semibold: 600;
     --fw-bold: 700;
-    --fw-extra-bold: 800;
 }
