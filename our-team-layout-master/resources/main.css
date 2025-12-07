@@ -20,6 +20,10 @@ main {
     overflow: hidden;
 }
 
+article {
+    height: 288px;
+}
+
 .intro {
     padding: 32px;
     display: flex;
@@ -27,6 +31,37 @@ main {
     gap: 12px;
     max-width: 568px;
     width: 100%;
+}
+
+h5 {
+    color: #263FA9;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+}
+
+p,
+.cta {
+    font-size: 1rem;
+    color: #394150;
+    font-weight: normal;
+}
+
+.member {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+
+span {
+    font-size: 15px;
+    color: #F3F4F6;
+    font-weight: normal;
 }
 
 .member,
@@ -37,24 +72,86 @@ main {
 
 .cta {
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    gap: 4px;
+}
+
+.cta img {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.liam,
+.sophia,
+.ethan,
+.isabella,
+.noah {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .liam {
     background-color: #C1B6F8;
+    background-image: url(./person_1.png);
 }
 
 .sophia {
     background-color: #EDACD2;
+    background-image: url(./person_1.png);
 }
 
 .ethan {
     background-color: #9DC4F8;
+    background-image: url(./person_1.png);
 }
 
 .isabella {
     background-color: #F8D8B0;
+    background-image: url(./person_1.png);
 }
 
 .noah {
     background-color: #86E7D4;
+    background-image: url(./person_1.png);
+}
+
+/* Grid layout */
+.team-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+/* Top row */
+.team-grid .intro {
+    grid-column: 1 / 3;
+    /* spans the 2fr + first 1fr? NO → spans TWO columns = 2fr */
+}
+
+.team-grid .member.liam {
+    grid-column: 3;
+}
+
+.team-grid .member.sophia {
+    grid-column: 4;
+}
+
+/* Bottom row */
+.team-grid .cta {
+    grid-column: 1;
+}
+
+.team-grid .member.ethan {
+    grid-column: 2;
+}
+
+.team-grid .member.isabella {
+    grid-column: 3;
+}
+
+.team-grid .member.noah {
+    grid-column: 4;
 }
