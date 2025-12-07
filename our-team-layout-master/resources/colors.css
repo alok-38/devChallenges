@@ -1,0 +1,17 @@
+:root {
+    /* Neutral / Grayscale */
+    --clr-white: #FFFEFE;
+    --clr-gray-100: #F3F4F6;
+    --clr-gray-700: #394150;
+    --clr-black: #000000;
+
+    /* Primary Brand Colors */
+    --clr-primary: #263FA9;
+
+    /* Accent Colors */
+    --clr-accent-mint: #86E7D4;
+    --clr-accent-blue: #9DC4F8;
+    --clr-accent-purple: #C1B6F8;
+    --clr-accent-pink: #EDACD2;
+    --clr-accent-peach: #F8D8B0;
+}
