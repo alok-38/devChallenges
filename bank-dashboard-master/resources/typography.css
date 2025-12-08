@@ -1,0 +1,28 @@
+@import url(font-face.css);
+:root {
+  /* Font family */
+  --font-primary: "Outfit", sans-serif;
+
+  /* ----------------------------- */
+  /*         FONT SIZES            */
+  /* ----------------------------- */
+
+  /* Label & Body Text */
+  --text-body-size: 1rem;      /* 16px */
+  --text-body-weight: 400;     /* Regular */
+  --text-body-weight-medium: 500;
+  --text-body-weight-bold: 700;
+
+  /* Price Text */
+  --text-price-size: 1.5rem;   /* 24px */
+  --text-price-weight: 700;
+
+  /* Credit Card Number Text */
+  --text-cc-size: 1.25rem;     /* 20px */
+  --text-cc-weight: 800;
+
+  /* Line Heights (optional) */
+  --lh-tight: 1.1;
+  --lh-normal: 1.4;
+  --lh-loose: 1.6;
+}

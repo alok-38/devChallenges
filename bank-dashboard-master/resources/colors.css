@@ -1,0 +1,24 @@
+:root {
+    /* Base / Neutral */
+    --clr-white: #FFFFFF;
+    --clr-dark-1: #262833;
+    --clr-dark-2: #43454D;
+    --clr-neutral-1: #E3ECE6;
+    --clr-neutral-2: #6C727F;
+
+    /* Accent Colors */
+    --clr-accent-1: #E4D6F3;
+    /* light purple */
+    --clr-accent-2: #F5DDC8;
+    /* light peach */
+    --clr-accent-3: #73B06F;
+    /* green */
+    --clr-accent-4: #A686C4;
+    /* purple */
+    --clr-accent-5: #E9AE79;
+    /* orange */
+
+    /* Transparency */
+    --clr-white-20: #FFFFFF33;
+    /* 20% white overlay */
+}
