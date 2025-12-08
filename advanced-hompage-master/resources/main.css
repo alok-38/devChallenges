@@ -30,6 +30,11 @@ nav {
     padding: 24px 72px 124px 72px;
 }
 
+.hero__content {
+    display: flex;
+    justify-content: space-between;
+}
+
 .hero__wrapper div article {
     flex-direction: column;
     gap: 82px;
@@ -192,4 +197,142 @@ section:first-of-type p:not(.hero__version p) {
     padding: 16px 36px;
     border-radius: 39px;
     width: 182px;
+}
+
+figure img {
+    margin-top: -50px;
+    /* adjusts how high the image sits */
+}
+
+.feature {
+    background-color: var(--clr-gray-900);
+    padding: 96px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    background-image: url(../resources/section_bg_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.feature div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.feature h2 {
+    font-size: 36px;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+.feature h2,
+.feature h3 {
+    color: var(--clr-surface-100);
+}
+
+.feature h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.feature__item-title {
+    width: 200px;
+}
+
+.feature p {
+    color: var(--clr-gray-500);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.feature__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1136px;
+    margin: auto;
+    gap: 32px;
+}
+
+.feature__item {
+    max-width: 260px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.feature__item img {
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+}
+
+.feature__item>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+}
+
+.pallete {
+    background-color: #6281F7;
+}
+
+.target {
+    background-color: #F5C044;
+}
+
+.flower {
+    background-color: #5DB082;
+}
+
+.gear {
+    background-color: #6D4AE5;
+}
+
+section:nth-of-type(3) {
+    padding: 96px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+section:nth-of-type(3) article {
+    display: flex;
+    justify-content: space-between;
+}
+
+section:nth-of-type(3) article div:first-of-type:not(.pallete) {
+    max-width: 552px;
+    width: 100%;
+}
+
+section:nth-of-type(3) .pallete {
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    padding: 96px 72px;
+    background-color: #161739;
+}
+
+footer section {
+    display: flex;
+}
+
+.footer__links {
+    display: flex;
 }
