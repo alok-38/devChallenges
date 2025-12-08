@@ -64,7 +64,7 @@ nav {
     padding: 8px;
 }
 
-.hero__version  p {
+.hero__version p {
     color: #263FA9;
     letter-spacing: -1%;
     font-size: 12px;
@@ -75,4 +75,121 @@ nav {
     width: 9.33px;
     height: 10.85px;
     object-fit: cover;
+}
+
+button {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--clr-gray-800);
+    font-family: inherit;
+}
+
+.hero__nav-cta {
+    display: flex;
+    gap: 27px;
+}
+
+.hero__nav-cta button:first-of-type,
+.hero__cta button:last-of-type {
+    color: #364153;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    /* Smooth transitions */
+    transition:
+        color 0.25s ease,
+        background-color 0.25s ease,
+        transform 0.2s ease,
+        box-shadow 0.25s ease;
+}
+
+/* Hover */
+.hero__nav-cta button:first-of-type:hover,
+.hero__cta button:last-of-type:hover {
+    color: #1d2633;
+}
+
+/* Focus (keyboard) */
+.hero__nav-cta button:first-of-type:focus,
+.hero__cta button:last-of-type:focus,
+.hero__nav-cta button:first-of-type:focus-visible,
+.hero__cta button:last-of-type:focus-visible {
+    outline-offset: 3px;
+}
+
+/* Active / Press */
+.hero__nav-cta button:first-of-type:active,
+.hero__cta button:last-of-type:active {
+    transform: scale(0.97);
+}
+
+
+.hero__nav-cta button:last-of-type {
+    border-radius: 37px;
+    padding: 12px 24px;
+    width: 112px;
+    height: 44px;
+}
+
+.hero__cta-background {
+    background-color: var(--clr-primary-600);
+    color: var(--clr-surface-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Smooth transitions */
+    transition:
+        background-color 0.25s ease,
+        transform 0.2s ease,
+        box-shadow 0.25s ease;
+}
+
+/* Hover effect */
+.hero__cta-background:hover {
+    background-color: var(--clr-primary-500);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+/* Focus / keyboard focus */
+.hero__cta-background:focus,
+.hero__cta-background:focus-visible {
+    outline: 3px solid var(--clr-primary-300);
+    outline-offset: 3px;
+
+}
+
+/* Active / Press */
+.hero__cta-background:active {
+    transform: translateY(0);
+    /* background-color: var(--clr-primary-700); */
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.18);
+}
+
+section:first-of-type h1,
+section:first-of-type p {
+    color: var(--clr-gray-800);
+}
+
+section:first-of-type h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+section:first-of-type p:not(.hero__version p) {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.hero__cta {
+    display: flex;
+    gap: 36px;
+}
+
+.hero__cta button:first-of-type {
+    padding: 16px 36px;
+    border-radius: 39px;
+    width: 182px;
 }
