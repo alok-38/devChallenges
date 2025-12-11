@@ -39,9 +39,11 @@ body {
     font-weight: 500;
 }
 
-.side-nav {
+.sidebar {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
 }
 
 ul,
@@ -85,4 +87,12 @@ li:nth-of-type(2) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.inventory-details {
+    max-width: 750px;
+}
+
+.layout {
+    display: flex;
 }

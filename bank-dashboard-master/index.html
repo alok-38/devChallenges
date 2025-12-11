@@ -24,141 +24,177 @@
     </div>
   </nav>
 
-  <section class="side-nav">
-    <a href="#">
-      <img src="resources/House.svg" alt="house">
-      Dashboard
-    </a>
-    <h5>Analytics</h5>
-    <ul>
-      <li>
-        <a href="#">
-          <img src="resources/show chart-1.svg" alt="chart">
-          Performance
+  <div class="layout">
+    <section class="sidebar">
+      <article class="sidebar__section">
+
+        <a class="sidebar__link" href="#">
+          <img class="sidebar__icon" src="resources/House.svg" alt="house">
+          <span class="sidebar__label">Dashboard</span>
         </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="resources/Archery.svg" alt="Archery">
-          Hotjar
 
-        </a>
-        <div class="side-nav__new">New</div>
-      </li>
-    </ul>
-    <h5>Support</h5>
-    <ul>
-      <li>
-        <a href="#">
-          <img src="resources/ticket.svg" alt="tickets">
-          Tickets
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="resources/users.svg" alt="users">
-          Agents
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <img src="resources/users.svg" alt="users">
-          Customers
-        </a>
-      </li>
-    </ul>
-    <h5>SHOP</h5>
-    <ul>
-      <li>
-        <a href="#">
-          <img src="resources/basket.svg" alt="basket">
-          Products
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="resources/shop.svg" alt="shop">
-          Orders
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="resources/chat info.svg" alt="info">
-          Reports
-        </a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <a href="#">
-          <img src="resources/Setting.svg" alt="gear">
-          Settings
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="resources/Logout.svg" alt="logout">
-          Logout
-        </a>
-      </li>
-    </ul>
-  </section>
+        <h5 class="sidebar__title">Analytics</h5>
 
-  Inventory Details
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#">
+              <img class="sidebar__icon" src="resources/show chart-1.svg" alt="chart">
+              <span class="sidebar__label">Performance</span>
+            </a>
+          </li>
 
-  Your balance
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#">
+              <img class="sidebar__icon" src="resources/Archery.svg" alt="Archery">
+              <span class="sidebar__label">Hotjar</span>
+            </a>
+            <div class="sidebar__badge sidebar__badge--new">New</div>
+          </li>
+        </ul>
 
-  $25,330
+        <h5 class="sidebar__title">Support</h5>
 
-  3 cards
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#">
+              <img class="sidebar__icon" src="resources/ticket.svg" alt="tickets">
+              <span class="sidebar__label">Tickets</span>
+            </a>
+          </li>
 
-  Details
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#">
+              <img class="sidebar__icon" src="resources/users.svg" alt="users">
+              <span class="sidebar__label">Agents</span>
+            </a>
+          </li>
 
-  Shopping Card
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#">
+              <img class="sidebar__icon" src="resources/users.svg" alt="users">
+              <span class="sidebar__label">Customers</span>
+            </a>
+          </li>
+        </ul>
 
-  NAME
+        <h5 class="sidebar__title">Shop</h5>
 
-  **** **** 0928
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#">
+              <img class="sidebar__icon" src="resources/basket.svg" alt="basket">
+              <span class="sidebar__label">Products</span>
+            </a>
+          </li>
 
-  **** **** 4486
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#">
+              <img class="sidebar__icon" src="resources/shop.svg" alt="shop">
+              <span class="sidebar__label">Orders</span>
+            </a>
+          </li>
 
-  Exp 26/6
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#">
+              <img class="sidebar__icon" src="resources/chat info.svg" alt="info">
+              <span class="sidebar__label">Reports</span>
+            </a>
+          </li>
+        </ul>
+      </article>
 
-  Add Card
+      <article class="sidebar__footer">
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#">
+              <img class="sidebar__icon" src="resources/Setting.svg" alt="gear">
+              <span class="sidebar__label">Settings</span>
+            </a>
+          </li>
 
-  Card details
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#">
+              <img class="sidebar__icon" src="resources/Logout.svg" alt="logout">
+              <span class="sidebar__label">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </article>
+    </section>
 
-  **** **** 7800
 
-  Card number
+    <!-- INVENTORY SECTION -->
+    <section class="inventory">
+      <h2 class="inventory__heading">Inventory Details</h2>
 
-  **** 1234 4567 7800
+      <div class="inventory__balance">
+        <span class="inventory__balance-label">Your balance</span>
+        <span class="inventory__balance-amount">$25,330</span>
+        <span class="inventory__balance-cards">3 cards</span>
+      </div>
 
-  Expire date
+      <div class="inventory__details">
+        <h3 class="inventory__subheading">Details</h3>
 
-  08/28
+        <div class="inventory__card inventory__card--primary">
+          <h4 class="inventory__card-title">Shopping Card</h4>
+          <span class="inventory__field-label">Name</span>
 
-  cvv
+          <span class="inventory__card-number">**** **** 0928</span>
+          <span class="inventory__card-number">**** **** 4486</span>
+          <span class="inventory__card-exp">Exp 26/6</span>
 
-  Level
+          <button class="inventory__button inventory__button--add">Add Card</button>
+        </div>
 
-  Spending limits
+        <div class="inventory__card-details">
+          <h4 class="inventory__subheading">Card details</h4>
 
-  Daily Transaction Limit
+          <span class="inventory__card-number">**** **** 7800</span>
 
-  $400 spent of $2000
+          <div class="inventory__field">
+            <span class="inventory__field-label">Card number</span>
+            <span class="inventory__field-value">**** 1234 4567 7800</span>
+          </div>
 
-  Earnings
+          <div class="inventory__field">
+            <span class="inventory__field-label">Expire date</span>
+            <span class="inventory__field-value">08/28</span>
+          </div>
 
-  $12,341
+          <div class="inventory__field">
+            <span class="inventory__field-label">CVV</span>
+            <span class="inventory__field-value">Level</span>
+          </div>
+        </div>
 
-  Spendings
+        <div class="inventory__limits">
+          <h4 class="inventory__subheading">Spending limits</h4>
 
-  $4,009
+          <div class="inventory__metric">
+            <span class="inventory__metric-label">Daily Transaction Limit</span>
+            <span class="inventory__metric-value">$400 spent of $2000</span>
+          </div>
 
-  Goals
+          <div class="inventory__metric">
+            <span class="inventory__metric-label">Earnings</span>
+            <span class="inventory__metric-value">$12,341</span>
+          </div>
 
-  $8,098
+          <div class="inventory__metric">
+            <span class="inventory__metric-label">Spendings</span>
+            <span class="inventory__metric-value">$4,009</span>
+          </div>
+
+          <div class="inventory__metric">
+            <span class="inventory__metric-label">Goals</span>
+            <span class="inventory__metric-value">$8,098</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
 
 
 </body>
