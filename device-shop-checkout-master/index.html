@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Device shop checkout page" />
+
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
+
+  <title>Device Shop Checkout | devChallenges.io</title>
+
+  <link rel="stylesheet" href="resources/css/main.css" />
+</head>
+
+<body>
+  <!-- ================= Header ================= -->
+  <header class="site-header" role="banner"></header>
+
+  <div class="wrapper page">
+    <h1 class="page__title">
+      Checkout
+      <span class="page__badge" aria-live="polite">3 ITEMS</span>
+    </h1>
+
+    <!-- ================= Main Content ================= -->
+    <main id="main-content" class="wrapper checkout" role="main">
+
+      <!-- ================= Cart Summary ================= -->
+      <section class="checkout__cart" aria-labelledby="cart-heading">
+        <ul class="cart__list" role="list" aria-label="Cart items">
+
+          <li class="cart__item">
+            <article class="cart-item" aria-labelledby="item-iphone-title">
+              <div class="cart-item__image">
+                <img src="resources/Gold.png" alt="iPhone 12 Pro in gold color" />
+              </div>
+
+              <div class="cart-item__content">
+                <div class="cart-item__details">
+                  <div class="cart-item__info">
+                    <h3 id="item-iphone-title" class="cart-item__title">iPhone 12 Pro</h3>
+                    <p class="cart-item__variant">Golden</p>
+                  </div>
+                  <p class="cart-item__price">
+                    <strong>$999.00</strong>
+                  </p>
+                </div>
+
+                <div class="cart-item__actions">
+                  <span class="cart-item__quantity" aria-label="Quantity">x 1</span>
+                  <button class="cart-item__remove" type="button" aria-label="Remove iPhone 12 Pro from cart">
+                    <img src="resources/close-icon.svg" alt="" aria-hidden="true" />
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="cart__item">
+            <article class="cart-item" aria-labelledby="item-watch-title">
+              <div class="cart-item__image">
+                <img src="resources/Apple-watch.png" alt="Apple Watch in blue color" />
+              </div>
+
+              <div class="cart-item__content">
+                <div class="cart-item__details">
+                  <div class="cart-item__info">
+                    <h3 id="item-watch-title" class="cart-item__title">Apple Watch</h3>
+                    <p class="cart-item__variant">Blue</p>
+                  </div>
+                  <p class="cart-item__price">
+                    <strong>$399.00</strong>
+                  </p>
+                </div>
+
+                <div class="cart-item__actions">
+                  <span class="cart-item__quantity">x 1</span>
+                  <button class="cart-item__remove" type="button">
+                    <img src="resources/close-icon.svg" alt="" aria-hidden="true" />
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="cart__item">
+            <article class="cart-item" aria-labelledby="item-imac-title">
+              <div class="cart-item__image">
+                <img src="resources/iMac.png" alt="iMac in green color" />
+              </div>
+
+              <div class="cart-item__content">
+                <div class="cart-item__details">
+                  <div class="cart-item__info">
+                    <h3 id="item-imac-title" class="cart-item__title">iMac</h3>
+                    <p class="cart-item__variant">Green</p>
+                  </div>
+                  <p class="cart-item__price">
+                    <strong>$1,199.00</strong>
+                  </p>
+                </div>
+
+                <div class="cart-item__actions">
+                  <span class="cart-item__quantity">x 1</span>
+                  <button class="cart-item__remove" type="button">
+                    <img src="resources/close-icon.svg" alt="" aria-hidden="true" />
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+
+        <hr>
+
+        <!-- ================= Coupon ================= -->
+        <form class="coupon" aria-labelledby="coupon-heading">
+          <label class="coupon__label" for="coupon-code">Coupon code</label>
+          <input class="coupon__input" id="coupon-code" name="coupon" type="text" placeholder="Enter coupon code" />
+          <button class="coupon__button" type="submit">Apply coupon</button>
+        </form>
+
+        <!-- ================= Totals ================= -->
+        <article class="total order-summary" aria-labelledby="order-summary-heading">
+          <dl class="order-summary__list">
+            <div class="order-summary__row">
+              <dt>Subtotal</dt>
+              <dd>$2,597.00</dd>
+            </div>
+            <div class="order-summary__row">
+              <dt>Tax</dt>
+              <dd>$623.28</dd>
+            </div>
+            <div class="order-summary__row order-summary__row--total">
+              <dt><strong>Total</strong></dt>
+              <dd><strong>$3,220.28</strong></dd>
+            </div>
+          </dl>
+        </article>
+      </section>
+
+      <!-- ================= Checkout Form ================= -->
+      <section class="checkout__form" aria-labelledby="contact-heading">
+        <h2 class="checkout__heading" id="contact-heading">Contact information</h2>
+
+        <form class="form">
+          <div class="form__group">
+            <label for="full-name">First & last name</label>
+            <input id="full-name" type="text" />
+          </div>
+
+          <div class="form__group">
+            <label for="email">Email address</label>
+            <input id="email" type="email" />
+          </div>
+
+          <div class="form__group">
+            <label for="country">Country</label>
+            <select id="country">
+              <option>Finland</option>
+            </select>
+          </div>
+
+          <div class="form__group">
+            <label for="postal-code">Postal code</label>
+            <input id="postal-code" type="text" />
+          </div>
+
+          <button class="form__submit" type="submit">Continue</button>
+        </form>
+      </section>
+
+    </main>
+  </div>
+</body>
+
+
+</html>
