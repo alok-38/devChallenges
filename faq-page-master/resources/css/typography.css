@@ -1,0 +1,227 @@
+/* ================================
+   Be Vietnam Pro – Font Faces
+   ================================ */
+
+/* Thin */
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("./Be_Vietnam_Pro/BeVietnamPro-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("./Be_Vietnam_Pro/BeVietnamPro-ThinItalic.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Extra Light */
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("./Be_Vietnam_Pro/BeVietnamPro-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("./Be_Vietnam_Pro/BeVietnamPro-ExtraLightItalic.ttf") format("truetype");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Light */
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("./Be_Vietnam_Pro/BeVietnamPro-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("./Be_Vietnam_Pro/BeVietnamPro-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Regular */
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("./Be_Vietnam_Pro/BeVietnamPro-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("./Be_Vietnam_Pro/BeVietnamPro-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Medium */
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("./Be_Vietnam_Pro/BeVietnamPro-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("./Be_Vietnam_Pro/BeVietnamPro-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* SemiBold */
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("./Be_Vietnam_Pro/BeVietnamPro-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("./Be_Vietnam_Pro/BeVietnamPro-SemiBoldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Bold */
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("./Be_Vietnam_Pro/BeVietnamPro-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("./Be_Vietnam_Pro/BeVietnamPro-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Extra Bold */
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("./Be_Vietnam_Pro/BeVietnamPro-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("./Be_Vietnam_Pro/BeVietnamPro-ExtraBoldItalic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Black */
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("./Be_Vietnam_Pro/BeVietnamPro-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url("./Be_Vietnam_Pro/BeVietnamPro-BlackItalic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+/* ================================
+   Root Typography Variables
+   ================================ */
+
+:root {
+    /* Font family */
+    --font-primary: "Be Vietnam Pro", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    /* Font sizes */
+    --fs-heading: 3rem;
+    /* 48px */
+    --fs-label: 1.25rem;
+    /* 20px */
+    --fs-body: 1rem;
+    /* 16px */
+    --fs-button: 0.875rem;
+    /* 14px */
+
+    /* Font weights */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* Line heights (recommended) */
+    --lh-heading: 1.2;
+    --lh-label: 1.4;
+    --lh-body: 1.6;
+    --lh-button: 1.4;
+
+    /* Base colors */
+    --color-primary-900: #12111F;
+    --color-primary-800: #2A2936;
+
+    --color-neutral-300: #CDD5E0;
+    --color-neutral-200: #F2F5F9;
+    --color-neutral-400: #97A3B6;
+
+    /* Semantic aliases */
+    --color-text-primary: var(--color-primary-900);
+    --color-text-secondary: var(--color-neutral-400);
+
+    --color-bg-primary: var(--color-neutral-200);
+    --color-bg-surface: #ffffff;
+
+    --color-border-default: var(--color-neutral-300);
+
+    /* Extra small */
+    --space-2xs: 8px;
+    --space-xs: 16px;
+    --space-sm: 20px;
+    --space-md: 24px;
+
+    /* Medium */
+    --space-lg: 28px;
+    --space-xl: 32px;
+    --space-2xl: 40px;
+
+    /* Large */
+    --space-3xl: 72px;
+    --space-4xl: 80px;
+    --space-5xl: 96px;
+
+    /* Layout / special */
+    --space-section: 120px;
+    /* optional section padding */
+    --space-max: 746px;
+    /* max container width */
+}
