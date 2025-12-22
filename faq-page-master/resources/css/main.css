@@ -1,2 +1,243 @@
 @import url(reset.css);
 @import url(typography.css);
+
+/* ================================
+   Base / Layout
+================================ */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-primary);
+    font-size: var(--fs-body);
+    background-color: var(--color-primary-900);
+    font-weight: var(--fw-regular);
+    color: var(--color-neutral-200);
+}
+
+.wrapper {
+    max-width: 1326px;
+    width: 100%;
+}
+
+main,
+header {
+    max-width: 820px;
+    width: 100%;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ================================
+   Header
+================================ */
+
+header {
+    background-image: url(../../resources/faq-title-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 295.2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-heading);
+    letter-spacing: -0.01em;
+    color: var(--color-neutral-400);
+    width: 455px;
+    text-align: center;
+}
+
+h1 span {
+    display: block;
+}
+
+/* ================================
+   Intro / Navigation
+================================ */
+
+.faq__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+nav {
+    margin-bottom: 80px;
+}
+
+nav ul {
+    display: flex;
+    gap: var(--space-md);
+    align-items: center;
+}
+
+h2 {
+    font-size: var(--fs-label);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-heading);
+    letter-spacing: -0.01em;
+    color: var(--color-neutral-200);
+}
+
+.faq__description {
+    font-size: var(--fs-body);
+    color: var(--color-neutral-400);
+    line-height: var(--lh-heading);
+    letter-spacing: -0.01em;
+    text-align: center;
+}
+
+/* ================================
+   Navigation Links
+================================ */
+
+ul li a {
+    font-size: var(--fs-button);
+    color: var(--color-neutral-200);
+}
+
+/* Base interactive link (ALL anchors) */
+a.is-interactive {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 50px;
+
+    background-color: transparent;
+    background-image: none;
+
+    transition:
+        background-image 0.25s ease,
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+/* Primary (first nav item) */
+ul li:first-of-type a {
+    font-weight: var(--fw-medium);
+    color: #ffffff;
+
+    background-color: var(--color-primary-800);
+    background-image: linear-gradient(135deg,
+            var(--color-primary-800),
+            var(--color-primary-900));
+}
+
+/* Hover / Focus (ALL links) */
+a.is-interactive.is-hovered {
+    background-image: linear-gradient(135deg,
+            var(--color-primary-900),
+            #000000);
+    box-shadow: 0 6px 14px rgba(18, 17, 31, 0.35);
+}
+
+/* Keyboard focus */
+a:focus-visible {
+    outline: 3px solid var(--color-neutral-300);
+    outline-offset: 3px;
+}
+
+/* Active / pressed */
+a.is-interactive.is-active {
+    transform: scale(0.96);
+    box-shadow: 0 3px 8px rgba(18, 17, 31, 0.45);
+}
+
+/* ================================
+   FAQ List
+================================ */
+
+.faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+article {
+    padding: 12px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: var(--color-primary-800);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: var(--fw-medium);
+    color: var(--color-neutral-300);
+}
+
+h3 img {
+    cursor: pointer;
+}
+
+article p {
+    font-size: var(--fs-body);
+    color: var(--color-neutral-300);
+    line-height: 1.5;
+}
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 1024px) {
+    body {
+        padding: 80px 12px;
+    }
+
+    .wrapper {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 412px) {
+    .wrapper {
+        max-width: 388px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+}
+
+/* ================================
+   Reduced Motion
+================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    a.is-interactive {
+        transition: none;
+    }
+}
+
+/* Accordion */
+.faq__answer {
+    display: none;
+}
+
+.faq__item.is-open .faq__answer {
+    display: block;
+}
