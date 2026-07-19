@@ -1,7 +1,8 @@
-div {
+  div {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: relative;
 }
 
 h1 {
@@ -30,4 +31,33 @@ button {
 button:hover {
   background-color: rgb(75 85 99);
   color: rgb(255, 255, 255);
+}
+
+.toast-container {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,.1),0 2px 15px 0 rgba(0,0,0,.05);
+  cursor: pointer;
+}
+
+/* animated bottom bar */
+.toast-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;              /* start from left */
+  height: 4px;
+  width: 100%;
+  background: seagreen;
+  animation: shrinkBar 3s linear backwards;
+}
+
+@keyframes shrinkBar {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
 }
