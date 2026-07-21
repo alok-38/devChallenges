@@ -1,0 +1,130 @@
+/* CSS Variables */
+:root {
+  --primary: #4f46e5;
+  --bg: #0f172a;
+  --text: #e5e7eb;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.navbar a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--text);
+  position: relative;
+}
+
+/* Hover underline */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: var(--primary);
+  transition: 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(90deg, #6366f1, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hero Section */
+.hero {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: var(--primary);
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--text);
+  border: none;
+  font-size: 1rem;
+
+  /* Smooth transitions */
+  transition: all 0.25s ease;
+
+  /* Subtle depth */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* 🌟 Hover effect */
+.hero button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  filter: brightness(1.1);
+}
+
+/* 🎯 Focus (keyboard accessibility) */
+.hero button:focus-visible {
+  outline: 2px solid #22d3ee;
+  outline-offset: 3px;
+}
+
+/* 👇 Click / Press effect */
+.hero button:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  filter: brightness(0.95);
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+/* Glassmorphism cards */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s;
+}
+
+.glass:hover {
+  transform: translateY(-5px);
+}
