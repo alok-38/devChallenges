@@ -128,3 +128,105 @@ body {
 .glass:hover {
   transform: translateY(-5px);
 }
+
+footer {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+/* Hamburger */
+/* Hamburger hidden on desktop */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #111;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  nav.active {
+    transition: transform 0.5s ease;
+    transform: translateX(0);
+  }
+}
+
+/* Modal background */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  backdrop-filter: blur(8px);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Show modal */
+.modal.show {
+  display: flex;
+}
+
+/* Modal box */
+.modal-content {
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Inputs */
+.modal input {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: none;
+}
+
+/* Button */
+.modal button {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/* Close */
+.close {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Toggle text */
+#toggle-mode {
+  color: cyan;
+  cursor: pointer;
+}
+
+/* Error */
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
