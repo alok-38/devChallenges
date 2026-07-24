@@ -63,6 +63,7 @@ a {
 .ppp-location {
   margin-left: auto;
   display: flex;
+  align-items: center;
 }
 
 .ppp-location svg {
@@ -85,7 +86,6 @@ a {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='14' fill='none' viewBox='0 0 9 14'%3E%3Cpath fill='%23fc706b' d='M8.429 7a.82.82 0 0 1-.255.603l-6 6q-.254.255-.603.254c-.349 0-.433-.085-.602-.254A.82.82 0 0 1 .714 13V1q0-.348.255-.603.254-.254.602-.254c.348 0 .434.085.603.254l6 6q.255.254.255.603'/%3E%3C/svg%3E");
   background-position: 50%;
   content: "";
-  display: inline-block;
   height: 14px;
   width: 9px;
 }
