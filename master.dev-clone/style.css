@@ -1,0 +1,29 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  min-height: 100vh;
+  color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.GlobalDiscountBanner {
+    display: flex;
+    justify-content: center;
+}
+
+.ppp-location {
+  margin-left: auto;
+}
+
+.remove-discount {
+  margin-left: auto;
+}
