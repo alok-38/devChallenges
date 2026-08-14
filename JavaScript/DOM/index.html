@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Understanding the Document Object Model (DOM)</title>
+  </head>
+  <body>
+    <h1 id="page-title"></h1>
+    <script>
+      let titleEl = document.getElementById("page-title");
+      titleEl.textContent = "New page title";
+
+      // Create <ol>
+      const orderedListEl = document.createElement("ol");
+
+      // Create first <li>
+      let listEl = document.createElement("li");
+      listEl.textContent = "A new item";
+
+      // Add first <li> to <ol>
+      orderedListEl.appendChild(listEl);
+
+      // Add <ol> to body
+      document.body.appendChild(orderedListEl);
+
+      // Create second <li>
+      let secondListEl = document.createElement("li");
+      secondListEl.textContent = "Another item";
+
+      // Add second <li> to <ol>
+      orderedListEl.appendChild(secondListEl);
+    </script>
+  </body>
+</html>
