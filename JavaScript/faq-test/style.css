@@ -1,0 +1,220 @@
+ * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family:
+          Inter,
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        color: #18181b;
+        background: #fafafa;
+        line-height: 1.6;
+      }
+
+      .faq {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 100px 24px;
+      }
+
+      /* Header */
+      .faq-header {
+        max-width: 680px;
+        margin: 0 auto 64px;
+        text-align: center;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 18px;
+        padding: 6px 12px;
+        border: 1px solid #e4e4e7;
+        border-radius: 999px;
+        background: #fff;
+        color: #71717a;
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #6366f1;
+      }
+
+      h1 {
+        font-size: clamp(42px, 6vw, 64px);
+        line-height: 1.05;
+        letter-spacing: -0.045em;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .intro {
+        color: #71717a;
+        font-size: 18px;
+        line-height: 1.7;
+      }
+
+      /* Search */
+      .search {
+        position: relative;
+        max-width: 620px;
+        margin: 0 auto 72px;
+      }
+
+      .search input {
+        width: 100%;
+        height: 58px;
+        padding: 0 20px 0 50px;
+        border: 1px solid #e4e4e7;
+        border-radius: 14px;
+        background: #fff;
+        color: #18181b;
+        font-size: 15px;
+        outline: none;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        transition:
+          border-color 0.2s,
+          box-shadow 0.2s;
+      }
+
+      .search input:focus {
+        border-color: #a1a1aa;
+        box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.08);
+      }
+
+      .search-icon {
+        position: absolute;
+        left: 19px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #a1a1aa;
+        font-size: 18px;
+      }
+
+      /* FAQ */
+      .faq-group {
+        margin-bottom: 52px;
+      }
+
+      .faq-group h2 {
+        margin-bottom: 16px;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #71717a;
+      }
+
+      .faq-list {
+        border-top: 1px solid #e4e4e7;
+      }
+
+      details {
+        border-bottom: 1px solid #e4e4e7;
+      }
+
+      summary {
+        position: relative;
+        list-style: none;
+        cursor: pointer;
+        padding: 24px 44px 24px 0;
+        font-size: 17px;
+        font-weight: 600;
+        color: #27272a;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      summary::after {
+        content: "+";
+        position: absolute;
+        right: 4px;
+        top: 20px;
+        color: #71717a;
+        font-size: 24px;
+        font-weight: 300;
+        transition: transform 0.2s;
+      }
+
+      details[open] summary::after {
+        content: "−";
+      }
+
+      .answer {
+        max-width: 720px;
+        padding: 0 0 26px;
+        color: #71717a;
+        font-size: 15px;
+        line-height: 1.75;
+      }
+
+      /* CTA */
+      .cta {
+        margin-top: 80px;
+        padding: 48px;
+        border-radius: 24px;
+        background: #18181b;
+        color: white;
+        text-align: center;
+      }
+
+      .cta h2 {
+        margin-bottom: 10px;
+        font-size: 28px;
+        letter-spacing: -0.025em;
+      }
+
+      .cta p {
+        margin-bottom: 24px;
+        color: #a1a1aa;
+      }
+
+      .cta a {
+        display: inline-flex;
+        align-items: center;
+        padding: 11px 18px;
+        border-radius: 10px;
+        background: white;
+        color: #18181b;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: transform 0.2s;
+      }
+
+      .cta a:hover {
+        transform: translateY(-1px);
+      }
+
+      @media (max-width: 640px) {
+        .faq {
+          padding: 64px 20px;
+        }
+
+        .faq-header {
+          margin-bottom: 48px;
+        }
+
+        .intro {
+          font-size: 16px;
+        }
+
+        .cta {
+          padding: 36px 24px;
+        }
+      }
