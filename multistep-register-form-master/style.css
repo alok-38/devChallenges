@@ -1,39 +1,394 @@
+/* =========================
+   Reset
+========================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.gradient-background {
-  background-color: #05040a;
-  background-image:
-    radial-gradient(circle at 0% 0%, #4c00b0 0%, transparent 50%),
-    radial-gradient(circle at 100% 0%, #4c00b0 0%, transparent 50%),
-    radial-gradient(circle at 0% 100%, #4c00b0 0%, transparent 50%),
-    radial-gradient(circle at 100% 100%, #4c00b0 0%, transparent 50%);
-  width: 100%;
+html {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
   min-height: 100vh;
+}
+
+/* =========================
+   Background
+========================= */
+
+.gradient-background {
+  min-height: 100vh;
+  width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.register {
-  max-width: 502px;
-  width: 100%;
+  padding: 24px;
 
-  background-color: #212936;
-  background-image:
+  background:
+    radial-gradient(
+      circle at 0% 0%,
+      rgba(108, 36, 220, 0.8) 0,
+      transparent 35%
+    ),
     radial-gradient(
       circle at 100% 0%,
-      rgba(124, 58, 237, 0.22) 0%,
+      rgba(77, 29, 177, 0.7) 0,
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 0% 100%,
+      rgba(79, 25, 179, 0.65) 0,
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 100% 100%,
+      rgba(101, 37, 211, 0.7) 0,
+      transparent 35%
+    ),
+    #05040a;
+}
+
+/* =========================
+   Register Card
+========================= */
+
+.register {
+  width: min(100%, 460px);
+
+  color: #f9fafb;
+
+  padding: 40px;
+
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(124, 58, 237, 0.18),
       transparent 45%
     ),
-    linear-gradient(145deg, #25213a 0%, #212936 45%, #1d2530 100%);
+    linear-gradient(145deg, #25213a 0%, #212936 50%, #1d2530 100%);
 
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
-  overflow: hidden;
 
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+/* =========================
+   Form / Steps
+========================= */
+
+.register__form {
+  width: 100%;
+}
+
+.register__step {
+  display: none;
+  min-height: 350px;
+
+  flex-direction: column;
+}
+
+.register__step--active {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* =========================
+   Header
+========================= */
+
+.register__header {
+  width: 100%;
+}
+
+.register__title {
+  color: #f9fafb;
+
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* =========================
+   Fields
+========================= */
+
+.register__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin-bottom: 20px;
+}
+
+.register__field:last-child {
+  margin-bottom: 0;
+}
+
+.register__label {
+  color: #d1d5db;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.register__input {
+  width: 100%;
+  height: 46px;
+
+  padding: 0 14px;
+
+  color: #f9fafb;
+  font-family: inherit;
+  font-size: 14px;
+
+  background: #111827;
+
+  border: 1px solid #374151;
+  border-radius: 8px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.register__input::placeholder {
+  color: #6b7280;
+}
+
+.register__input:hover {
+  border-color: #4b5563;
+}
+
+.register__input:focus {
+  border-color: #7c3aed;
+
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+/* =========================
+   Continue Button
+========================= */
+
+.register__button {
+  width: 100%;
+  height: 46px;
+
+  margin-top: auto;
+
+  border: 0;
+  border-radius: 8px;
+
+  color: #ffffff;
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.25);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+}
+
+.register__button:hover {
+  filter: brightness(1.08);
+
+  box-shadow: 0 10px 26px rgba(124, 58, 237, 0.35);
+
+  transform: translateY(-1px);
+}
+
+.register__button:active {
+  transform: translateY(0);
+}
+
+/* =========================
+   Topic Options
+========================= */
+
+.register__options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.register__option {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  min-height: 52px;
+
+  padding: 0 16px;
+
+  color: #d1d5db;
+  background: #374151;
+
+  border: 1px solid transparent;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.register__option:hover {
+  background: #414b5a;
+}
+
+.register__checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.register__option-text {
+  width: 100%;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Selected topic */
+
+.register__checkbox:checked + .register__option-text {
+  color: #ffffff;
+}
+
+.register__checkbox:checked ~ .register__option-text {
+  color: #ffffff;
+}
+
+.register__option:has(.register__checkbox:checked) {
+  background: #6d28d9;
+  border-color: #8b5cf6;
+}
+
+/* =========================
+   Progress
+========================= */
+
+.register__progress {
+  position: relative;
+
+  margin-top: 24px;
+  padding-top: 18px;
+
+  color: #9ca3af;
+
+  font-size: 12px;
+  text-align: center;
+}
+
+/* =========================
+   Summary
+========================= */
+
+.register__summary {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding-left: 18px;
+
+  color: #d1d5db;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.register__summary-item {
+  padding-left: 4px;
+}
+
+.register__summary-label {
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.register__subtitle {
+  margin-bottom: 12px;
+
+  color: #d1d5db;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.register__topics {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  list-style: none;
+}
+
+.register__topic {
+  padding: 12px 14px;
+
+  color: #e5e7eb;
+  background: #374151;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 520px) {
+  .gradient-background {
+    padding: 16px;
+  }
+
+  .register {
+    padding: 28px 24px;
+    border-radius: 10px;
+  }
+
+  .register__step {
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 380px) {
+  .register {
+    padding: 24px 18px;
+  }
+
+  .register__title {
+    font-size: 18px;
+  }
 }

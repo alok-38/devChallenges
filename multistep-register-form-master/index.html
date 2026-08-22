@@ -12,110 +12,144 @@
     />
 
     <title>Multi-step Register Form | devChallenges.io</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="gradient-background">
+
+  <body class="register-page gradient-background">
     <main class="register">
       <form class="register__form">
         <!-- Step 1 -->
-        <section class="register__step register__step--active">
-          <div class="register__header">
-            <h1 class="register__title">Register</h1>
+        <section
+          class="register__step register__step--active"
+          id="register-step-1"
+        >
+          <div class="flex">
+            <div class="register__header">
+              <h1 class="register__title">Register</h1>
+            </div>
+
+            <div>
+              <div class="register__field">
+                <label class="register__label" for="register-name">
+                  Name
+                </label>
+                <input
+                  class="register__input"
+                  type="text"
+                  name="name"
+                  id="register-name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="register__field">
+                <label class="register__label" for="register-email">
+                  Email
+                </label>
+                <input
+                  class="register__input"
+                  type="email"
+                  name="email"
+                  id="register-email"
+                  placeholder="Example@gmail.com"
+                />
+              </div>
+            </div>
           </div>
 
-          <div class="register__field">
-            <label class="register__label" for="register-name">Name</label>
-            <input
-              class="register__input"
-              type="text"
-              name="name"
-              id="register-name"
-              placeholder="Enter your name"
-            />
-          </div>
-
-          <div class="register__field">
-            <label class="register__label" for="register-email">Email</label>
-            <input
-              class="register__input"
-              type="email"
-              name="email"
-              id="register-email"
-              placeholder="Example@gmail.com"
-            />
-          </div>
-
-          <button class="register__button" type="submit">Continue</button>
+          <button
+            class="register__button register__button--continue"
+            type="submit"
+          >
+            Continue
+          </button>
 
           <div class="register__progress">Step 1 of 3</div>
         </section>
 
         <!-- Step 2 -->
-        <section class="register__step">
-          <div class="register__header">
-            <h2 class="register__title">Which topics you are interested in?</h2>
-          </div>
+        <section class="register__step" id="register-step-2">
+          <div class="flex">
+            <div class="register__header">
+              <h2 class="register__title">
+                Which topics you are interested in?
+              </h2>
+            </div>
 
-          <div class="register__options">
-            <label class="register__option">
-              <input
-                class="register__checkbox"
-                type="checkbox"
-                name="topics"
-                value="software-development"
-              />
-              <span class="register__option-text"> Software Development </span>
-            </label>
+            <div class="register__options">
+              <label class="register__option">
+                <input
+                  class="register__checkbox"
+                  type="checkbox"
+                  name="topics"
+                  value="software-development"
+                />
+                <span class="register__option-text">
+                  Software Development
+                </span>
+              </label>
 
-            <label class="register__option">
-              <input
-                class="register__checkbox"
-                type="checkbox"
-                name="topics"
-                value="user-experience"
-              />
-              <span class="register__option-text"> User Experience </span>
-            </label>
+              <label class="register__option">
+                <input
+                  class="register__checkbox"
+                  type="checkbox"
+                  name="topics"
+                  value="user-experience"
+                />
+                <span class="register__option-text"> User Experience </span>
+              </label>
 
-            <label class="register__option">
-              <input
-                class="register__checkbox"
-                type="checkbox"
-                name="topics"
-                value="graphic-design"
-              />
-              <span class="register__option-text"> Graphic Design </span>
-            </label>
+              <label class="register__option">
+                <input
+                  class="register__checkbox"
+                  type="checkbox"
+                  name="topics"
+                  value="graphic-design"
+                />
+                <span class="register__option-text"> Graphic Design </span>
+              </label>
+            </div>
           </div>
 
           <div class="register__progress">Step 2 of 3</div>
         </section>
 
         <!-- Step 3 -->
-        <section class="register__step">
-          <div class="register__header">
-            <h3 class="register__title">Summary</h3>
+        <section class="register__step" id="register-step-3">
+          <div class="flex">
+            <div class="register__header">
+              <h3 class="register__title">Summary</h3>
+            </div>
+
+            <div>
+              <ol class="register__summary">
+                <li class="register__summary-item">
+                  <span class="register__summary-label">Name:</span>
+                  Emily Johnson
+                </li>
+
+                <li class="register__summary-item">
+                  <span class="register__summary-label">Email:</span>
+                  emily@emilyjohnsonstl.com
+                </li>
+              </ol>
+            </div>
+
+            <div>
+              <h4 class="register__subtitle">Topics</h4>
+
+              <ul class="register__topics">
+                <li class="register__topic">User Experience</li>
+                <li class="register__topic">Graphic Design</li>
+              </ul>
+            </div>
           </div>
-
-          <ol class="register__summary">
-            <li class="register__summary-item">
-              <span class="register__summary-label">Name:</span>
-              Emily Johnson
-            </li>
-
-            <li class="register__summary-item">
-              <span class="register__summary-label">Email:</span>
-              emily@emilyjohnsonstl.com
-            </li>
-          </ol>
-
-          <h4 class="register__subtitle">Topics</h4>
-
-          <ul class="register__topics">
-            <li class="register__topic">User Experience</li>
-            <li class="register__topic">Graphic Design</li>
-          </ul>
 
           <div class="register__progress">Step 3 of 3</div>
         </section>
