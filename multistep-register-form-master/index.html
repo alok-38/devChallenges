@@ -20,11 +20,12 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
   </head>
 
   <body class="register-page gradient-background">
     <main class="register">
-      <form class="register__form">
+      <form class="register__form" novalidate>
         <!-- Step 1 -->
         <section
           class="register__step register__step--active"
@@ -64,6 +65,7 @@
           </div>
 
           <button
+            id="continue"
             class="register__button register__button--continue"
             type="submit"
           >
