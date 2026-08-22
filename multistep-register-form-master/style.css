@@ -4,14 +4,36 @@
   box-sizing: border-box;
 }
 
+.gradient-background {
+  background-color: #05040a;
+  background-image:
+    radial-gradient(circle at 0% 0%, #4c00b0 0%, transparent 50%),
+    radial-gradient(circle at 100% 0%, #4c00b0 0%, transparent 50%),
+    radial-gradient(circle at 0% 100%, #4c00b0 0%, transparent 50%),
+    radial-gradient(circle at 100% 100%, #4c00b0 0%, transparent 50%);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .gradient-background {
-    background-color: #05040a;
-    background-image:
-      radial-gradient(circle at 0% 0%, #4c00b0 0%, transparent 50%),
-      radial-gradient(circle at 100% 0%, #4c00b0 0%, transparent 50%),
-      radial-gradient(circle at 0% 100%, #4c00b0 0%, transparent 50%),
-      radial-gradient(circle at 100% 100%, #4c00b0 0%, transparent 50%);
-    width: 100%;
-    height: 100vh;
-  }
+.register {
+  max-width: 502px;
+  width: 100%;
+
+  background-color: #212936;
+  background-image:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(124, 58, 237, 0.22) 0%,
+      transparent 45%
+    ),
+    linear-gradient(145deg, #25213a 0%, #212936 45%, #1d2530 100%);
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  overflow: hidden;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
